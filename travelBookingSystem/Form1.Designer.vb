@@ -29,27 +29,13 @@ Partial Class displayForm
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.Button3 = New System.Windows.Forms.Button()
-        Me.Button4 = New System.Windows.Forms.Button()
-        Me.Button5 = New System.Windows.Forms.Button()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.CheckBox1 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox2 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox3 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox4 = New System.Windows.Forms.CheckBox()
+        Me.btnGroupA = New System.Windows.Forms.Button()
+        Me.btnGroupB = New System.Windows.Forms.Button()
+        Me.btnGroupC = New System.Windows.Forms.Button()
+        Me.btnConfirm = New System.Windows.Forms.Button()
+        Me.btnCancel = New System.Windows.Forms.Button()
+        Me.priceLbl = New System.Windows.Forms.Label()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
-        Me.CheckBox5 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox6 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox7 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox8 = New System.Windows.Forms.CheckBox()
-        Me.GroupBox3 = New System.Windows.Forms.GroupBox()
-        Me.CheckBox9 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox10 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox11 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox12 = New System.Windows.Forms.CheckBox()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
@@ -63,11 +49,46 @@ Partial Class displayForm
         Me.Label15 = New System.Windows.Forms.Label()
         Me.Label16 = New System.Windows.Forms.Label()
         Me.Label17 = New System.Windows.Forms.Label()
+        Me.Label18 = New System.Windows.Forms.Label()
+        Me.Label19 = New System.Windows.Forms.Label()
+        Me.Label20 = New System.Windows.Forms.Label()
+        Me.addOngroupC = New System.Windows.Forms.GroupBox()
+        Me.CheckBox13 = New System.Windows.Forms.CheckBox()
+        Me.CheckBox14 = New System.Windows.Forms.CheckBox()
+        Me.CheckBox15 = New System.Windows.Forms.CheckBox()
+        Me.CheckBox16 = New System.Windows.Forms.CheckBox()
+        Me.addOngroupA = New System.Windows.Forms.GroupBox()
+        Me.CheckBox17 = New System.Windows.Forms.CheckBox()
+        Me.CheckBox18 = New System.Windows.Forms.CheckBox()
+        Me.CheckBox19 = New System.Windows.Forms.CheckBox()
+        Me.CheckBox20 = New System.Windows.Forms.CheckBox()
+        Me.addOngroupB = New System.Windows.Forms.GroupBox()
+        Me.CheckBox21 = New System.Windows.Forms.CheckBox()
+        Me.CheckBox22 = New System.Windows.Forms.CheckBox()
+        Me.CheckBox23 = New System.Windows.Forms.CheckBox()
+        Me.CheckBox24 = New System.Windows.Forms.CheckBox()
+        Me.Label21 = New System.Windows.Forms.Label()
+        Me.Label22 = New System.Windows.Forms.Label()
+        Me.Label23 = New System.Windows.Forms.Label()
+        Me.Label24 = New System.Windows.Forms.Label()
+        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.Label25 = New System.Windows.Forms.Label()
+        Me.Label26 = New System.Windows.Forms.Label()
+        Me.Label27 = New System.Windows.Forms.Label()
+        Me.Label28 = New System.Windows.Forms.Label()
+        Me.GroupBox3 = New System.Windows.Forms.GroupBox()
+        Me.Label29 = New System.Windows.Forms.Label()
+        Me.Label30 = New System.Windows.Forms.Label()
+        Me.Label31 = New System.Windows.Forms.Label()
+        Me.Label32 = New System.Windows.Forms.Label()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
+        Me.addOngroupC.SuspendLayout()
+        Me.addOngroupA.SuspendLayout()
+        Me.addOngroupB.SuspendLayout()
+        Me.GroupBox1.SuspendLayout()
         Me.GroupBox3.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -140,262 +161,98 @@ Partial Class displayForm
         Me.PictureBox2.TabIndex = 8
         Me.PictureBox2.TabStop = False
         '
-        'Button1
+        'btnGroupA
         '
-        Me.Button1.BackColor = System.Drawing.Color.White
-        Me.Button1.FlatAppearance.BorderSize = 0
-        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button1.Font = New System.Drawing.Font("Cocogoose", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.Location = New System.Drawing.Point(182, 664)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(126, 41)
-        Me.Button1.TabIndex = 10
-        Me.Button1.Text = "BOOK NOW"
-        Me.Button1.UseVisualStyleBackColor = False
+        Me.btnGroupA.BackColor = System.Drawing.Color.White
+        Me.btnGroupA.FlatAppearance.BorderSize = 0
+        Me.btnGroupA.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnGroupA.Font = New System.Drawing.Font("Cocogoose", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnGroupA.Location = New System.Drawing.Point(182, 664)
+        Me.btnGroupA.Name = "btnGroupA"
+        Me.btnGroupA.Size = New System.Drawing.Size(126, 41)
+        Me.btnGroupA.TabIndex = 10
+        Me.btnGroupA.Text = "BOOK NOW"
+        Me.btnGroupA.UseVisualStyleBackColor = False
         '
-        'Button2
+        'btnGroupB
         '
-        Me.Button2.BackColor = System.Drawing.Color.White
-        Me.Button2.FlatAppearance.BorderSize = 0
-        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button2.Font = New System.Drawing.Font("Cocogoose", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button2.Location = New System.Drawing.Point(635, 664)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(126, 41)
-        Me.Button2.TabIndex = 11
-        Me.Button2.Text = "BOOK NOW"
-        Me.Button2.UseVisualStyleBackColor = False
+        Me.btnGroupB.BackColor = System.Drawing.Color.White
+        Me.btnGroupB.FlatAppearance.BorderSize = 0
+        Me.btnGroupB.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnGroupB.Font = New System.Drawing.Font("Cocogoose", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnGroupB.Location = New System.Drawing.Point(635, 664)
+        Me.btnGroupB.Name = "btnGroupB"
+        Me.btnGroupB.Size = New System.Drawing.Size(126, 41)
+        Me.btnGroupB.TabIndex = 11
+        Me.btnGroupB.Text = "BOOK NOW"
+        Me.btnGroupB.UseVisualStyleBackColor = False
         '
-        'Button3
+        'btnGroupC
         '
-        Me.Button3.BackColor = System.Drawing.Color.White
-        Me.Button3.FlatAppearance.BorderSize = 0
-        Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button3.Font = New System.Drawing.Font("Cocogoose", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button3.Location = New System.Drawing.Point(1085, 664)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(126, 41)
-        Me.Button3.TabIndex = 12
-        Me.Button3.Text = "BOOK NOW"
-        Me.Button3.UseVisualStyleBackColor = False
+        Me.btnGroupC.BackColor = System.Drawing.Color.White
+        Me.btnGroupC.FlatAppearance.BorderSize = 0
+        Me.btnGroupC.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnGroupC.Font = New System.Drawing.Font("Cocogoose", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnGroupC.Location = New System.Drawing.Point(1085, 664)
+        Me.btnGroupC.Name = "btnGroupC"
+        Me.btnGroupC.Size = New System.Drawing.Size(126, 41)
+        Me.btnGroupC.TabIndex = 12
+        Me.btnGroupC.Text = "BOOK NOW"
+        Me.btnGroupC.UseVisualStyleBackColor = False
         '
-        'Button4
+        'btnConfirm
         '
-        Me.Button4.BackColor = System.Drawing.Color.White
-        Me.Button4.FlatAppearance.BorderSize = 0
-        Me.Button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button4.Font = New System.Drawing.Font("Cocogoose", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button4.Location = New System.Drawing.Point(1209, 872)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(113, 36)
-        Me.Button4.TabIndex = 13
-        Me.Button4.Text = "CONFIRM"
-        Me.Button4.UseVisualStyleBackColor = False
+        Me.btnConfirm.BackColor = System.Drawing.Color.White
+        Me.btnConfirm.FlatAppearance.BorderSize = 0
+        Me.btnConfirm.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnConfirm.Font = New System.Drawing.Font("Cocogoose", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnConfirm.Location = New System.Drawing.Point(1209, 872)
+        Me.btnConfirm.Name = "btnConfirm"
+        Me.btnConfirm.Size = New System.Drawing.Size(113, 36)
+        Me.btnConfirm.TabIndex = 13
+        Me.btnConfirm.Text = "CONFIRM"
+        Me.btnConfirm.UseVisualStyleBackColor = False
         '
-        'Button5
+        'btnCancel
         '
-        Me.Button5.BackColor = System.Drawing.Color.White
-        Me.Button5.FlatAppearance.BorderSize = 0
-        Me.Button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button5.Font = New System.Drawing.Font("Cocogoose", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button5.Location = New System.Drawing.Point(1085, 872)
-        Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(113, 36)
-        Me.Button5.TabIndex = 14
-        Me.Button5.Text = "CANCEL"
-        Me.Button5.UseVisualStyleBackColor = False
+        Me.btnCancel.BackColor = System.Drawing.Color.White
+        Me.btnCancel.FlatAppearance.BorderSize = 0
+        Me.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnCancel.Font = New System.Drawing.Font("Cocogoose", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnCancel.Location = New System.Drawing.Point(1085, 872)
+        Me.btnCancel.Name = "btnCancel"
+        Me.btnCancel.Size = New System.Drawing.Size(113, 36)
+        Me.btnCancel.TabIndex = 14
+        Me.btnCancel.Text = "CANCEL"
+        Me.btnCancel.UseVisualStyleBackColor = False
         '
-        'Label4
+        'priceLbl
         '
-        Me.Label4.AutoSize = True
-        Me.Label4.BackColor = System.Drawing.Color.Transparent
-        Me.Label4.Font = New System.Drawing.Font("Impact", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.ForeColor = System.Drawing.Color.White
-        Me.Label4.Location = New System.Drawing.Point(1085, 827)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(237, 26)
-        Me.Label4.TabIndex = 15
-        Me.Label4.Text = "CURRENT PRICE: RM 500.00"
-        '
-        'GroupBox1
-        '
-        Me.GroupBox1.BackColor = System.Drawing.Color.FromArgb(CType(CType(77, Byte), Integer), CType(CType(46, Byte), Integer), CType(CType(118, Byte), Integer))
-        Me.GroupBox1.Controls.Add(Me.CheckBox4)
-        Me.GroupBox1.Controls.Add(Me.CheckBox3)
-        Me.GroupBox1.Controls.Add(Me.CheckBox2)
-        Me.GroupBox1.Controls.Add(Me.CheckBox1)
-        Me.GroupBox1.Font = New System.Drawing.Font("Arial", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GroupBox1.ForeColor = System.Drawing.Color.White
-        Me.GroupBox1.Location = New System.Drawing.Point(560, 516)
-        Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(270, 132)
-        Me.GroupBox1.TabIndex = 16
-        Me.GroupBox1.TabStop = False
-        Me.GroupBox1.Text = "Add On"
-        '
-        'CheckBox1
-        '
-        Me.CheckBox1.AutoSize = True
-        Me.CheckBox1.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CheckBox1.Location = New System.Drawing.Point(19, 24)
-        Me.CheckBox1.Name = "CheckBox1"
-        Me.CheckBox1.Size = New System.Drawing.Size(175, 20)
-        Me.CheckBox1.TabIndex = 17
-        Me.CheckBox1.Text = "CheckBox1   (+ RM5.00)"
-        Me.CheckBox1.UseVisualStyleBackColor = True
-        '
-        'CheckBox2
-        '
-        Me.CheckBox2.AutoSize = True
-        Me.CheckBox2.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CheckBox2.Location = New System.Drawing.Point(19, 50)
-        Me.CheckBox2.Name = "CheckBox2"
-        Me.CheckBox2.Size = New System.Drawing.Size(175, 20)
-        Me.CheckBox2.TabIndex = 18
-        Me.CheckBox2.Text = "CheckBox2   (+ RM5.00)"
-        Me.CheckBox2.UseVisualStyleBackColor = True
-        '
-        'CheckBox3
-        '
-        Me.CheckBox3.AutoSize = True
-        Me.CheckBox3.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CheckBox3.Location = New System.Drawing.Point(19, 76)
-        Me.CheckBox3.Name = "CheckBox3"
-        Me.CheckBox3.Size = New System.Drawing.Size(175, 20)
-        Me.CheckBox3.TabIndex = 19
-        Me.CheckBox3.Text = "CheckBox3   (+ RM5.00)"
-        Me.CheckBox3.UseVisualStyleBackColor = True
-        '
-        'CheckBox4
-        '
-        Me.CheckBox4.AutoSize = True
-        Me.CheckBox4.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CheckBox4.Location = New System.Drawing.Point(19, 102)
-        Me.CheckBox4.Name = "CheckBox4"
-        Me.CheckBox4.Size = New System.Drawing.Size(175, 20)
-        Me.CheckBox4.TabIndex = 20
-        Me.CheckBox4.Text = "CheckBox4   (+ RM5.00)"
-        Me.CheckBox4.UseVisualStyleBackColor = True
+        Me.priceLbl.AutoSize = True
+        Me.priceLbl.BackColor = System.Drawing.Color.Transparent
+        Me.priceLbl.Font = New System.Drawing.Font("Impact", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.priceLbl.ForeColor = System.Drawing.Color.White
+        Me.priceLbl.Location = New System.Drawing.Point(1085, 827)
+        Me.priceLbl.Name = "priceLbl"
+        Me.priceLbl.Size = New System.Drawing.Size(237, 26)
+        Me.priceLbl.TabIndex = 15
+        Me.priceLbl.Text = "CURRENT PRICE: RM 500.00"
         '
         'GroupBox2
         '
         Me.GroupBox2.BackColor = System.Drawing.Color.FromArgb(CType(CType(77, Byte), Integer), CType(CType(46, Byte), Integer), CType(CType(118, Byte), Integer))
-        Me.GroupBox2.Controls.Add(Me.CheckBox5)
-        Me.GroupBox2.Controls.Add(Me.CheckBox6)
-        Me.GroupBox2.Controls.Add(Me.CheckBox7)
-        Me.GroupBox2.Controls.Add(Me.CheckBox8)
+        Me.GroupBox2.Controls.Add(Me.Label24)
+        Me.GroupBox2.Controls.Add(Me.Label23)
+        Me.GroupBox2.Controls.Add(Me.Label22)
+        Me.GroupBox2.Controls.Add(Me.Label21)
         Me.GroupBox2.Font = New System.Drawing.Font("Arial", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox2.ForeColor = System.Drawing.Color.White
-        Me.GroupBox2.Location = New System.Drawing.Point(118, 516)
+        Me.GroupBox2.Location = New System.Drawing.Point(114, 466)
         Me.GroupBox2.Name = "GroupBox2"
         Me.GroupBox2.Size = New System.Drawing.Size(270, 132)
         Me.GroupBox2.TabIndex = 21
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Add On"
-        '
-        'CheckBox5
-        '
-        Me.CheckBox5.AutoSize = True
-        Me.CheckBox5.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CheckBox5.Location = New System.Drawing.Point(19, 102)
-        Me.CheckBox5.Name = "CheckBox5"
-        Me.CheckBox5.Size = New System.Drawing.Size(175, 20)
-        Me.CheckBox5.TabIndex = 20
-        Me.CheckBox5.Text = "CheckBox4   (+ RM5.00)"
-        Me.CheckBox5.UseVisualStyleBackColor = True
-        '
-        'CheckBox6
-        '
-        Me.CheckBox6.AutoSize = True
-        Me.CheckBox6.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CheckBox6.Location = New System.Drawing.Point(19, 76)
-        Me.CheckBox6.Name = "CheckBox6"
-        Me.CheckBox6.Size = New System.Drawing.Size(175, 20)
-        Me.CheckBox6.TabIndex = 19
-        Me.CheckBox6.Text = "CheckBox3   (+ RM5.00)"
-        Me.CheckBox6.UseVisualStyleBackColor = True
-        '
-        'CheckBox7
-        '
-        Me.CheckBox7.AutoSize = True
-        Me.CheckBox7.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CheckBox7.Location = New System.Drawing.Point(19, 50)
-        Me.CheckBox7.Name = "CheckBox7"
-        Me.CheckBox7.Size = New System.Drawing.Size(175, 20)
-        Me.CheckBox7.TabIndex = 18
-        Me.CheckBox7.Text = "CheckBox2   (+ RM5.00)"
-        Me.CheckBox7.UseVisualStyleBackColor = True
-        '
-        'CheckBox8
-        '
-        Me.CheckBox8.AutoSize = True
-        Me.CheckBox8.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CheckBox8.Location = New System.Drawing.Point(19, 24)
-        Me.CheckBox8.Name = "CheckBox8"
-        Me.CheckBox8.Size = New System.Drawing.Size(175, 20)
-        Me.CheckBox8.TabIndex = 17
-        Me.CheckBox8.Text = "CheckBox1   (+ RM5.00)"
-        Me.CheckBox8.UseVisualStyleBackColor = True
-        '
-        'GroupBox3
-        '
-        Me.GroupBox3.BackColor = System.Drawing.Color.FromArgb(CType(CType(77, Byte), Integer), CType(CType(46, Byte), Integer), CType(CType(118, Byte), Integer))
-        Me.GroupBox3.Controls.Add(Me.CheckBox9)
-        Me.GroupBox3.Controls.Add(Me.CheckBox10)
-        Me.GroupBox3.Controls.Add(Me.CheckBox11)
-        Me.GroupBox3.Controls.Add(Me.CheckBox12)
-        Me.GroupBox3.Font = New System.Drawing.Font("Arial", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GroupBox3.ForeColor = System.Drawing.Color.White
-        Me.GroupBox3.Location = New System.Drawing.Point(1000, 516)
-        Me.GroupBox3.Name = "GroupBox3"
-        Me.GroupBox3.Size = New System.Drawing.Size(270, 132)
-        Me.GroupBox3.TabIndex = 22
-        Me.GroupBox3.TabStop = False
-        Me.GroupBox3.Text = "Add On"
-        '
-        'CheckBox9
-        '
-        Me.CheckBox9.AutoSize = True
-        Me.CheckBox9.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CheckBox9.Location = New System.Drawing.Point(19, 102)
-        Me.CheckBox9.Name = "CheckBox9"
-        Me.CheckBox9.Size = New System.Drawing.Size(175, 20)
-        Me.CheckBox9.TabIndex = 20
-        Me.CheckBox9.Text = "CheckBox4   (+ RM5.00)"
-        Me.CheckBox9.UseVisualStyleBackColor = True
-        '
-        'CheckBox10
-        '
-        Me.CheckBox10.AutoSize = True
-        Me.CheckBox10.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CheckBox10.Location = New System.Drawing.Point(19, 76)
-        Me.CheckBox10.Name = "CheckBox10"
-        Me.CheckBox10.Size = New System.Drawing.Size(175, 20)
-        Me.CheckBox10.TabIndex = 19
-        Me.CheckBox10.Text = "CheckBox3   (+ RM5.00)"
-        Me.CheckBox10.UseVisualStyleBackColor = True
-        '
-        'CheckBox11
-        '
-        Me.CheckBox11.AutoSize = True
-        Me.CheckBox11.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CheckBox11.Location = New System.Drawing.Point(19, 50)
-        Me.CheckBox11.Name = "CheckBox11"
-        Me.CheckBox11.Size = New System.Drawing.Size(175, 20)
-        Me.CheckBox11.TabIndex = 18
-        Me.CheckBox11.Text = "CheckBox2   (+ RM5.00)"
-        Me.CheckBox11.UseVisualStyleBackColor = True
-        '
-        'CheckBox12
-        '
-        Me.CheckBox12.AutoSize = True
-        Me.CheckBox12.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CheckBox12.Location = New System.Drawing.Point(19, 24)
-        Me.CheckBox12.Name = "CheckBox12"
-        Me.CheckBox12.Size = New System.Drawing.Size(175, 20)
-        Me.CheckBox12.TabIndex = 17
-        Me.CheckBox12.Text = "CheckBox1   (+ RM5.00)"
-        Me.CheckBox12.UseVisualStyleBackColor = True
         '
         'Label5
         '
@@ -553,12 +410,388 @@ Partial Class displayForm
         Me.Label17.TabIndex = 35
         Me.Label17.Text = "Choose Your Package"
         '
+        'Label18
+        '
+        Me.Label18.AutoSize = True
+        Me.Label18.BackColor = System.Drawing.Color.FromArgb(CType(CType(77, Byte), Integer), CType(CType(46, Byte), Integer), CType(CType(118, Byte), Integer))
+        Me.Label18.Font = New System.Drawing.Font("Arial", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label18.ForeColor = System.Drawing.Color.White
+        Me.Label18.Location = New System.Drawing.Point(607, 614)
+        Me.Label18.Name = "Label18"
+        Me.Label18.Size = New System.Drawing.Size(174, 37)
+        Me.Label18.TabIndex = 36
+        Me.Label18.Text = "RM 800.00"
+        '
+        'Label19
+        '
+        Me.Label19.AutoSize = True
+        Me.Label19.BackColor = System.Drawing.Color.FromArgb(CType(CType(77, Byte), Integer), CType(CType(46, Byte), Integer), CType(CType(118, Byte), Integer))
+        Me.Label19.Font = New System.Drawing.Font("Arial", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label19.ForeColor = System.Drawing.Color.White
+        Me.Label19.Location = New System.Drawing.Point(154, 614)
+        Me.Label19.Name = "Label19"
+        Me.Label19.Size = New System.Drawing.Size(174, 37)
+        Me.Label19.TabIndex = 37
+        Me.Label19.Text = "RM 500.00"
+        '
+        'Label20
+        '
+        Me.Label20.AutoSize = True
+        Me.Label20.BackColor = System.Drawing.Color.FromArgb(CType(CType(77, Byte), Integer), CType(CType(46, Byte), Integer), CType(CType(118, Byte), Integer))
+        Me.Label20.Font = New System.Drawing.Font("Arial", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label20.ForeColor = System.Drawing.Color.White
+        Me.Label20.Location = New System.Drawing.Point(1046, 614)
+        Me.Label20.Name = "Label20"
+        Me.Label20.Size = New System.Drawing.Size(192, 37)
+        Me.Label20.TabIndex = 38
+        Me.Label20.Text = "RM 1000.00"
+        '
+        'addOngroupC
+        '
+        Me.addOngroupC.BackColor = System.Drawing.Color.Transparent
+        Me.addOngroupC.Controls.Add(Me.CheckBox13)
+        Me.addOngroupC.Controls.Add(Me.CheckBox14)
+        Me.addOngroupC.Controls.Add(Me.CheckBox15)
+        Me.addOngroupC.Controls.Add(Me.CheckBox16)
+        Me.addOngroupC.Font = New System.Drawing.Font("Arial", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.addOngroupC.ForeColor = System.Drawing.Color.White
+        Me.addOngroupC.Location = New System.Drawing.Point(798, 776)
+        Me.addOngroupC.Name = "addOngroupC"
+        Me.addOngroupC.Size = New System.Drawing.Size(270, 132)
+        Me.addOngroupC.TabIndex = 21
+        Me.addOngroupC.TabStop = False
+        Me.addOngroupC.Text = "Add On"
+        '
+        'CheckBox13
+        '
+        Me.CheckBox13.AutoSize = True
+        Me.CheckBox13.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CheckBox13.Location = New System.Drawing.Point(19, 102)
+        Me.CheckBox13.Name = "CheckBox13"
+        Me.CheckBox13.Size = New System.Drawing.Size(182, 20)
+        Me.CheckBox13.TabIndex = 20
+        Me.CheckBox13.Text = "CheckBox12   (+ RM5.00)"
+        Me.CheckBox13.UseVisualStyleBackColor = True
+        '
+        'CheckBox14
+        '
+        Me.CheckBox14.AutoSize = True
+        Me.CheckBox14.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CheckBox14.Location = New System.Drawing.Point(19, 76)
+        Me.CheckBox14.Name = "CheckBox14"
+        Me.CheckBox14.Size = New System.Drawing.Size(181, 20)
+        Me.CheckBox14.TabIndex = 19
+        Me.CheckBox14.Text = "CheckBox11   (+ RM5.00)"
+        Me.CheckBox14.UseVisualStyleBackColor = True
+        '
+        'CheckBox15
+        '
+        Me.CheckBox15.AutoSize = True
+        Me.CheckBox15.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CheckBox15.Location = New System.Drawing.Point(19, 50)
+        Me.CheckBox15.Name = "CheckBox15"
+        Me.CheckBox15.Size = New System.Drawing.Size(182, 20)
+        Me.CheckBox15.TabIndex = 18
+        Me.CheckBox15.Text = "CheckBox10   (+ RM5.00)"
+        Me.CheckBox15.UseVisualStyleBackColor = True
+        '
+        'CheckBox16
+        '
+        Me.CheckBox16.AutoSize = True
+        Me.CheckBox16.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CheckBox16.Location = New System.Drawing.Point(19, 24)
+        Me.CheckBox16.Name = "CheckBox16"
+        Me.CheckBox16.Size = New System.Drawing.Size(175, 20)
+        Me.CheckBox16.TabIndex = 17
+        Me.CheckBox16.Text = "CheckBox9   (+ RM5.00)"
+        Me.CheckBox16.UseVisualStyleBackColor = True
+        '
+        'addOngroupA
+        '
+        Me.addOngroupA.BackColor = System.Drawing.Color.Transparent
+        Me.addOngroupA.Controls.Add(Me.CheckBox17)
+        Me.addOngroupA.Controls.Add(Me.CheckBox18)
+        Me.addOngroupA.Controls.Add(Me.CheckBox19)
+        Me.addOngroupA.Controls.Add(Me.CheckBox20)
+        Me.addOngroupA.Font = New System.Drawing.Font("Arial", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.addOngroupA.ForeColor = System.Drawing.Color.White
+        Me.addOngroupA.Location = New System.Drawing.Point(798, 776)
+        Me.addOngroupA.Name = "addOngroupA"
+        Me.addOngroupA.Size = New System.Drawing.Size(270, 132)
+        Me.addOngroupA.TabIndex = 22
+        Me.addOngroupA.TabStop = False
+        Me.addOngroupA.Text = "Add On"
+        '
+        'CheckBox17
+        '
+        Me.CheckBox17.AutoSize = True
+        Me.CheckBox17.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CheckBox17.Location = New System.Drawing.Point(19, 102)
+        Me.CheckBox17.Name = "CheckBox17"
+        Me.CheckBox17.Size = New System.Drawing.Size(175, 20)
+        Me.CheckBox17.TabIndex = 20
+        Me.CheckBox17.Text = "CheckBox4   (+ RM5.00)"
+        Me.CheckBox17.UseVisualStyleBackColor = True
+        '
+        'CheckBox18
+        '
+        Me.CheckBox18.AutoSize = True
+        Me.CheckBox18.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CheckBox18.Location = New System.Drawing.Point(19, 76)
+        Me.CheckBox18.Name = "CheckBox18"
+        Me.CheckBox18.Size = New System.Drawing.Size(175, 20)
+        Me.CheckBox18.TabIndex = 19
+        Me.CheckBox18.Text = "CheckBox3   (+ RM5.00)"
+        Me.CheckBox18.UseVisualStyleBackColor = True
+        '
+        'CheckBox19
+        '
+        Me.CheckBox19.AutoSize = True
+        Me.CheckBox19.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CheckBox19.Location = New System.Drawing.Point(19, 50)
+        Me.CheckBox19.Name = "CheckBox19"
+        Me.CheckBox19.Size = New System.Drawing.Size(175, 20)
+        Me.CheckBox19.TabIndex = 18
+        Me.CheckBox19.Text = "CheckBox2   (+ RM5.00)"
+        Me.CheckBox19.UseVisualStyleBackColor = True
+        '
+        'CheckBox20
+        '
+        Me.CheckBox20.AutoSize = True
+        Me.CheckBox20.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CheckBox20.Location = New System.Drawing.Point(19, 24)
+        Me.CheckBox20.Name = "CheckBox20"
+        Me.CheckBox20.Size = New System.Drawing.Size(175, 20)
+        Me.CheckBox20.TabIndex = 17
+        Me.CheckBox20.Text = "CheckBox1   (+ RM5.00)"
+        Me.CheckBox20.UseVisualStyleBackColor = True
+        '
+        'addOngroupB
+        '
+        Me.addOngroupB.BackColor = System.Drawing.Color.Transparent
+        Me.addOngroupB.Controls.Add(Me.CheckBox21)
+        Me.addOngroupB.Controls.Add(Me.CheckBox22)
+        Me.addOngroupB.Controls.Add(Me.CheckBox23)
+        Me.addOngroupB.Controls.Add(Me.CheckBox24)
+        Me.addOngroupB.Font = New System.Drawing.Font("Arial", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.addOngroupB.ForeColor = System.Drawing.Color.White
+        Me.addOngroupB.Location = New System.Drawing.Point(798, 776)
+        Me.addOngroupB.Name = "addOngroupB"
+        Me.addOngroupB.Size = New System.Drawing.Size(270, 132)
+        Me.addOngroupB.TabIndex = 23
+        Me.addOngroupB.TabStop = False
+        Me.addOngroupB.Text = "Add On"
+        '
+        'CheckBox21
+        '
+        Me.CheckBox21.AutoSize = True
+        Me.CheckBox21.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CheckBox21.Location = New System.Drawing.Point(19, 102)
+        Me.CheckBox21.Name = "CheckBox21"
+        Me.CheckBox21.Size = New System.Drawing.Size(175, 20)
+        Me.CheckBox21.TabIndex = 20
+        Me.CheckBox21.Text = "CheckBox8   (+ RM5.00)"
+        Me.CheckBox21.UseVisualStyleBackColor = True
+        '
+        'CheckBox22
+        '
+        Me.CheckBox22.AutoSize = True
+        Me.CheckBox22.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CheckBox22.Location = New System.Drawing.Point(19, 76)
+        Me.CheckBox22.Name = "CheckBox22"
+        Me.CheckBox22.Size = New System.Drawing.Size(175, 20)
+        Me.CheckBox22.TabIndex = 19
+        Me.CheckBox22.Text = "CheckBox7   (+ RM5.00)"
+        Me.CheckBox22.UseVisualStyleBackColor = True
+        '
+        'CheckBox23
+        '
+        Me.CheckBox23.AutoSize = True
+        Me.CheckBox23.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CheckBox23.Location = New System.Drawing.Point(19, 50)
+        Me.CheckBox23.Name = "CheckBox23"
+        Me.CheckBox23.Size = New System.Drawing.Size(175, 20)
+        Me.CheckBox23.TabIndex = 18
+        Me.CheckBox23.Text = "CheckBox6   (+ RM5.00)"
+        Me.CheckBox23.UseVisualStyleBackColor = True
+        '
+        'CheckBox24
+        '
+        Me.CheckBox24.AutoSize = True
+        Me.CheckBox24.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CheckBox24.Location = New System.Drawing.Point(19, 24)
+        Me.CheckBox24.Name = "CheckBox24"
+        Me.CheckBox24.Size = New System.Drawing.Size(175, 20)
+        Me.CheckBox24.TabIndex = 17
+        Me.CheckBox24.Text = "CheckBox5   (+ RM5.00)"
+        Me.CheckBox24.UseVisualStyleBackColor = True
+        '
+        'Label21
+        '
+        Me.Label21.AutoSize = True
+        Me.Label21.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label21.Location = New System.Drawing.Point(18, 28)
+        Me.Label21.Name = "Label21"
+        Me.Label21.Size = New System.Drawing.Size(156, 16)
+        Me.Label21.TabIndex = 0
+        Me.Label21.Text = "CheckBox1   (+ RM5.00)"
+        '
+        'Label22
+        '
+        Me.Label22.AutoSize = True
+        Me.Label22.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label22.Location = New System.Drawing.Point(18, 53)
+        Me.Label22.Name = "Label22"
+        Me.Label22.Size = New System.Drawing.Size(156, 16)
+        Me.Label22.TabIndex = 1
+        Me.Label22.Text = "CheckBox2   (+ RM5.00)"
+        '
+        'Label23
+        '
+        Me.Label23.AutoSize = True
+        Me.Label23.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label23.Location = New System.Drawing.Point(18, 77)
+        Me.Label23.Name = "Label23"
+        Me.Label23.Size = New System.Drawing.Size(156, 16)
+        Me.Label23.TabIndex = 2
+        Me.Label23.Text = "CheckBox3   (+ RM5.00)"
+        '
+        'Label24
+        '
+        Me.Label24.AutoSize = True
+        Me.Label24.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label24.Location = New System.Drawing.Point(18, 102)
+        Me.Label24.Name = "Label24"
+        Me.Label24.Size = New System.Drawing.Size(156, 16)
+        Me.Label24.TabIndex = 3
+        Me.Label24.Text = "CheckBox4   (+ RM5.00)"
+        '
+        'GroupBox1
+        '
+        Me.GroupBox1.BackColor = System.Drawing.Color.FromArgb(CType(CType(77, Byte), Integer), CType(CType(46, Byte), Integer), CType(CType(118, Byte), Integer))
+        Me.GroupBox1.Controls.Add(Me.Label25)
+        Me.GroupBox1.Controls.Add(Me.Label26)
+        Me.GroupBox1.Controls.Add(Me.Label27)
+        Me.GroupBox1.Controls.Add(Me.Label28)
+        Me.GroupBox1.Font = New System.Drawing.Font("Arial", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GroupBox1.ForeColor = System.Drawing.Color.White
+        Me.GroupBox1.Location = New System.Drawing.Point(560, 466)
+        Me.GroupBox1.Name = "GroupBox1"
+        Me.GroupBox1.Size = New System.Drawing.Size(270, 132)
+        Me.GroupBox1.TabIndex = 22
+        Me.GroupBox1.TabStop = False
+        Me.GroupBox1.Text = "Add On"
+        '
+        'Label25
+        '
+        Me.Label25.AutoSize = True
+        Me.Label25.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label25.Location = New System.Drawing.Point(18, 102)
+        Me.Label25.Name = "Label25"
+        Me.Label25.Size = New System.Drawing.Size(156, 16)
+        Me.Label25.TabIndex = 3
+        Me.Label25.Text = "CheckBox4   (+ RM5.00)"
+        '
+        'Label26
+        '
+        Me.Label26.AutoSize = True
+        Me.Label26.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label26.Location = New System.Drawing.Point(18, 77)
+        Me.Label26.Name = "Label26"
+        Me.Label26.Size = New System.Drawing.Size(156, 16)
+        Me.Label26.TabIndex = 2
+        Me.Label26.Text = "CheckBox3   (+ RM5.00)"
+        '
+        'Label27
+        '
+        Me.Label27.AutoSize = True
+        Me.Label27.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label27.Location = New System.Drawing.Point(18, 53)
+        Me.Label27.Name = "Label27"
+        Me.Label27.Size = New System.Drawing.Size(156, 16)
+        Me.Label27.TabIndex = 1
+        Me.Label27.Text = "CheckBox2   (+ RM5.00)"
+        '
+        'Label28
+        '
+        Me.Label28.AutoSize = True
+        Me.Label28.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label28.Location = New System.Drawing.Point(18, 28)
+        Me.Label28.Name = "Label28"
+        Me.Label28.Size = New System.Drawing.Size(156, 16)
+        Me.Label28.TabIndex = 0
+        Me.Label28.Text = "CheckBox1   (+ RM5.00)"
+        '
+        'GroupBox3
+        '
+        Me.GroupBox3.BackColor = System.Drawing.Color.FromArgb(CType(CType(77, Byte), Integer), CType(CType(46, Byte), Integer), CType(CType(118, Byte), Integer))
+        Me.GroupBox3.Controls.Add(Me.Label29)
+        Me.GroupBox3.Controls.Add(Me.Label30)
+        Me.GroupBox3.Controls.Add(Me.Label31)
+        Me.GroupBox3.Controls.Add(Me.Label32)
+        Me.GroupBox3.Font = New System.Drawing.Font("Arial", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GroupBox3.ForeColor = System.Drawing.Color.White
+        Me.GroupBox3.Location = New System.Drawing.Point(1002, 466)
+        Me.GroupBox3.Name = "GroupBox3"
+        Me.GroupBox3.Size = New System.Drawing.Size(270, 132)
+        Me.GroupBox3.TabIndex = 23
+        Me.GroupBox3.TabStop = False
+        Me.GroupBox3.Text = "Add On"
+        '
+        'Label29
+        '
+        Me.Label29.AutoSize = True
+        Me.Label29.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label29.Location = New System.Drawing.Point(18, 102)
+        Me.Label29.Name = "Label29"
+        Me.Label29.Size = New System.Drawing.Size(156, 16)
+        Me.Label29.TabIndex = 3
+        Me.Label29.Text = "CheckBox4   (+ RM5.00)"
+        '
+        'Label30
+        '
+        Me.Label30.AutoSize = True
+        Me.Label30.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label30.Location = New System.Drawing.Point(18, 77)
+        Me.Label30.Name = "Label30"
+        Me.Label30.Size = New System.Drawing.Size(156, 16)
+        Me.Label30.TabIndex = 2
+        Me.Label30.Text = "CheckBox3   (+ RM5.00)"
+        '
+        'Label31
+        '
+        Me.Label31.AutoSize = True
+        Me.Label31.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label31.Location = New System.Drawing.Point(18, 53)
+        Me.Label31.Name = "Label31"
+        Me.Label31.Size = New System.Drawing.Size(156, 16)
+        Me.Label31.TabIndex = 1
+        Me.Label31.Text = "CheckBox2   (+ RM5.00)"
+        '
+        'Label32
+        '
+        Me.Label32.AutoSize = True
+        Me.Label32.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label32.Location = New System.Drawing.Point(18, 28)
+        Me.Label32.Name = "Label32"
+        Me.Label32.Size = New System.Drawing.Size(156, 16)
+        Me.Label32.TabIndex = 0
+        Me.Label32.Text = "CheckBox1   (+ RM5.00)"
+        '
         'displayForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(20, Byte), Integer), CType(CType(46, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(1367, 920)
+        Me.Controls.Add(Me.GroupBox3)
+        Me.Controls.Add(Me.addOngroupA)
+        Me.Controls.Add(Me.GroupBox1)
+        Me.Controls.Add(Me.addOngroupB)
+        Me.Controls.Add(Me.addOngroupC)
+        Me.Controls.Add(Me.Label20)
+        Me.Controls.Add(Me.Label19)
+        Me.Controls.Add(Me.Label18)
         Me.Controls.Add(Me.Label17)
         Me.Controls.Add(Me.Label16)
         Me.Controls.Add(Me.Label15)
@@ -572,15 +805,13 @@ Partial Class displayForm
         Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.Label5)
-        Me.Controls.Add(Me.GroupBox3)
         Me.Controls.Add(Me.GroupBox2)
-        Me.Controls.Add(Me.GroupBox1)
-        Me.Controls.Add(Me.Label4)
-        Me.Controls.Add(Me.Button5)
-        Me.Controls.Add(Me.Button4)
-        Me.Controls.Add(Me.Button3)
-        Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.priceLbl)
+        Me.Controls.Add(Me.btnCancel)
+        Me.Controls.Add(Me.btnConfirm)
+        Me.Controls.Add(Me.btnGroupC)
+        Me.Controls.Add(Me.btnGroupB)
+        Me.Controls.Add(Me.btnGroupA)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.PictureBox2)
         Me.Controls.Add(Me.Label1)
@@ -594,10 +825,16 @@ Partial Class displayForm
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.GroupBox1.ResumeLayout(False)
-        Me.GroupBox1.PerformLayout()
         Me.GroupBox2.ResumeLayout(False)
         Me.GroupBox2.PerformLayout()
+        Me.addOngroupC.ResumeLayout(False)
+        Me.addOngroupC.PerformLayout()
+        Me.addOngroupA.ResumeLayout(False)
+        Me.addOngroupA.PerformLayout()
+        Me.addOngroupB.ResumeLayout(False)
+        Me.addOngroupB.PerformLayout()
+        Me.GroupBox1.ResumeLayout(False)
+        Me.GroupBox1.PerformLayout()
         Me.GroupBox3.ResumeLayout(False)
         Me.GroupBox3.PerformLayout()
         Me.ResumeLayout(False)
@@ -610,27 +847,13 @@ Partial Class displayForm
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents Label2 As Label
     Friend WithEvents PictureBox2 As PictureBox
-    Friend WithEvents Button1 As Button
-    Friend WithEvents Button2 As Button
-    Friend WithEvents Button3 As Button
-    Friend WithEvents Button4 As Button
-    Friend WithEvents Button5 As Button
-    Friend WithEvents Label4 As Label
-    Friend WithEvents GroupBox1 As GroupBox
-    Friend WithEvents CheckBox4 As CheckBox
-    Friend WithEvents CheckBox3 As CheckBox
-    Friend WithEvents CheckBox2 As CheckBox
-    Friend WithEvents CheckBox1 As CheckBox
+    Friend WithEvents btnGroupA As Button
+    Friend WithEvents btnGroupB As Button
+    Friend WithEvents btnGroupC As Button
+    Friend WithEvents btnConfirm As Button
+    Friend WithEvents btnCancel As Button
+    Friend WithEvents priceLbl As Label
     Friend WithEvents GroupBox2 As GroupBox
-    Friend WithEvents CheckBox5 As CheckBox
-    Friend WithEvents CheckBox6 As CheckBox
-    Friend WithEvents CheckBox7 As CheckBox
-    Friend WithEvents CheckBox8 As CheckBox
-    Friend WithEvents GroupBox3 As GroupBox
-    Friend WithEvents CheckBox9 As CheckBox
-    Friend WithEvents CheckBox10 As CheckBox
-    Friend WithEvents CheckBox11 As CheckBox
-    Friend WithEvents CheckBox12 As CheckBox
     Friend WithEvents Label5 As Label
     Friend WithEvents Label6 As Label
     Friend WithEvents Label7 As Label
@@ -644,4 +867,36 @@ Partial Class displayForm
     Friend WithEvents Label15 As Label
     Friend WithEvents Label16 As Label
     Friend WithEvents Label17 As Label
+    Friend WithEvents Label18 As Label
+    Friend WithEvents Label19 As Label
+    Friend WithEvents Label20 As Label
+    Friend WithEvents addOngroupC As GroupBox
+    Friend WithEvents CheckBox13 As CheckBox
+    Friend WithEvents CheckBox14 As CheckBox
+    Friend WithEvents CheckBox15 As CheckBox
+    Friend WithEvents CheckBox16 As CheckBox
+    Friend WithEvents addOngroupA As GroupBox
+    Friend WithEvents CheckBox17 As CheckBox
+    Friend WithEvents CheckBox18 As CheckBox
+    Friend WithEvents CheckBox19 As CheckBox
+    Friend WithEvents CheckBox20 As CheckBox
+    Friend WithEvents addOngroupB As GroupBox
+    Friend WithEvents CheckBox21 As CheckBox
+    Friend WithEvents CheckBox22 As CheckBox
+    Friend WithEvents CheckBox23 As CheckBox
+    Friend WithEvents CheckBox24 As CheckBox
+    Friend WithEvents Label24 As Label
+    Friend WithEvents Label23 As Label
+    Friend WithEvents Label22 As Label
+    Friend WithEvents Label21 As Label
+    Friend WithEvents GroupBox1 As GroupBox
+    Friend WithEvents Label25 As Label
+    Friend WithEvents Label26 As Label
+    Friend WithEvents Label27 As Label
+    Friend WithEvents Label28 As Label
+    Friend WithEvents GroupBox3 As GroupBox
+    Friend WithEvents Label29 As Label
+    Friend WithEvents Label30 As Label
+    Friend WithEvents Label31 As Label
+    Friend WithEvents Label32 As Label
 End Class
