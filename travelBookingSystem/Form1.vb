@@ -1,4 +1,4 @@
-﻿Public Class displayForm
+﻿Public Class packageForm
 
     Public totalPrice As Double
     Private Sub Button1_Click(sender As Object, e As EventArgs)
