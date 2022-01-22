@@ -89,6 +89,7 @@ Partial Class Form4
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.Label18 = New System.Windows.Forms.Label()
         Me.Label19 = New System.Windows.Forms.Label()
+        Me.Guna2Button4 = New Guna.UI2.WinForms.Guna2Button()
         Me.Panel3.SuspendLayout()
         Me.Panel4.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -130,6 +131,7 @@ Partial Class Form4
         'Panel4
         '
         Me.Panel4.BackColor = System.Drawing.Color.FromArgb(CType(CType(34, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(73, Byte), Integer))
+        Me.Panel4.Controls.Add(Me.Guna2Button4)
         Me.Panel4.Controls.Add(Me.Guna2Button3)
         Me.Panel4.Controls.Add(Me.Guna2Button2)
         Me.Panel4.Controls.Add(Me.Guna2Button1)
@@ -602,7 +604,7 @@ Partial Class Form4
         Me.btnCancel.FlatAppearance.BorderSize = 0
         Me.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnCancel.Font = New System.Drawing.Font("Cocogoose", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnCancel.Location = New System.Drawing.Point(1038, 870)
+        Me.btnCancel.Location = New System.Drawing.Point(472, 816)
         Me.btnCancel.Name = "btnCancel"
         Me.btnCancel.Size = New System.Drawing.Size(113, 36)
         Me.btnCancel.TabIndex = 49
@@ -615,7 +617,7 @@ Partial Class Form4
         Me.btnConfirm.FlatAppearance.BorderSize = 0
         Me.btnConfirm.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnConfirm.Font = New System.Drawing.Font("Cocogoose", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnConfirm.Location = New System.Drawing.Point(1162, 870)
+        Me.btnConfirm.Location = New System.Drawing.Point(472, 858)
         Me.btnConfirm.Name = "btnConfirm"
         Me.btnConfirm.Size = New System.Drawing.Size(113, 36)
         Me.btnConfirm.TabIndex = 48
@@ -628,7 +630,7 @@ Partial Class Form4
         Me.Label5.BackColor = System.Drawing.Color.FromArgb(CType(CType(77, Byte), Integer), CType(CType(46, Byte), Integer), CType(CType(118, Byte), Integer))
         Me.Label5.Font = New System.Drawing.Font("Cocogoose", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.ForeColor = System.Drawing.Color.White
-        Me.Label5.Location = New System.Drawing.Point(176, 238)
+        Me.Label5.Location = New System.Drawing.Point(164, 238)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(182, 39)
         Me.Label5.TabIndex = 44
@@ -687,7 +689,7 @@ Partial Class Form4
         Me.Label12.BackColor = System.Drawing.Color.FromArgb(CType(CType(77, Byte), Integer), CType(CType(46, Byte), Integer), CType(CType(118, Byte), Integer))
         Me.Label12.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label12.ForeColor = System.Drawing.Color.White
-        Me.Label12.Location = New System.Drawing.Point(984, 385)
+        Me.Label12.Location = New System.Drawing.Point(983, 388)
         Me.Label12.Name = "Label12"
         Me.Label12.Size = New System.Drawing.Size(224, 18)
         Me.Label12.TabIndex = 64
@@ -723,7 +725,7 @@ Partial Class Form4
         Me.Label9.BackColor = System.Drawing.Color.FromArgb(CType(CType(77, Byte), Integer), CType(CType(46, Byte), Integer), CType(CType(118, Byte), Integer))
         Me.Label9.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label9.ForeColor = System.Drawing.Color.White
-        Me.Label9.Location = New System.Drawing.Point(560, 385)
+        Me.Label9.Location = New System.Drawing.Point(560, 388)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(224, 18)
         Me.Label9.TabIndex = 61
@@ -759,7 +761,7 @@ Partial Class Form4
         Me.Label33.BackColor = System.Drawing.Color.FromArgb(CType(CType(77, Byte), Integer), CType(CType(46, Byte), Integer), CType(CType(118, Byte), Integer))
         Me.Label33.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label33.ForeColor = System.Drawing.Color.White
-        Me.Label33.Location = New System.Drawing.Point(134, 385)
+        Me.Label33.Location = New System.Drawing.Point(134, 388)
         Me.Label33.Name = "Label33"
         Me.Label33.Size = New System.Drawing.Size(224, 18)
         Me.Label33.TabIndex = 58
@@ -837,6 +839,7 @@ Partial Class Form4
         '
         'Guna2Button1
         '
+        Me.Guna2Button1.Animated = True
         Me.Guna2Button1.AutoRoundedCorners = True
         Me.Guna2Button1.BackColor = System.Drawing.Color.FromArgb(CType(CType(77, Byte), Integer), CType(CType(46, Byte), Integer), CType(CType(118, Byte), Integer))
         Me.Guna2Button1.BorderRadius = 21
@@ -855,6 +858,7 @@ Partial Class Form4
         '
         'Guna2Button2
         '
+        Me.Guna2Button2.Animated = True
         Me.Guna2Button2.AutoRoundedCorners = True
         Me.Guna2Button2.BackColor = System.Drawing.Color.FromArgb(CType(CType(77, Byte), Integer), CType(CType(46, Byte), Integer), CType(CType(118, Byte), Integer))
         Me.Guna2Button2.BorderRadius = 21
@@ -873,6 +877,7 @@ Partial Class Form4
         '
         'Guna2Button3
         '
+        Me.Guna2Button3.Animated = True
         Me.Guna2Button3.AutoRoundedCorners = True
         Me.Guna2Button3.BackColor = System.Drawing.Color.FromArgb(CType(CType(77, Byte), Integer), CType(CType(46, Byte), Integer), CType(CType(118, Byte), Integer))
         Me.Guna2Button3.BorderRadius = 21
@@ -924,6 +929,25 @@ Partial Class Form4
         Me.Label19.Size = New System.Drawing.Size(146, 29)
         Me.Label19.TabIndex = 80
         Me.Label19.Text = "..................."
+        '
+        'Guna2Button4
+        '
+        Me.Guna2Button4.Animated = True
+        Me.Guna2Button4.AutoRoundedCorners = True
+        Me.Guna2Button4.BackColor = System.Drawing.Color.Transparent
+        Me.Guna2Button4.BorderRadius = 20
+        Me.Guna2Button4.CheckedState.Parent = Me.Guna2Button4
+        Me.Guna2Button4.CustomImages.Parent = Me.Guna2Button4
+        Me.Guna2Button4.FillColor = System.Drawing.Color.SlateBlue
+        Me.Guna2Button4.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.Guna2Button4.ForeColor = System.Drawing.Color.White
+        Me.Guna2Button4.HoverState.Parent = Me.Guna2Button4
+        Me.Guna2Button4.Location = New System.Drawing.Point(1198, 863)
+        Me.Guna2Button4.Name = "Guna2Button4"
+        Me.Guna2Button4.ShadowDecoration.Parent = Me.Guna2Button4
+        Me.Guna2Button4.Size = New System.Drawing.Size(146, 43)
+        Me.Guna2Button4.TabIndex = 79
+        Me.Guna2Button4.Text = "BOOK NOW"
         '
         'Form4
         '
@@ -1029,4 +1053,5 @@ Partial Class Form4
     Friend WithEvents Panel2 As Panel
     Friend WithEvents Label19 As Label
     Friend WithEvents Label18 As Label
+    Friend WithEvents Guna2Button4 As Guna.UI2.WinForms.Guna2Button
 End Class

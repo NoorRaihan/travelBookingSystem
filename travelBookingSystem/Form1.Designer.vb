@@ -444,7 +444,7 @@ Partial Class packageForm
         Me.Label17.BackColor = System.Drawing.Color.Transparent
         Me.Label17.Font = New System.Drawing.Font("Cocogoose", 27.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label17.ForeColor = System.Drawing.Color.White
-        Me.Label17.Location = New System.Drawing.Point(462, 20)
+        Me.Label17.Location = New System.Drawing.Point(462, 35)
         Me.Label17.Name = "Label17"
         Me.Label17.Size = New System.Drawing.Size(488, 53)
         Me.Label17.TabIndex = 35
