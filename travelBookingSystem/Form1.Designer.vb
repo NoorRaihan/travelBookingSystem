@@ -121,7 +121,7 @@ Partial Class packageForm
         Me.Label1.BackColor = System.Drawing.Color.FromArgb(CType(CType(77, Byte), Integer), CType(CType(46, Byte), Integer), CType(CType(118, Byte), Integer))
         Me.Label1.Font = New System.Drawing.Font("Cocogoose", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.White
-        Me.Label1.Location = New System.Drawing.Point(607, 167)
+        Me.Label1.Location = New System.Drawing.Point(601, 167)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(180, 39)
         Me.Label1.TabIndex = 7
@@ -144,7 +144,7 @@ Partial Class packageForm
         Me.Label2.BackColor = System.Drawing.Color.FromArgb(CType(CType(77, Byte), Integer), CType(CType(46, Byte), Integer), CType(CType(118, Byte), Integer))
         Me.Label2.Font = New System.Drawing.Font("Cocogoose", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.White
-        Me.Label2.Location = New System.Drawing.Point(166, 167)
+        Me.Label2.Location = New System.Drawing.Point(146, 167)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(182, 39)
         Me.Label2.TabIndex = 9
@@ -336,7 +336,7 @@ Partial Class packageForm
         Me.Label8.BackColor = System.Drawing.Color.FromArgb(CType(CType(77, Byte), Integer), CType(CType(46, Byte), Integer), CType(CType(118, Byte), Integer))
         Me.Label8.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label8.ForeColor = System.Drawing.Color.White
-        Me.Label8.Location = New System.Drawing.Point(576, 326)
+        Me.Label8.Location = New System.Drawing.Point(570, 326)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(224, 18)
         Me.Label8.TabIndex = 28
@@ -348,7 +348,7 @@ Partial Class packageForm
         Me.Label9.BackColor = System.Drawing.Color.FromArgb(CType(CType(77, Byte), Integer), CType(CType(46, Byte), Integer), CType(CType(118, Byte), Integer))
         Me.Label9.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label9.ForeColor = System.Drawing.Color.White
-        Me.Label9.Location = New System.Drawing.Point(576, 285)
+        Me.Label9.Location = New System.Drawing.Point(570, 285)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(224, 18)
         Me.Label9.TabIndex = 27
@@ -360,7 +360,7 @@ Partial Class packageForm
         Me.Label10.BackColor = System.Drawing.Color.FromArgb(CType(CType(77, Byte), Integer), CType(CType(46, Byte), Integer), CType(CType(118, Byte), Integer))
         Me.Label10.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label10.ForeColor = System.Drawing.Color.White
-        Me.Label10.Location = New System.Drawing.Point(576, 239)
+        Me.Label10.Location = New System.Drawing.Point(570, 239)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(164, 18)
         Me.Label10.TabIndex = 26
@@ -408,7 +408,7 @@ Partial Class packageForm
         Me.Label14.BackColor = System.Drawing.Color.FromArgb(CType(CType(77, Byte), Integer), CType(CType(46, Byte), Integer), CType(CType(118, Byte), Integer))
         Me.Label14.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label14.ForeColor = System.Drawing.Color.White
-        Me.Label14.Location = New System.Drawing.Point(576, 363)
+        Me.Label14.Location = New System.Drawing.Point(570, 363)
         Me.Label14.Name = "Label14"
         Me.Label14.Size = New System.Drawing.Size(197, 18)
         Me.Label14.TabIndex = 32
@@ -783,6 +783,7 @@ Partial Class packageForm
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(20, Byte), Integer), CType(CType(46, Byte), Integer))
+        Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.ClientSize = New System.Drawing.Size(1367, 920)
         Me.Controls.Add(Me.GroupBox3)
         Me.Controls.Add(Me.addOngroupA)
@@ -813,11 +814,11 @@ Partial Class packageForm
         Me.Controls.Add(Me.btnGroupB)
         Me.Controls.Add(Me.btnGroupA)
         Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.PictureBox2)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.PictureBox3)
+        Me.Controls.Add(Me.PictureBox2)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.MaximizeBox = False
         Me.Name = "packageForm"
