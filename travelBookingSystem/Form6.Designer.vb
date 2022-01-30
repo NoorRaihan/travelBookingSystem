@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class Form6
+Partial Class BOOKING
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -22,9 +22,10 @@ Partial Class Form6
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form6))
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(BOOKING))
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Panel3 = New System.Windows.Forms.Panel()
+        Me.IconButton1 = New FontAwesome.Sharp.IconButton()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Panel2 = New System.Windows.Forms.Panel()
@@ -37,6 +38,14 @@ Partial Class Form6
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Panel4 = New System.Windows.Forms.Panel()
+        Me.Guna2ComboBox2 = New Guna.UI2.WinForms.Guna2ComboBox()
+        Me.Guna2ComboBox1 = New Guna.UI2.WinForms.Guna2ComboBox()
+        Me.Label21 = New System.Windows.Forms.Label()
+        Me.Guna2Button3 = New Guna.UI2.WinForms.Guna2Button()
+        Me.Guna2Button2 = New Guna.UI2.WinForms.Guna2Button()
+        Me.Guna2Button1 = New Guna.UI2.WinForms.Guna2Button()
+        Me.Label20 = New System.Windows.Forms.Label()
+        Me.ListBox1 = New System.Windows.Forms.ListBox()
         Me.Guna2DateTimePicker1 = New Guna.UI2.WinForms.Guna2DateTimePicker()
         Me.Guna2TextBox7 = New Guna.UI2.WinForms.Guna2TextBox()
         Me.Guna2TextBox6 = New Guna.UI2.WinForms.Guna2TextBox()
@@ -55,9 +64,6 @@ Partial Class Form6
         Me.Label9 = New System.Windows.Forms.Label()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
-        Me.ListBox1 = New System.Windows.Forms.ListBox()
-        Me.Label20 = New System.Windows.Forms.Label()
-        Me.Guna2Button1 = New Guna.UI2.WinForms.Guna2Button()
         Me.Panel3.SuspendLayout()
         Me.Panel1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -70,7 +76,7 @@ Partial Class Form6
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 26.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.White
-        Me.Label1.Location = New System.Drawing.Point(507, 24)
+        Me.Label1.Location = New System.Drawing.Point(507, 20)
         Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(497, 52)
@@ -80,14 +86,29 @@ Partial Class Form6
         'Panel3
         '
         Me.Panel3.BackColor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(25, Byte), Integer), CType(CType(62, Byte), Integer))
+        Me.Panel3.Controls.Add(Me.IconButton1)
         Me.Panel3.Controls.Add(Me.Panel1)
         Me.Panel3.Controls.Add(Me.Label1)
         Me.Panel3.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel3.Location = New System.Drawing.Point(0, 0)
         Me.Panel3.Margin = New System.Windows.Forms.Padding(4)
         Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(1473, 111)
+        Me.Panel3.Size = New System.Drawing.Size(1473, 92)
         Me.Panel3.TabIndex = 6
+        '
+        'IconButton1
+        '
+        Me.IconButton1.FlatAppearance.BorderSize = 0
+        Me.IconButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.IconButton1.ForeColor = System.Drawing.Color.White
+        Me.IconButton1.IconChar = FontAwesome.Sharp.IconChar.ChevronCircleLeft
+        Me.IconButton1.IconColor = System.Drawing.Color.White
+        Me.IconButton1.IconFont = FontAwesome.Sharp.IconFont.[Auto]
+        Me.IconButton1.Location = New System.Drawing.Point(1386, 22)
+        Me.IconButton1.Name = "IconButton1"
+        Me.IconButton1.Size = New System.Drawing.Size(75, 64)
+        Me.IconButton1.TabIndex = 2
+        Me.IconButton1.UseVisualStyleBackColor = True
         '
         'Panel1
         '
@@ -96,13 +117,13 @@ Partial Class Form6
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
         Me.Panel1.Margin = New System.Windows.Forms.Padding(4)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(336, 111)
+        Me.Panel1.Size = New System.Drawing.Size(336, 92)
         Me.Panel1.TabIndex = 1
         '
         'PictureBox1
         '
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(53, 15)
+        Me.PictureBox1.Location = New System.Drawing.Point(80, 1)
         Me.PictureBox1.Margin = New System.Windows.Forms.Padding(4)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(162, 87)
@@ -118,10 +139,10 @@ Partial Class Form6
         Me.Panel2.Controls.Add(Me.Label18)
         Me.Panel2.Controls.Add(Me.Label2)
         Me.Panel2.Controls.Add(Me.Label4)
-        Me.Panel2.Location = New System.Drawing.Point(0, 110)
+        Me.Panel2.Location = New System.Drawing.Point(0, 93)
         Me.Panel2.Margin = New System.Windows.Forms.Padding(4)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(1820, 91)
+        Me.Panel2.Size = New System.Drawing.Size(1820, 83)
         Me.Panel2.TabIndex = 78
         '
         'Label19
@@ -130,7 +151,7 @@ Partial Class Form6
         Me.Label19.BackColor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(25, Byte), Integer), CType(CType(56, Byte), Integer))
         Me.Label19.Font = New System.Drawing.Font("Arial", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label19.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Label19.Location = New System.Drawing.Point(935, 32)
+        Me.Label19.Location = New System.Drawing.Point(945, 21)
         Me.Label19.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label19.Name = "Label19"
         Me.Label19.Size = New System.Drawing.Size(167, 35)
@@ -143,7 +164,7 @@ Partial Class Form6
         Me.Label3.BackColor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(25, Byte), Integer), CType(CType(56, Byte), Integer))
         Me.Label3.Font = New System.Drawing.Font("Arial", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.Color.White
-        Me.Label3.Location = New System.Drawing.Point(567, 32)
+        Me.Label3.Location = New System.Drawing.Point(574, 21)
         Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(363, 35)
@@ -156,7 +177,7 @@ Partial Class Form6
         Me.Label18.BackColor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(25, Byte), Integer), CType(CType(56, Byte), Integer))
         Me.Label18.Font = New System.Drawing.Font("Arial", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label18.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Label18.Location = New System.Drawing.Point(399, 32)
+        Me.Label18.Location = New System.Drawing.Point(399, 21)
         Me.Label18.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label18.Name = "Label18"
         Me.Label18.Size = New System.Drawing.Size(167, 35)
@@ -169,7 +190,7 @@ Partial Class Form6
         Me.Label2.BackColor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(25, Byte), Integer), CType(CType(56, Byte), Integer))
         Me.Label2.Font = New System.Drawing.Font("Arial", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Label2.Location = New System.Drawing.Point(62, 32)
+        Me.Label2.Location = New System.Drawing.Point(62, 21)
         Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(329, 35)
@@ -182,7 +203,7 @@ Partial Class Form6
         Me.Label4.BackColor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(25, Byte), Integer), CType(CType(56, Byte), Integer))
         Me.Label4.Font = New System.Drawing.Font("Arial", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Label4.Location = New System.Drawing.Point(1122, 32)
+        Me.Label4.Location = New System.Drawing.Point(1122, 21)
         Me.Label4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(298, 35)
@@ -207,7 +228,7 @@ Partial Class Form6
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Underline), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.ForeColor = System.Drawing.Color.White
-        Me.Label5.Location = New System.Drawing.Point(149, 219)
+        Me.Label5.Location = New System.Drawing.Point(145, 203)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(246, 29)
         Me.Label5.TabIndex = 79
@@ -227,6 +248,11 @@ Partial Class Form6
         'Panel4
         '
         Me.Panel4.BackColor = System.Drawing.Color.FromArgb(CType(CType(34, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(73, Byte), Integer))
+        Me.Panel4.Controls.Add(Me.Guna2ComboBox2)
+        Me.Panel4.Controls.Add(Me.Guna2ComboBox1)
+        Me.Panel4.Controls.Add(Me.Label21)
+        Me.Panel4.Controls.Add(Me.Guna2Button3)
+        Me.Panel4.Controls.Add(Me.Guna2Button2)
         Me.Panel4.Controls.Add(Me.Guna2Button1)
         Me.Panel4.Controls.Add(Me.Label20)
         Me.Panel4.Controls.Add(Me.ListBox1)
@@ -258,6 +284,128 @@ Partial Class Form6
         Me.Panel4.Name = "Panel4"
         Me.Panel4.Size = New System.Drawing.Size(1473, 872)
         Me.Panel4.TabIndex = 7
+        '
+        'Guna2ComboBox2
+        '
+        Me.Guna2ComboBox2.BackColor = System.Drawing.Color.Transparent
+        Me.Guna2ComboBox2.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed
+        Me.Guna2ComboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.Guna2ComboBox2.FocusedColor = System.Drawing.Color.Empty
+        Me.Guna2ComboBox2.FocusedState.Parent = Me.Guna2ComboBox2
+        Me.Guna2ComboBox2.Font = New System.Drawing.Font("Segoe UI", 10.0!)
+        Me.Guna2ComboBox2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(68, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(112, Byte), Integer))
+        Me.Guna2ComboBox2.FormattingEnabled = True
+        Me.Guna2ComboBox2.HoverState.Parent = Me.Guna2ComboBox2
+        Me.Guna2ComboBox2.ItemHeight = 30
+        Me.Guna2ComboBox2.ItemsAppearance.Parent = Me.Guna2ComboBox2
+        Me.Guna2ComboBox2.Location = New System.Drawing.Point(1217, 319)
+        Me.Guna2ComboBox2.Name = "Guna2ComboBox2"
+        Me.Guna2ComboBox2.ShadowDecoration.Parent = Me.Guna2ComboBox2
+        Me.Guna2ComboBox2.Size = New System.Drawing.Size(216, 36)
+        Me.Guna2ComboBox2.TabIndex = 106
+        '
+        'Guna2ComboBox1
+        '
+        Me.Guna2ComboBox1.BackColor = System.Drawing.Color.Transparent
+        Me.Guna2ComboBox1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed
+        Me.Guna2ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.Guna2ComboBox1.FocusedColor = System.Drawing.Color.Empty
+        Me.Guna2ComboBox1.FocusedState.Parent = Me.Guna2ComboBox1
+        Me.Guna2ComboBox1.Font = New System.Drawing.Font("Segoe UI", 10.0!)
+        Me.Guna2ComboBox1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(68, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(112, Byte), Integer))
+        Me.Guna2ComboBox1.FormattingEnabled = True
+        Me.Guna2ComboBox1.HoverState.Parent = Me.Guna2ComboBox1
+        Me.Guna2ComboBox1.ItemHeight = 30
+        Me.Guna2ComboBox1.ItemsAppearance.Parent = Me.Guna2ComboBox1
+        Me.Guna2ComboBox1.Location = New System.Drawing.Point(971, 318)
+        Me.Guna2ComboBox1.Name = "Guna2ComboBox1"
+        Me.Guna2ComboBox1.ShadowDecoration.Parent = Me.Guna2ComboBox1
+        Me.Guna2ComboBox1.Size = New System.Drawing.Size(216, 36)
+        Me.Guna2ComboBox1.TabIndex = 105
+        '
+        'Label21
+        '
+        Me.Label21.BackColor = System.Drawing.Color.DarkViolet
+        Me.Label21.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label21.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Label21.Location = New System.Drawing.Point(966, 258)
+        Me.Label21.Name = "Label21"
+        Me.Label21.Size = New System.Drawing.Size(221, 35)
+        Me.Label21.TabIndex = 104
+        '
+        'Guna2Button3
+        '
+        Me.Guna2Button3.Animated = True
+        Me.Guna2Button3.AutoRoundedCorners = True
+        Me.Guna2Button3.BorderRadius = 25
+        Me.Guna2Button3.CheckedState.Parent = Me.Guna2Button3
+        Me.Guna2Button3.CustomImages.Parent = Me.Guna2Button3
+        Me.Guna2Button3.FillColor = System.Drawing.Color.DarkViolet
+        Me.Guna2Button3.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Guna2Button3.ForeColor = System.Drawing.Color.White
+        Me.Guna2Button3.HoverState.Parent = Me.Guna2Button3
+        Me.Guna2Button3.Location = New System.Drawing.Point(926, 777)
+        Me.Guna2Button3.Name = "Guna2Button3"
+        Me.Guna2Button3.ShadowDecoration.Parent = Me.Guna2Button3
+        Me.Guna2Button3.Size = New System.Drawing.Size(237, 52)
+        Me.Guna2Button3.TabIndex = 103
+        Me.Guna2Button3.Text = "CANCEL"
+        '
+        'Guna2Button2
+        '
+        Me.Guna2Button2.Animated = True
+        Me.Guna2Button2.AutoRoundedCorners = True
+        Me.Guna2Button2.BorderRadius = 25
+        Me.Guna2Button2.CheckedState.Parent = Me.Guna2Button2
+        Me.Guna2Button2.CustomImages.Parent = Me.Guna2Button2
+        Me.Guna2Button2.FillColor = System.Drawing.Color.DarkViolet
+        Me.Guna2Button2.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Guna2Button2.ForeColor = System.Drawing.Color.White
+        Me.Guna2Button2.HoverState.Parent = Me.Guna2Button2
+        Me.Guna2Button2.Location = New System.Drawing.Point(1183, 777)
+        Me.Guna2Button2.Name = "Guna2Button2"
+        Me.Guna2Button2.ShadowDecoration.Parent = Me.Guna2Button2
+        Me.Guna2Button2.Size = New System.Drawing.Size(237, 52)
+        Me.Guna2Button2.TabIndex = 102
+        Me.Guna2Button2.Text = "BOOK NOW"
+        '
+        'Guna2Button1
+        '
+        Me.Guna2Button1.Animated = True
+        Me.Guna2Button1.AutoRoundedCorners = True
+        Me.Guna2Button1.BorderRadius = 25
+        Me.Guna2Button1.CheckedState.Parent = Me.Guna2Button1
+        Me.Guna2Button1.CustomImages.Parent = Me.Guna2Button1
+        Me.Guna2Button1.FillColor = System.Drawing.Color.DarkViolet
+        Me.Guna2Button1.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Guna2Button1.ForeColor = System.Drawing.Color.White
+        Me.Guna2Button1.HoverState.Parent = Me.Guna2Button1
+        Me.Guna2Button1.Location = New System.Drawing.Point(242, 777)
+        Me.Guna2Button1.Name = "Guna2Button1"
+        Me.Guna2Button1.ShadowDecoration.Parent = Me.Guna2Button1
+        Me.Guna2Button1.Size = New System.Drawing.Size(237, 52)
+        Me.Guna2Button1.TabIndex = 101
+        Me.Guna2Button1.Text = "CONFIRM"
+        '
+        'Label20
+        '
+        Me.Label20.AutoSize = True
+        Me.Label20.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Underline), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label20.ForeColor = System.Drawing.Color.White
+        Me.Label20.Location = New System.Drawing.Point(966, 381)
+        Me.Label20.Name = "Label20"
+        Me.Label20.Size = New System.Drawing.Size(206, 29)
+        Me.Label20.TabIndex = 100
+        Me.Label20.Text = "Booking Receipt"
+        '
+        'ListBox1
+        '
+        Me.ListBox1.FormattingEnabled = True
+        Me.ListBox1.ItemHeight = 16
+        Me.ListBox1.Location = New System.Drawing.Point(733, 423)
+        Me.ListBox1.Name = "ListBox1"
+        Me.ListBox1.Size = New System.Drawing.Size(687, 324)
+        Me.ListBox1.TabIndex = 99
         '
         'Guna2DateTimePicker1
         '
@@ -492,7 +640,7 @@ Partial Class Form6
         Me.Label12.AutoSize = True
         Me.Label12.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label12.ForeColor = System.Drawing.Color.White
-        Me.Label12.Location = New System.Drawing.Point(724, 279)
+        Me.Label12.Location = New System.Drawing.Point(724, 330)
         Me.Label12.Name = "Label12"
         Me.Label12.Size = New System.Drawing.Size(220, 25)
         Me.Label12.TabIndex = 86
@@ -503,7 +651,7 @@ Partial Class Form6
         Me.Label11.AutoSize = True
         Me.Label11.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label11.ForeColor = System.Drawing.Color.White
-        Me.Label11.Location = New System.Drawing.Point(724, 223)
+        Me.Label11.Location = New System.Drawing.Point(724, 268)
         Me.Label11.Name = "Label11"
         Me.Label11.Size = New System.Drawing.Size(218, 25)
         Me.Label11.TabIndex = 85
@@ -553,45 +701,7 @@ Partial Class Form6
         Me.Label7.TabIndex = 81
         Me.Label7.Text = "Email                       : "
         '
-        'ListBox1
-        '
-        Me.ListBox1.FormattingEnabled = True
-        Me.ListBox1.ItemHeight = 16
-        Me.ListBox1.Location = New System.Drawing.Point(733, 403)
-        Me.ListBox1.Name = "ListBox1"
-        Me.ListBox1.Size = New System.Drawing.Size(687, 372)
-        Me.ListBox1.TabIndex = 99
-        '
-        'Label20
-        '
-        Me.Label20.AutoSize = True
-        Me.Label20.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Underline), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label20.ForeColor = System.Drawing.Color.White
-        Me.Label20.Location = New System.Drawing.Point(955, 355)
-        Me.Label20.Name = "Label20"
-        Me.Label20.Size = New System.Drawing.Size(206, 29)
-        Me.Label20.TabIndex = 100
-        Me.Label20.Text = "Booking Receipt"
-        '
-        'Guna2Button1
-        '
-        Me.Guna2Button1.Animated = True
-        Me.Guna2Button1.AutoRoundedCorners = True
-        Me.Guna2Button1.BorderRadius = 25
-        Me.Guna2Button1.CheckedState.Parent = Me.Guna2Button1
-        Me.Guna2Button1.CustomImages.Parent = Me.Guna2Button1
-        Me.Guna2Button1.FillColor = System.Drawing.Color.DarkViolet
-        Me.Guna2Button1.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.Guna2Button1.ForeColor = System.Drawing.Color.White
-        Me.Guna2Button1.HoverState.Parent = Me.Guna2Button1
-        Me.Guna2Button1.Location = New System.Drawing.Point(239, 798)
-        Me.Guna2Button1.Name = "Guna2Button1"
-        Me.Guna2Button1.ShadowDecoration.Parent = Me.Guna2Button1
-        Me.Guna2Button1.Size = New System.Drawing.Size(237, 52)
-        Me.Guna2Button1.TabIndex = 101
-        Me.Guna2Button1.Text = "CONFIRM"
-        '
-        'Form6
+        'BOOKING
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(120.0!, 120.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi
@@ -601,8 +711,8 @@ Partial Class Form6
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Margin = New System.Windows.Forms.Padding(4)
         Me.MaximizeBox = False
-        Me.Name = "Form6"
-        Me.Text = "Form6"
+        Me.Name = "BOOKING"
+        Me.Text = "BOOKING FORM"
         Me.Panel3.ResumeLayout(False)
         Me.Panel3.PerformLayout()
         Me.Panel1.ResumeLayout(False)
@@ -649,4 +759,10 @@ Partial Class Form6
     Friend WithEvents Guna2Button1 As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents Label20 As Label
     Friend WithEvents ListBox1 As ListBox
+    Friend WithEvents Guna2Button3 As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents Guna2Button2 As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents Guna2ComboBox2 As Guna.UI2.WinForms.Guna2ComboBox
+    Friend WithEvents Guna2ComboBox1 As Guna.UI2.WinForms.Guna2ComboBox
+    Friend WithEvents Label21 As Label
+    Friend WithEvents IconButton1 As FontAwesome.Sharp.IconButton
 End Class
