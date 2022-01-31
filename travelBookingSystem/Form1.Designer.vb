@@ -97,9 +97,10 @@ Partial Class packageForm
         Me.PictureBox3.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox3.BackgroundImage = CType(resources.GetObject("PictureBox3.BackgroundImage"), System.Drawing.Image)
         Me.PictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.PictureBox3.Location = New System.Drawing.Point(912, 108)
+        Me.PictureBox3.Location = New System.Drawing.Point(1216, 133)
+        Me.PictureBox3.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.PictureBox3.Name = "PictureBox3"
-        Me.PictureBox3.Size = New System.Drawing.Size(435, 656)
+        Me.PictureBox3.Size = New System.Drawing.Size(580, 807)
         Me.PictureBox3.TabIndex = 2
         Me.PictureBox3.TabStop = False
         '
@@ -109,9 +110,10 @@ Partial Class packageForm
         Me.Label3.BackColor = System.Drawing.Color.FromArgb(CType(CType(77, Byte), Integer), CType(CType(46, Byte), Integer), CType(CType(118, Byte), Integer))
         Me.Label3.Font = New System.Drawing.Font("Cocogoose", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.Color.White
-        Me.Label3.Location = New System.Drawing.Point(1046, 167)
+        Me.Label3.Location = New System.Drawing.Point(1395, 206)
+        Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(180, 39)
+        Me.Label3.Size = New System.Drawing.Size(227, 49)
         Me.Label3.TabIndex = 5
         Me.Label3.Text = "Package C"
         '
@@ -121,9 +123,10 @@ Partial Class packageForm
         Me.Label1.BackColor = System.Drawing.Color.FromArgb(CType(CType(77, Byte), Integer), CType(CType(46, Byte), Integer), CType(CType(118, Byte), Integer))
         Me.Label1.Font = New System.Drawing.Font("Cocogoose", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.White
-        Me.Label1.Location = New System.Drawing.Point(601, 167)
+        Me.Label1.Location = New System.Drawing.Point(801, 206)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(180, 39)
+        Me.Label1.Size = New System.Drawing.Size(227, 49)
         Me.Label1.TabIndex = 7
         Me.Label1.Text = "Package B"
         '
@@ -132,9 +135,10 @@ Partial Class packageForm
         Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox1.BackgroundImage = CType(resources.GetObject("PictureBox1.BackgroundImage"), System.Drawing.Image)
         Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.PictureBox1.Location = New System.Drawing.Point(471, 108)
+        Me.PictureBox1.Location = New System.Drawing.Point(628, 133)
+        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(435, 656)
+        Me.PictureBox1.Size = New System.Drawing.Size(580, 807)
         Me.PictureBox1.TabIndex = 6
         Me.PictureBox1.TabStop = False
         '
@@ -144,9 +148,10 @@ Partial Class packageForm
         Me.Label2.BackColor = System.Drawing.Color.FromArgb(CType(CType(77, Byte), Integer), CType(CType(46, Byte), Integer), CType(CType(118, Byte), Integer))
         Me.Label2.Font = New System.Drawing.Font("Cocogoose", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.White
-        Me.Label2.Location = New System.Drawing.Point(146, 167)
+        Me.Label2.Location = New System.Drawing.Point(195, 206)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(182, 39)
+        Me.Label2.Size = New System.Drawing.Size(229, 49)
         Me.Label2.TabIndex = 9
         Me.Label2.Text = "Package A"
         '
@@ -155,9 +160,10 @@ Partial Class packageForm
         Me.PictureBox2.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox2.BackgroundImage = CType(resources.GetObject("PictureBox2.BackgroundImage"), System.Drawing.Image)
         Me.PictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.PictureBox2.Location = New System.Drawing.Point(30, 108)
+        Me.PictureBox2.Location = New System.Drawing.Point(40, 133)
+        Me.PictureBox2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(435, 656)
+        Me.PictureBox2.Size = New System.Drawing.Size(580, 807)
         Me.PictureBox2.TabIndex = 8
         Me.PictureBox2.TabStop = False
         '
@@ -167,9 +173,10 @@ Partial Class packageForm
         Me.btnGroupA.FlatAppearance.BorderSize = 0
         Me.btnGroupA.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnGroupA.Font = New System.Drawing.Font("Cocogoose", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnGroupA.Location = New System.Drawing.Point(182, 664)
+        Me.btnGroupA.Location = New System.Drawing.Point(243, 817)
+        Me.btnGroupA.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btnGroupA.Name = "btnGroupA"
-        Me.btnGroupA.Size = New System.Drawing.Size(126, 41)
+        Me.btnGroupA.Size = New System.Drawing.Size(168, 50)
         Me.btnGroupA.TabIndex = 10
         Me.btnGroupA.Text = "BOOK NOW"
         Me.btnGroupA.UseVisualStyleBackColor = False
@@ -180,9 +187,10 @@ Partial Class packageForm
         Me.btnGroupB.FlatAppearance.BorderSize = 0
         Me.btnGroupB.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnGroupB.Font = New System.Drawing.Font("Cocogoose", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnGroupB.Location = New System.Drawing.Point(635, 664)
+        Me.btnGroupB.Location = New System.Drawing.Point(847, 817)
+        Me.btnGroupB.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btnGroupB.Name = "btnGroupB"
-        Me.btnGroupB.Size = New System.Drawing.Size(126, 41)
+        Me.btnGroupB.Size = New System.Drawing.Size(168, 50)
         Me.btnGroupB.TabIndex = 11
         Me.btnGroupB.Text = "BOOK NOW"
         Me.btnGroupB.UseVisualStyleBackColor = False
@@ -193,9 +201,10 @@ Partial Class packageForm
         Me.btnGroupC.FlatAppearance.BorderSize = 0
         Me.btnGroupC.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnGroupC.Font = New System.Drawing.Font("Cocogoose", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnGroupC.Location = New System.Drawing.Point(1085, 664)
+        Me.btnGroupC.Location = New System.Drawing.Point(1447, 817)
+        Me.btnGroupC.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btnGroupC.Name = "btnGroupC"
-        Me.btnGroupC.Size = New System.Drawing.Size(126, 41)
+        Me.btnGroupC.Size = New System.Drawing.Size(168, 50)
         Me.btnGroupC.TabIndex = 12
         Me.btnGroupC.Text = "BOOK NOW"
         Me.btnGroupC.UseVisualStyleBackColor = False
@@ -206,9 +215,10 @@ Partial Class packageForm
         Me.btnConfirm.FlatAppearance.BorderSize = 0
         Me.btnConfirm.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnConfirm.Font = New System.Drawing.Font("Cocogoose", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnConfirm.Location = New System.Drawing.Point(1209, 872)
+        Me.btnConfirm.Location = New System.Drawing.Point(1612, 1073)
+        Me.btnConfirm.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btnConfirm.Name = "btnConfirm"
-        Me.btnConfirm.Size = New System.Drawing.Size(113, 36)
+        Me.btnConfirm.Size = New System.Drawing.Size(151, 44)
         Me.btnConfirm.TabIndex = 13
         Me.btnConfirm.Text = "CONFIRM"
         Me.btnConfirm.UseVisualStyleBackColor = False
@@ -219,9 +229,10 @@ Partial Class packageForm
         Me.btnCancel.FlatAppearance.BorderSize = 0
         Me.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnCancel.Font = New System.Drawing.Font("Cocogoose", 9.749999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnCancel.Location = New System.Drawing.Point(1085, 872)
+        Me.btnCancel.Location = New System.Drawing.Point(1447, 1073)
+        Me.btnCancel.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btnCancel.Name = "btnCancel"
-        Me.btnCancel.Size = New System.Drawing.Size(113, 36)
+        Me.btnCancel.Size = New System.Drawing.Size(151, 44)
         Me.btnCancel.TabIndex = 14
         Me.btnCancel.Text = "CANCEL"
         Me.btnCancel.UseVisualStyleBackColor = False
@@ -232,9 +243,10 @@ Partial Class packageForm
         Me.priceLbl.BackColor = System.Drawing.Color.Transparent
         Me.priceLbl.Font = New System.Drawing.Font("Impact", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.priceLbl.ForeColor = System.Drawing.Color.White
-        Me.priceLbl.Location = New System.Drawing.Point(1085, 827)
+        Me.priceLbl.Location = New System.Drawing.Point(1447, 1018)
+        Me.priceLbl.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.priceLbl.Name = "priceLbl"
-        Me.priceLbl.Size = New System.Drawing.Size(237, 26)
+        Me.priceLbl.Size = New System.Drawing.Size(305, 34)
         Me.priceLbl.TabIndex = 15
         Me.priceLbl.Text = "CURRENT PRICE: RM 500.00"
         '
@@ -247,9 +259,11 @@ Partial Class packageForm
         Me.GroupBox2.Controls.Add(Me.Label21)
         Me.GroupBox2.Font = New System.Drawing.Font("Arial", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox2.ForeColor = System.Drawing.Color.White
-        Me.GroupBox2.Location = New System.Drawing.Point(114, 466)
+        Me.GroupBox2.Location = New System.Drawing.Point(152, 574)
+        Me.GroupBox2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(270, 132)
+        Me.GroupBox2.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox2.Size = New System.Drawing.Size(360, 162)
         Me.GroupBox2.TabIndex = 21
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Add On"
@@ -258,9 +272,10 @@ Partial Class packageForm
         '
         Me.Label24.AutoSize = True
         Me.Label24.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label24.Location = New System.Drawing.Point(18, 102)
+        Me.Label24.Location = New System.Drawing.Point(24, 126)
+        Me.Label24.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label24.Name = "Label24"
-        Me.Label24.Size = New System.Drawing.Size(156, 16)
+        Me.Label24.Size = New System.Drawing.Size(197, 19)
         Me.Label24.TabIndex = 3
         Me.Label24.Text = "CheckBox4   (+ RM5.00)"
         '
@@ -268,9 +283,10 @@ Partial Class packageForm
         '
         Me.Label23.AutoSize = True
         Me.Label23.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label23.Location = New System.Drawing.Point(18, 77)
+        Me.Label23.Location = New System.Drawing.Point(24, 95)
+        Me.Label23.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label23.Name = "Label23"
-        Me.Label23.Size = New System.Drawing.Size(156, 16)
+        Me.Label23.Size = New System.Drawing.Size(197, 19)
         Me.Label23.TabIndex = 2
         Me.Label23.Text = "CheckBox3   (+ RM5.00)"
         '
@@ -278,9 +294,10 @@ Partial Class packageForm
         '
         Me.Label22.AutoSize = True
         Me.Label22.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label22.Location = New System.Drawing.Point(18, 53)
+        Me.Label22.Location = New System.Drawing.Point(24, 65)
+        Me.Label22.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label22.Name = "Label22"
-        Me.Label22.Size = New System.Drawing.Size(156, 16)
+        Me.Label22.Size = New System.Drawing.Size(197, 19)
         Me.Label22.TabIndex = 1
         Me.Label22.Text = "CheckBox2   (+ RM5.00)"
         '
@@ -288,9 +305,10 @@ Partial Class packageForm
         '
         Me.Label21.AutoSize = True
         Me.Label21.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label21.Location = New System.Drawing.Point(18, 28)
+        Me.Label21.Location = New System.Drawing.Point(24, 34)
+        Me.Label21.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label21.Name = "Label21"
-        Me.Label21.Size = New System.Drawing.Size(156, 16)
+        Me.Label21.Size = New System.Drawing.Size(197, 19)
         Me.Label21.TabIndex = 0
         Me.Label21.Text = "CheckBox1   (+ RM5.00)"
         '
@@ -300,9 +318,10 @@ Partial Class packageForm
         Me.Label5.BackColor = System.Drawing.Color.FromArgb(CType(CType(77, Byte), Integer), CType(CType(46, Byte), Integer), CType(CType(118, Byte), Integer))
         Me.Label5.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.ForeColor = System.Drawing.Color.White
-        Me.Label5.Location = New System.Drawing.Point(124, 239)
+        Me.Label5.Location = New System.Drawing.Point(165, 294)
+        Me.Label5.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(164, 18)
+        Me.Label5.Size = New System.Drawing.Size(211, 23)
         Me.Label5.TabIndex = 23
         Me.Label5.Text = "Day 1: Go to Massage"
         '
@@ -312,9 +331,10 @@ Partial Class packageForm
         Me.Label6.BackColor = System.Drawing.Color.FromArgb(CType(CType(77, Byte), Integer), CType(CType(46, Byte), Integer), CType(CType(118, Byte), Integer))
         Me.Label6.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label6.ForeColor = System.Drawing.Color.White
-        Me.Label6.Location = New System.Drawing.Point(124, 285)
+        Me.Label6.Location = New System.Drawing.Point(165, 351)
+        Me.Label6.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(224, 18)
+        Me.Label6.Size = New System.Drawing.Size(285, 23)
         Me.Label6.TabIndex = 24
         Me.Label6.Text = "Day 2: Go to Massage Againnn"
         '
@@ -324,9 +344,10 @@ Partial Class packageForm
         Me.Label7.BackColor = System.Drawing.Color.FromArgb(CType(CType(77, Byte), Integer), CType(CType(46, Byte), Integer), CType(CType(118, Byte), Integer))
         Me.Label7.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label7.ForeColor = System.Drawing.Color.White
-        Me.Label7.Location = New System.Drawing.Point(124, 326)
+        Me.Label7.Location = New System.Drawing.Point(165, 401)
+        Me.Label7.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(224, 18)
+        Me.Label7.Size = New System.Drawing.Size(282, 23)
         Me.Label7.TabIndex = 25
         Me.Label7.Text = "Day 3: Happy Ending Massage"
         '
@@ -336,9 +357,10 @@ Partial Class packageForm
         Me.Label8.BackColor = System.Drawing.Color.FromArgb(CType(CType(77, Byte), Integer), CType(CType(46, Byte), Integer), CType(CType(118, Byte), Integer))
         Me.Label8.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label8.ForeColor = System.Drawing.Color.White
-        Me.Label8.Location = New System.Drawing.Point(570, 326)
+        Me.Label8.Location = New System.Drawing.Point(760, 401)
+        Me.Label8.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(224, 18)
+        Me.Label8.Size = New System.Drawing.Size(282, 23)
         Me.Label8.TabIndex = 28
         Me.Label8.Text = "Day 3: Happy Ending Massage"
         '
@@ -348,9 +370,10 @@ Partial Class packageForm
         Me.Label9.BackColor = System.Drawing.Color.FromArgb(CType(CType(77, Byte), Integer), CType(CType(46, Byte), Integer), CType(CType(118, Byte), Integer))
         Me.Label9.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label9.ForeColor = System.Drawing.Color.White
-        Me.Label9.Location = New System.Drawing.Point(570, 285)
+        Me.Label9.Location = New System.Drawing.Point(760, 351)
+        Me.Label9.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(224, 18)
+        Me.Label9.Size = New System.Drawing.Size(285, 23)
         Me.Label9.TabIndex = 27
         Me.Label9.Text = "Day 2: Go to Massage Againnn"
         '
@@ -360,9 +383,10 @@ Partial Class packageForm
         Me.Label10.BackColor = System.Drawing.Color.FromArgb(CType(CType(77, Byte), Integer), CType(CType(46, Byte), Integer), CType(CType(118, Byte), Integer))
         Me.Label10.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label10.ForeColor = System.Drawing.Color.White
-        Me.Label10.Location = New System.Drawing.Point(570, 239)
+        Me.Label10.Location = New System.Drawing.Point(760, 294)
+        Me.Label10.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(164, 18)
+        Me.Label10.Size = New System.Drawing.Size(211, 23)
         Me.Label10.TabIndex = 26
         Me.Label10.Text = "Day 1: Go to Massage"
         '
@@ -372,9 +396,10 @@ Partial Class packageForm
         Me.Label11.BackColor = System.Drawing.Color.FromArgb(CType(CType(77, Byte), Integer), CType(CType(46, Byte), Integer), CType(CType(118, Byte), Integer))
         Me.Label11.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label11.ForeColor = System.Drawing.Color.White
-        Me.Label11.Location = New System.Drawing.Point(1016, 326)
+        Me.Label11.Location = New System.Drawing.Point(1355, 401)
+        Me.Label11.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(224, 18)
+        Me.Label11.Size = New System.Drawing.Size(282, 23)
         Me.Label11.TabIndex = 31
         Me.Label11.Text = "Day 3: Happy Ending Massage"
         '
@@ -384,9 +409,10 @@ Partial Class packageForm
         Me.Label12.BackColor = System.Drawing.Color.FromArgb(CType(CType(77, Byte), Integer), CType(CType(46, Byte), Integer), CType(CType(118, Byte), Integer))
         Me.Label12.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label12.ForeColor = System.Drawing.Color.White
-        Me.Label12.Location = New System.Drawing.Point(1016, 285)
+        Me.Label12.Location = New System.Drawing.Point(1355, 351)
+        Me.Label12.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(224, 18)
+        Me.Label12.Size = New System.Drawing.Size(285, 23)
         Me.Label12.TabIndex = 30
         Me.Label12.Text = "Day 2: Go to Massage Againnn"
         '
@@ -396,9 +422,10 @@ Partial Class packageForm
         Me.Label13.BackColor = System.Drawing.Color.FromArgb(CType(CType(77, Byte), Integer), CType(CType(46, Byte), Integer), CType(CType(118, Byte), Integer))
         Me.Label13.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label13.ForeColor = System.Drawing.Color.White
-        Me.Label13.Location = New System.Drawing.Point(1016, 239)
+        Me.Label13.Location = New System.Drawing.Point(1355, 294)
+        Me.Label13.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label13.Name = "Label13"
-        Me.Label13.Size = New System.Drawing.Size(164, 18)
+        Me.Label13.Size = New System.Drawing.Size(211, 23)
         Me.Label13.TabIndex = 29
         Me.Label13.Text = "Day 1: Go to Massage"
         '
@@ -408,9 +435,10 @@ Partial Class packageForm
         Me.Label14.BackColor = System.Drawing.Color.FromArgb(CType(CType(77, Byte), Integer), CType(CType(46, Byte), Integer), CType(CType(118, Byte), Integer))
         Me.Label14.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label14.ForeColor = System.Drawing.Color.White
-        Me.Label14.Location = New System.Drawing.Point(570, 363)
+        Me.Label14.Location = New System.Drawing.Point(760, 447)
+        Me.Label14.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label14.Name = "Label14"
-        Me.Label14.Size = New System.Drawing.Size(197, 18)
+        Me.Label14.Size = New System.Drawing.Size(246, 23)
         Me.Label14.TabIndex = 32
         Me.Label14.Text = "Day 4: Clubbing in Vitenam"
         '
@@ -420,9 +448,10 @@ Partial Class packageForm
         Me.Label15.BackColor = System.Drawing.Color.FromArgb(CType(CType(77, Byte), Integer), CType(CType(46, Byte), Integer), CType(CType(118, Byte), Integer))
         Me.Label15.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label15.ForeColor = System.Drawing.Color.White
-        Me.Label15.Location = New System.Drawing.Point(1016, 363)
+        Me.Label15.Location = New System.Drawing.Point(1355, 447)
+        Me.Label15.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label15.Name = "Label15"
-        Me.Label15.Size = New System.Drawing.Size(197, 18)
+        Me.Label15.Size = New System.Drawing.Size(246, 23)
         Me.Label15.TabIndex = 33
         Me.Label15.Text = "Day 4: Clubbing in Vitenam"
         '
@@ -432,9 +461,10 @@ Partial Class packageForm
         Me.Label16.BackColor = System.Drawing.Color.FromArgb(CType(CType(77, Byte), Integer), CType(CType(46, Byte), Integer), CType(CType(118, Byte), Integer))
         Me.Label16.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label16.ForeColor = System.Drawing.Color.White
-        Me.Label16.Location = New System.Drawing.Point(1016, 404)
+        Me.Label16.Location = New System.Drawing.Point(1355, 497)
+        Me.Label16.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label16.Name = "Label16"
-        Me.Label16.Size = New System.Drawing.Size(209, 18)
+        Me.Label16.Size = New System.Drawing.Size(264, 23)
         Me.Label16.TabIndex = 34
         Me.Label16.Text = "Day 5: Swimming with chicks"
         '
@@ -444,9 +474,10 @@ Partial Class packageForm
         Me.Label17.BackColor = System.Drawing.Color.Transparent
         Me.Label17.Font = New System.Drawing.Font("Cocogoose", 27.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label17.ForeColor = System.Drawing.Color.White
-        Me.Label17.Location = New System.Drawing.Point(462, 35)
+        Me.Label17.Location = New System.Drawing.Point(616, 43)
+        Me.Label17.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label17.Name = "Label17"
-        Me.Label17.Size = New System.Drawing.Size(488, 53)
+        Me.Label17.Size = New System.Drawing.Size(618, 67)
         Me.Label17.TabIndex = 35
         Me.Label17.Text = "Choose Your Package"
         '
@@ -456,9 +487,10 @@ Partial Class packageForm
         Me.Label18.BackColor = System.Drawing.Color.FromArgb(CType(CType(77, Byte), Integer), CType(CType(46, Byte), Integer), CType(CType(118, Byte), Integer))
         Me.Label18.Font = New System.Drawing.Font("Arial", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label18.ForeColor = System.Drawing.Color.White
-        Me.Label18.Location = New System.Drawing.Point(607, 614)
+        Me.Label18.Location = New System.Drawing.Point(809, 756)
+        Me.Label18.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label18.Name = "Label18"
-        Me.Label18.Size = New System.Drawing.Size(174, 37)
+        Me.Label18.Size = New System.Drawing.Size(214, 46)
         Me.Label18.TabIndex = 36
         Me.Label18.Text = "RM 800.00"
         '
@@ -468,9 +500,10 @@ Partial Class packageForm
         Me.Label19.BackColor = System.Drawing.Color.FromArgb(CType(CType(77, Byte), Integer), CType(CType(46, Byte), Integer), CType(CType(118, Byte), Integer))
         Me.Label19.Font = New System.Drawing.Font("Arial", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label19.ForeColor = System.Drawing.Color.White
-        Me.Label19.Location = New System.Drawing.Point(154, 614)
+        Me.Label19.Location = New System.Drawing.Point(205, 756)
+        Me.Label19.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label19.Name = "Label19"
-        Me.Label19.Size = New System.Drawing.Size(174, 37)
+        Me.Label19.Size = New System.Drawing.Size(214, 46)
         Me.Label19.TabIndex = 37
         Me.Label19.Text = "RM 500.00"
         '
@@ -480,9 +513,10 @@ Partial Class packageForm
         Me.Label20.BackColor = System.Drawing.Color.FromArgb(CType(CType(77, Byte), Integer), CType(CType(46, Byte), Integer), CType(CType(118, Byte), Integer))
         Me.Label20.Font = New System.Drawing.Font("Arial", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label20.ForeColor = System.Drawing.Color.White
-        Me.Label20.Location = New System.Drawing.Point(1046, 614)
+        Me.Label20.Location = New System.Drawing.Point(1395, 756)
+        Me.Label20.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label20.Name = "Label20"
-        Me.Label20.Size = New System.Drawing.Size(192, 37)
+        Me.Label20.Size = New System.Drawing.Size(236, 46)
         Me.Label20.TabIndex = 38
         Me.Label20.Text = "RM 1000.00"
         '
@@ -495,9 +529,11 @@ Partial Class packageForm
         Me.addOngroupC.Controls.Add(Me.CheckBox16)
         Me.addOngroupC.Font = New System.Drawing.Font("Arial", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.addOngroupC.ForeColor = System.Drawing.Color.White
-        Me.addOngroupC.Location = New System.Drawing.Point(798, 776)
+        Me.addOngroupC.Location = New System.Drawing.Point(1064, 955)
+        Me.addOngroupC.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.addOngroupC.Name = "addOngroupC"
-        Me.addOngroupC.Size = New System.Drawing.Size(270, 132)
+        Me.addOngroupC.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.addOngroupC.Size = New System.Drawing.Size(360, 162)
         Me.addOngroupC.TabIndex = 21
         Me.addOngroupC.TabStop = False
         Me.addOngroupC.Text = "Add On"
@@ -506,9 +542,10 @@ Partial Class packageForm
         '
         Me.CheckBox13.AutoSize = True
         Me.CheckBox13.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CheckBox13.Location = New System.Drawing.Point(19, 102)
+        Me.CheckBox13.Location = New System.Drawing.Point(25, 126)
+        Me.CheckBox13.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.CheckBox13.Name = "CheckBox13"
-        Me.CheckBox13.Size = New System.Drawing.Size(182, 20)
+        Me.CheckBox13.Size = New System.Drawing.Size(228, 23)
         Me.CheckBox13.TabIndex = 20
         Me.CheckBox13.Text = "CheckBox12   (+ RM5.00)"
         Me.CheckBox13.UseVisualStyleBackColor = True
@@ -517,9 +554,10 @@ Partial Class packageForm
         '
         Me.CheckBox14.AutoSize = True
         Me.CheckBox14.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CheckBox14.Location = New System.Drawing.Point(19, 76)
+        Me.CheckBox14.Location = New System.Drawing.Point(25, 94)
+        Me.CheckBox14.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.CheckBox14.Name = "CheckBox14"
-        Me.CheckBox14.Size = New System.Drawing.Size(181, 20)
+        Me.CheckBox14.Size = New System.Drawing.Size(227, 23)
         Me.CheckBox14.TabIndex = 19
         Me.CheckBox14.Text = "CheckBox11   (+ RM5.00)"
         Me.CheckBox14.UseVisualStyleBackColor = True
@@ -528,9 +566,10 @@ Partial Class packageForm
         '
         Me.CheckBox15.AutoSize = True
         Me.CheckBox15.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CheckBox15.Location = New System.Drawing.Point(19, 50)
+        Me.CheckBox15.Location = New System.Drawing.Point(25, 62)
+        Me.CheckBox15.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.CheckBox15.Name = "CheckBox15"
-        Me.CheckBox15.Size = New System.Drawing.Size(182, 20)
+        Me.CheckBox15.Size = New System.Drawing.Size(228, 23)
         Me.CheckBox15.TabIndex = 18
         Me.CheckBox15.Text = "CheckBox10   (+ RM5.00)"
         Me.CheckBox15.UseVisualStyleBackColor = True
@@ -539,9 +578,10 @@ Partial Class packageForm
         '
         Me.CheckBox16.AutoSize = True
         Me.CheckBox16.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CheckBox16.Location = New System.Drawing.Point(19, 24)
+        Me.CheckBox16.Location = New System.Drawing.Point(25, 30)
+        Me.CheckBox16.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.CheckBox16.Name = "CheckBox16"
-        Me.CheckBox16.Size = New System.Drawing.Size(175, 20)
+        Me.CheckBox16.Size = New System.Drawing.Size(219, 23)
         Me.CheckBox16.TabIndex = 17
         Me.CheckBox16.Text = "CheckBox9   (+ RM5.00)"
         Me.CheckBox16.UseVisualStyleBackColor = True
@@ -555,9 +595,11 @@ Partial Class packageForm
         Me.addOngroupA.Controls.Add(Me.CheckBox20)
         Me.addOngroupA.Font = New System.Drawing.Font("Arial", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.addOngroupA.ForeColor = System.Drawing.Color.White
-        Me.addOngroupA.Location = New System.Drawing.Point(798, 776)
+        Me.addOngroupA.Location = New System.Drawing.Point(1064, 955)
+        Me.addOngroupA.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.addOngroupA.Name = "addOngroupA"
-        Me.addOngroupA.Size = New System.Drawing.Size(270, 132)
+        Me.addOngroupA.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.addOngroupA.Size = New System.Drawing.Size(360, 162)
         Me.addOngroupA.TabIndex = 22
         Me.addOngroupA.TabStop = False
         Me.addOngroupA.Text = "Add On"
@@ -566,9 +608,10 @@ Partial Class packageForm
         '
         Me.CheckBox17.AutoSize = True
         Me.CheckBox17.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CheckBox17.Location = New System.Drawing.Point(19, 102)
+        Me.CheckBox17.Location = New System.Drawing.Point(25, 126)
+        Me.CheckBox17.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.CheckBox17.Name = "CheckBox17"
-        Me.CheckBox17.Size = New System.Drawing.Size(175, 20)
+        Me.CheckBox17.Size = New System.Drawing.Size(219, 23)
         Me.CheckBox17.TabIndex = 20
         Me.CheckBox17.Text = "CheckBox4   (+ RM5.00)"
         Me.CheckBox17.UseVisualStyleBackColor = True
@@ -577,9 +620,10 @@ Partial Class packageForm
         '
         Me.CheckBox18.AutoSize = True
         Me.CheckBox18.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CheckBox18.Location = New System.Drawing.Point(19, 76)
+        Me.CheckBox18.Location = New System.Drawing.Point(25, 94)
+        Me.CheckBox18.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.CheckBox18.Name = "CheckBox18"
-        Me.CheckBox18.Size = New System.Drawing.Size(175, 20)
+        Me.CheckBox18.Size = New System.Drawing.Size(219, 23)
         Me.CheckBox18.TabIndex = 19
         Me.CheckBox18.Text = "CheckBox3   (+ RM5.00)"
         Me.CheckBox18.UseVisualStyleBackColor = True
@@ -588,9 +632,10 @@ Partial Class packageForm
         '
         Me.CheckBox19.AutoSize = True
         Me.CheckBox19.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CheckBox19.Location = New System.Drawing.Point(19, 50)
+        Me.CheckBox19.Location = New System.Drawing.Point(25, 62)
+        Me.CheckBox19.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.CheckBox19.Name = "CheckBox19"
-        Me.CheckBox19.Size = New System.Drawing.Size(175, 20)
+        Me.CheckBox19.Size = New System.Drawing.Size(219, 23)
         Me.CheckBox19.TabIndex = 18
         Me.CheckBox19.Text = "CheckBox2   (+ RM5.00)"
         Me.CheckBox19.UseVisualStyleBackColor = True
@@ -599,9 +644,10 @@ Partial Class packageForm
         '
         Me.CheckBox20.AutoSize = True
         Me.CheckBox20.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CheckBox20.Location = New System.Drawing.Point(19, 24)
+        Me.CheckBox20.Location = New System.Drawing.Point(25, 30)
+        Me.CheckBox20.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.CheckBox20.Name = "CheckBox20"
-        Me.CheckBox20.Size = New System.Drawing.Size(175, 20)
+        Me.CheckBox20.Size = New System.Drawing.Size(219, 23)
         Me.CheckBox20.TabIndex = 17
         Me.CheckBox20.Text = "CheckBox1   (+ RM5.00)"
         Me.CheckBox20.UseVisualStyleBackColor = True
@@ -615,9 +661,11 @@ Partial Class packageForm
         Me.addOngroupB.Controls.Add(Me.CheckBox24)
         Me.addOngroupB.Font = New System.Drawing.Font("Arial", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.addOngroupB.ForeColor = System.Drawing.Color.White
-        Me.addOngroupB.Location = New System.Drawing.Point(798, 776)
+        Me.addOngroupB.Location = New System.Drawing.Point(1064, 955)
+        Me.addOngroupB.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.addOngroupB.Name = "addOngroupB"
-        Me.addOngroupB.Size = New System.Drawing.Size(270, 132)
+        Me.addOngroupB.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.addOngroupB.Size = New System.Drawing.Size(360, 162)
         Me.addOngroupB.TabIndex = 23
         Me.addOngroupB.TabStop = False
         Me.addOngroupB.Text = "Add On"
@@ -626,9 +674,10 @@ Partial Class packageForm
         '
         Me.CheckBox21.AutoSize = True
         Me.CheckBox21.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CheckBox21.Location = New System.Drawing.Point(19, 102)
+        Me.CheckBox21.Location = New System.Drawing.Point(25, 126)
+        Me.CheckBox21.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.CheckBox21.Name = "CheckBox21"
-        Me.CheckBox21.Size = New System.Drawing.Size(175, 20)
+        Me.CheckBox21.Size = New System.Drawing.Size(219, 23)
         Me.CheckBox21.TabIndex = 20
         Me.CheckBox21.Text = "CheckBox8   (+ RM5.00)"
         Me.CheckBox21.UseVisualStyleBackColor = True
@@ -637,9 +686,10 @@ Partial Class packageForm
         '
         Me.CheckBox22.AutoSize = True
         Me.CheckBox22.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CheckBox22.Location = New System.Drawing.Point(19, 76)
+        Me.CheckBox22.Location = New System.Drawing.Point(25, 94)
+        Me.CheckBox22.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.CheckBox22.Name = "CheckBox22"
-        Me.CheckBox22.Size = New System.Drawing.Size(175, 20)
+        Me.CheckBox22.Size = New System.Drawing.Size(219, 23)
         Me.CheckBox22.TabIndex = 19
         Me.CheckBox22.Text = "CheckBox7   (+ RM5.00)"
         Me.CheckBox22.UseVisualStyleBackColor = True
@@ -648,9 +698,10 @@ Partial Class packageForm
         '
         Me.CheckBox23.AutoSize = True
         Me.CheckBox23.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CheckBox23.Location = New System.Drawing.Point(19, 50)
+        Me.CheckBox23.Location = New System.Drawing.Point(25, 62)
+        Me.CheckBox23.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.CheckBox23.Name = "CheckBox23"
-        Me.CheckBox23.Size = New System.Drawing.Size(175, 20)
+        Me.CheckBox23.Size = New System.Drawing.Size(219, 23)
         Me.CheckBox23.TabIndex = 18
         Me.CheckBox23.Text = "CheckBox6   (+ RM5.00)"
         Me.CheckBox23.UseVisualStyleBackColor = True
@@ -659,9 +710,10 @@ Partial Class packageForm
         '
         Me.CheckBox24.AutoSize = True
         Me.CheckBox24.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CheckBox24.Location = New System.Drawing.Point(19, 24)
+        Me.CheckBox24.Location = New System.Drawing.Point(25, 30)
+        Me.CheckBox24.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.CheckBox24.Name = "CheckBox24"
-        Me.CheckBox24.Size = New System.Drawing.Size(175, 20)
+        Me.CheckBox24.Size = New System.Drawing.Size(219, 23)
         Me.CheckBox24.TabIndex = 17
         Me.CheckBox24.Text = "CheckBox5   (+ RM5.00)"
         Me.CheckBox24.UseVisualStyleBackColor = True
@@ -675,9 +727,11 @@ Partial Class packageForm
         Me.GroupBox1.Controls.Add(Me.Label28)
         Me.GroupBox1.Font = New System.Drawing.Font("Arial", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox1.ForeColor = System.Drawing.Color.White
-        Me.GroupBox1.Location = New System.Drawing.Point(560, 466)
+        Me.GroupBox1.Location = New System.Drawing.Point(747, 574)
+        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(270, 132)
+        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox1.Size = New System.Drawing.Size(360, 162)
         Me.GroupBox1.TabIndex = 22
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Add On"
@@ -686,9 +740,10 @@ Partial Class packageForm
         '
         Me.Label25.AutoSize = True
         Me.Label25.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label25.Location = New System.Drawing.Point(18, 102)
+        Me.Label25.Location = New System.Drawing.Point(24, 126)
+        Me.Label25.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label25.Name = "Label25"
-        Me.Label25.Size = New System.Drawing.Size(156, 16)
+        Me.Label25.Size = New System.Drawing.Size(197, 19)
         Me.Label25.TabIndex = 3
         Me.Label25.Text = "CheckBox4   (+ RM5.00)"
         '
@@ -696,9 +751,10 @@ Partial Class packageForm
         '
         Me.Label26.AutoSize = True
         Me.Label26.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label26.Location = New System.Drawing.Point(18, 77)
+        Me.Label26.Location = New System.Drawing.Point(24, 95)
+        Me.Label26.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label26.Name = "Label26"
-        Me.Label26.Size = New System.Drawing.Size(156, 16)
+        Me.Label26.Size = New System.Drawing.Size(197, 19)
         Me.Label26.TabIndex = 2
         Me.Label26.Text = "CheckBox3   (+ RM5.00)"
         '
@@ -706,9 +762,10 @@ Partial Class packageForm
         '
         Me.Label27.AutoSize = True
         Me.Label27.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label27.Location = New System.Drawing.Point(18, 53)
+        Me.Label27.Location = New System.Drawing.Point(24, 65)
+        Me.Label27.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label27.Name = "Label27"
-        Me.Label27.Size = New System.Drawing.Size(156, 16)
+        Me.Label27.Size = New System.Drawing.Size(197, 19)
         Me.Label27.TabIndex = 1
         Me.Label27.Text = "CheckBox2   (+ RM5.00)"
         '
@@ -716,9 +773,10 @@ Partial Class packageForm
         '
         Me.Label28.AutoSize = True
         Me.Label28.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label28.Location = New System.Drawing.Point(18, 28)
+        Me.Label28.Location = New System.Drawing.Point(24, 34)
+        Me.Label28.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label28.Name = "Label28"
-        Me.Label28.Size = New System.Drawing.Size(156, 16)
+        Me.Label28.Size = New System.Drawing.Size(197, 19)
         Me.Label28.TabIndex = 0
         Me.Label28.Text = "CheckBox1   (+ RM5.00)"
         '
@@ -731,9 +789,11 @@ Partial Class packageForm
         Me.GroupBox3.Controls.Add(Me.Label32)
         Me.GroupBox3.Font = New System.Drawing.Font("Arial", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox3.ForeColor = System.Drawing.Color.White
-        Me.GroupBox3.Location = New System.Drawing.Point(1002, 466)
+        Me.GroupBox3.Location = New System.Drawing.Point(1336, 574)
+        Me.GroupBox3.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.GroupBox3.Name = "GroupBox3"
-        Me.GroupBox3.Size = New System.Drawing.Size(270, 132)
+        Me.GroupBox3.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox3.Size = New System.Drawing.Size(360, 162)
         Me.GroupBox3.TabIndex = 23
         Me.GroupBox3.TabStop = False
         Me.GroupBox3.Text = "Add On"
@@ -742,9 +802,10 @@ Partial Class packageForm
         '
         Me.Label29.AutoSize = True
         Me.Label29.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label29.Location = New System.Drawing.Point(18, 102)
+        Me.Label29.Location = New System.Drawing.Point(24, 126)
+        Me.Label29.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label29.Name = "Label29"
-        Me.Label29.Size = New System.Drawing.Size(156, 16)
+        Me.Label29.Size = New System.Drawing.Size(197, 19)
         Me.Label29.TabIndex = 3
         Me.Label29.Text = "CheckBox4   (+ RM5.00)"
         '
@@ -752,9 +813,10 @@ Partial Class packageForm
         '
         Me.Label30.AutoSize = True
         Me.Label30.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label30.Location = New System.Drawing.Point(18, 77)
+        Me.Label30.Location = New System.Drawing.Point(24, 95)
+        Me.Label30.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label30.Name = "Label30"
-        Me.Label30.Size = New System.Drawing.Size(156, 16)
+        Me.Label30.Size = New System.Drawing.Size(197, 19)
         Me.Label30.TabIndex = 2
         Me.Label30.Text = "CheckBox3   (+ RM5.00)"
         '
@@ -762,9 +824,10 @@ Partial Class packageForm
         '
         Me.Label31.AutoSize = True
         Me.Label31.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label31.Location = New System.Drawing.Point(18, 53)
+        Me.Label31.Location = New System.Drawing.Point(24, 65)
+        Me.Label31.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label31.Name = "Label31"
-        Me.Label31.Size = New System.Drawing.Size(156, 16)
+        Me.Label31.Size = New System.Drawing.Size(197, 19)
         Me.Label31.TabIndex = 1
         Me.Label31.Text = "CheckBox2   (+ RM5.00)"
         '
@@ -772,19 +835,20 @@ Partial Class packageForm
         '
         Me.Label32.AutoSize = True
         Me.Label32.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label32.Location = New System.Drawing.Point(18, 28)
+        Me.Label32.Location = New System.Drawing.Point(24, 34)
+        Me.Label32.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label32.Name = "Label32"
-        Me.Label32.Size = New System.Drawing.Size(156, 16)
+        Me.Label32.Size = New System.Drawing.Size(197, 19)
         Me.Label32.TabIndex = 0
         Me.Label32.Text = "CheckBox1   (+ RM5.00)"
         '
         'packageForm
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(20, Byte), Integer), CType(CType(46, Byte), Integer))
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
-        Me.ClientSize = New System.Drawing.Size(1367, 920)
+        Me.ClientSize = New System.Drawing.Size(1823, 1054)
         Me.Controls.Add(Me.GroupBox3)
         Me.Controls.Add(Me.addOngroupA)
         Me.Controls.Add(Me.GroupBox1)
@@ -820,6 +884,7 @@ Partial Class packageForm
         Me.Controls.Add(Me.PictureBox3)
         Me.Controls.Add(Me.PictureBox2)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.MaximizeBox = False
         Me.Name = "packageForm"
         Me.Text = "Form1"
