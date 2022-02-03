@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class BOOKING
+Partial Class bookForm
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -22,7 +22,7 @@ Partial Class BOOKING
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(BOOKING))
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(bookForm))
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Panel3 = New System.Windows.Forms.Panel()
         Me.IconButton1 = New FontAwesome.Sharp.IconButton()
@@ -38,22 +38,22 @@ Partial Class BOOKING
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Panel4 = New System.Windows.Forms.Panel()
-        Me.Guna2ComboBox2 = New Guna.UI2.WinForms.Guna2ComboBox()
-        Me.Guna2ComboBox1 = New Guna.UI2.WinForms.Guna2ComboBox()
-        Me.Label21 = New System.Windows.Forms.Label()
-        Me.Guna2Button3 = New Guna.UI2.WinForms.Guna2Button()
-        Me.Guna2Button2 = New Guna.UI2.WinForms.Guna2Button()
-        Me.Guna2Button1 = New Guna.UI2.WinForms.Guna2Button()
+        Me.comboAddon2 = New Guna.UI2.WinForms.Guna2ComboBox()
+        Me.comboAddon1 = New Guna.UI2.WinForms.Guna2ComboBox()
+        Me.pkgLbl = New System.Windows.Forms.Label()
+        Me.cancelBtn = New Guna.UI2.WinForms.Guna2Button()
+        Me.bookBtn = New Guna.UI2.WinForms.Guna2Button()
+        Me.confirmBtn = New Guna.UI2.WinForms.Guna2Button()
         Me.Label20 = New System.Windows.Forms.Label()
-        Me.ListBox1 = New System.Windows.Forms.ListBox()
-        Me.Guna2DateTimePicker1 = New Guna.UI2.WinForms.Guna2DateTimePicker()
-        Me.Guna2TextBox7 = New Guna.UI2.WinForms.Guna2TextBox()
-        Me.Guna2TextBox6 = New Guna.UI2.WinForms.Guna2TextBox()
-        Me.Guna2TextBox5 = New Guna.UI2.WinForms.Guna2TextBox()
-        Me.Guna2TextBox4 = New Guna.UI2.WinForms.Guna2TextBox()
-        Me.Guna2TextBox3 = New Guna.UI2.WinForms.Guna2TextBox()
-        Me.Guna2TextBox2 = New Guna.UI2.WinForms.Guna2TextBox()
-        Me.Guna2TextBox1 = New Guna.UI2.WinForms.Guna2TextBox()
+        Me.receiptLst = New System.Windows.Forms.ListBox()
+        Me.dateTxt = New Guna.UI2.WinForms.Guna2DateTimePicker()
+        Me.adultTxt = New Guna.UI2.WinForms.Guna2TextBox()
+        Me.childTxt = New Guna.UI2.WinForms.Guna2TextBox()
+        Me.seniorTxt = New Guna.UI2.WinForms.Guna2TextBox()
+        Me.icTxt = New Guna.UI2.WinForms.Guna2TextBox()
+        Me.phoneTxt = New Guna.UI2.WinForms.Guna2TextBox()
+        Me.emailTxt = New Guna.UI2.WinForms.Guna2TextBox()
+        Me.nameTxt = New Guna.UI2.WinForms.Guna2TextBox()
         Me.Label16 = New System.Windows.Forms.Label()
         Me.Label15 = New System.Windows.Forms.Label()
         Me.Label14 = New System.Windows.Forms.Label()
@@ -152,7 +152,7 @@ Partial Class BOOKING
         Me.Label19.BackColor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(25, Byte), Integer), CType(CType(56, Byte), Integer))
         Me.Label19.Font = New System.Drawing.Font("Arial", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label19.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Label19.Location = New System.Drawing.Point(945, 21)
+        Me.Label19.Location = New System.Drawing.Point(965, 21)
         Me.Label19.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label19.Name = "Label19"
         Me.Label19.Size = New System.Drawing.Size(167, 35)
@@ -165,7 +165,7 @@ Partial Class BOOKING
         Me.Label3.BackColor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(25, Byte), Integer), CType(CType(56, Byte), Integer))
         Me.Label3.Font = New System.Drawing.Font("Arial", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.Color.White
-        Me.Label3.Location = New System.Drawing.Point(574, 21)
+        Me.Label3.Location = New System.Drawing.Point(569, 21)
         Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(363, 35)
@@ -178,7 +178,7 @@ Partial Class BOOKING
         Me.Label18.BackColor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(25, Byte), Integer), CType(CType(56, Byte), Integer))
         Me.Label18.Font = New System.Drawing.Font("Arial", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label18.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Label18.Location = New System.Drawing.Point(399, 21)
+        Me.Label18.Location = New System.Drawing.Point(380, 21)
         Me.Label18.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label18.Name = "Label18"
         Me.Label18.Size = New System.Drawing.Size(167, 35)
@@ -191,7 +191,7 @@ Partial Class BOOKING
         Me.Label2.BackColor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(25, Byte), Integer), CType(CType(56, Byte), Integer))
         Me.Label2.Font = New System.Drawing.Font("Arial", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Label2.Location = New System.Drawing.Point(62, 21)
+        Me.Label2.Location = New System.Drawing.Point(30, 21)
         Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(329, 35)
@@ -204,7 +204,7 @@ Partial Class BOOKING
         Me.Label4.BackColor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(25, Byte), Integer), CType(CType(56, Byte), Integer))
         Me.Label4.Font = New System.Drawing.Font("Arial", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Label4.Location = New System.Drawing.Point(1122, 21)
+        Me.Label4.Location = New System.Drawing.Point(1162, 21)
         Me.Label4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(298, 35)
@@ -249,22 +249,22 @@ Partial Class BOOKING
         'Panel4
         '
         Me.Panel4.BackColor = System.Drawing.Color.FromArgb(CType(CType(34, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(73, Byte), Integer))
-        Me.Panel4.Controls.Add(Me.Guna2ComboBox2)
-        Me.Panel4.Controls.Add(Me.Guna2ComboBox1)
-        Me.Panel4.Controls.Add(Me.Label21)
-        Me.Panel4.Controls.Add(Me.Guna2Button3)
-        Me.Panel4.Controls.Add(Me.Guna2Button2)
-        Me.Panel4.Controls.Add(Me.Guna2Button1)
+        Me.Panel4.Controls.Add(Me.comboAddon2)
+        Me.Panel4.Controls.Add(Me.comboAddon1)
+        Me.Panel4.Controls.Add(Me.pkgLbl)
+        Me.Panel4.Controls.Add(Me.cancelBtn)
+        Me.Panel4.Controls.Add(Me.bookBtn)
+        Me.Panel4.Controls.Add(Me.confirmBtn)
         Me.Panel4.Controls.Add(Me.Label20)
-        Me.Panel4.Controls.Add(Me.ListBox1)
-        Me.Panel4.Controls.Add(Me.Guna2DateTimePicker1)
-        Me.Panel4.Controls.Add(Me.Guna2TextBox7)
-        Me.Panel4.Controls.Add(Me.Guna2TextBox6)
-        Me.Panel4.Controls.Add(Me.Guna2TextBox5)
-        Me.Panel4.Controls.Add(Me.Guna2TextBox4)
-        Me.Panel4.Controls.Add(Me.Guna2TextBox3)
-        Me.Panel4.Controls.Add(Me.Guna2TextBox2)
-        Me.Panel4.Controls.Add(Me.Guna2TextBox1)
+        Me.Panel4.Controls.Add(Me.receiptLst)
+        Me.Panel4.Controls.Add(Me.dateTxt)
+        Me.Panel4.Controls.Add(Me.adultTxt)
+        Me.Panel4.Controls.Add(Me.childTxt)
+        Me.Panel4.Controls.Add(Me.seniorTxt)
+        Me.Panel4.Controls.Add(Me.icTxt)
+        Me.Panel4.Controls.Add(Me.phoneTxt)
+        Me.Panel4.Controls.Add(Me.emailTxt)
+        Me.Panel4.Controls.Add(Me.nameTxt)
         Me.Panel4.Controls.Add(Me.Label16)
         Me.Panel4.Controls.Add(Me.Label15)
         Me.Panel4.Controls.Add(Me.Label14)
@@ -286,107 +286,107 @@ Partial Class BOOKING
         Me.Panel4.Size = New System.Drawing.Size(1473, 872)
         Me.Panel4.TabIndex = 7
         '
-        'Guna2ComboBox2
+        'comboAddon2
         '
-        Me.Guna2ComboBox2.BackColor = System.Drawing.Color.Transparent
-        Me.Guna2ComboBox2.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed
-        Me.Guna2ComboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.Guna2ComboBox2.FocusedColor = System.Drawing.Color.Empty
-        Me.Guna2ComboBox2.FocusedState.Parent = Me.Guna2ComboBox2
-        Me.Guna2ComboBox2.Font = New System.Drawing.Font("Segoe UI", 10.0!)
-        Me.Guna2ComboBox2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(68, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(112, Byte), Integer))
-        Me.Guna2ComboBox2.FormattingEnabled = True
-        Me.Guna2ComboBox2.HoverState.Parent = Me.Guna2ComboBox2
-        Me.Guna2ComboBox2.ItemHeight = 30
-        Me.Guna2ComboBox2.ItemsAppearance.Parent = Me.Guna2ComboBox2
-        Me.Guna2ComboBox2.Location = New System.Drawing.Point(1217, 319)
-        Me.Guna2ComboBox2.Name = "Guna2ComboBox2"
-        Me.Guna2ComboBox2.ShadowDecoration.Parent = Me.Guna2ComboBox2
-        Me.Guna2ComboBox2.Size = New System.Drawing.Size(216, 36)
-        Me.Guna2ComboBox2.TabIndex = 106
+        Me.comboAddon2.BackColor = System.Drawing.Color.Transparent
+        Me.comboAddon2.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed
+        Me.comboAddon2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.comboAddon2.FocusedColor = System.Drawing.Color.Empty
+        Me.comboAddon2.FocusedState.Parent = Me.comboAddon2
+        Me.comboAddon2.Font = New System.Drawing.Font("Segoe UI", 10.0!)
+        Me.comboAddon2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(68, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(112, Byte), Integer))
+        Me.comboAddon2.FormattingEnabled = True
+        Me.comboAddon2.HoverState.Parent = Me.comboAddon2
+        Me.comboAddon2.ItemHeight = 30
+        Me.comboAddon2.ItemsAppearance.Parent = Me.comboAddon2
+        Me.comboAddon2.Location = New System.Drawing.Point(1217, 319)
+        Me.comboAddon2.Name = "comboAddon2"
+        Me.comboAddon2.ShadowDecoration.Parent = Me.comboAddon2
+        Me.comboAddon2.Size = New System.Drawing.Size(216, 36)
+        Me.comboAddon2.TabIndex = 106
         '
-        'Guna2ComboBox1
+        'comboAddon1
         '
-        Me.Guna2ComboBox1.BackColor = System.Drawing.Color.Transparent
-        Me.Guna2ComboBox1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed
-        Me.Guna2ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.Guna2ComboBox1.FocusedColor = System.Drawing.Color.Empty
-        Me.Guna2ComboBox1.FocusedState.Parent = Me.Guna2ComboBox1
-        Me.Guna2ComboBox1.Font = New System.Drawing.Font("Segoe UI", 10.0!)
-        Me.Guna2ComboBox1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(68, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(112, Byte), Integer))
-        Me.Guna2ComboBox1.FormattingEnabled = True
-        Me.Guna2ComboBox1.HoverState.Parent = Me.Guna2ComboBox1
-        Me.Guna2ComboBox1.ItemHeight = 30
-        Me.Guna2ComboBox1.ItemsAppearance.Parent = Me.Guna2ComboBox1
-        Me.Guna2ComboBox1.Location = New System.Drawing.Point(971, 318)
-        Me.Guna2ComboBox1.Name = "Guna2ComboBox1"
-        Me.Guna2ComboBox1.ShadowDecoration.Parent = Me.Guna2ComboBox1
-        Me.Guna2ComboBox1.Size = New System.Drawing.Size(216, 36)
-        Me.Guna2ComboBox1.TabIndex = 105
+        Me.comboAddon1.BackColor = System.Drawing.Color.Transparent
+        Me.comboAddon1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed
+        Me.comboAddon1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.comboAddon1.FocusedColor = System.Drawing.Color.Empty
+        Me.comboAddon1.FocusedState.Parent = Me.comboAddon1
+        Me.comboAddon1.Font = New System.Drawing.Font("Segoe UI", 10.0!)
+        Me.comboAddon1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(68, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(112, Byte), Integer))
+        Me.comboAddon1.FormattingEnabled = True
+        Me.comboAddon1.HoverState.Parent = Me.comboAddon1
+        Me.comboAddon1.ItemHeight = 30
+        Me.comboAddon1.ItemsAppearance.Parent = Me.comboAddon1
+        Me.comboAddon1.Location = New System.Drawing.Point(971, 318)
+        Me.comboAddon1.Name = "comboAddon1"
+        Me.comboAddon1.ShadowDecoration.Parent = Me.comboAddon1
+        Me.comboAddon1.Size = New System.Drawing.Size(216, 36)
+        Me.comboAddon1.TabIndex = 105
         '
-        'Label21
+        'pkgLbl
         '
-        Me.Label21.BackColor = System.Drawing.Color.DarkViolet
-        Me.Label21.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label21.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Label21.Location = New System.Drawing.Point(966, 258)
-        Me.Label21.Name = "Label21"
-        Me.Label21.Size = New System.Drawing.Size(221, 35)
-        Me.Label21.TabIndex = 104
+        Me.pkgLbl.BackColor = System.Drawing.Color.DarkViolet
+        Me.pkgLbl.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.pkgLbl.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.pkgLbl.Location = New System.Drawing.Point(966, 258)
+        Me.pkgLbl.Name = "pkgLbl"
+        Me.pkgLbl.Size = New System.Drawing.Size(221, 35)
+        Me.pkgLbl.TabIndex = 104
         '
-        'Guna2Button3
+        'cancelBtn
         '
-        Me.Guna2Button3.Animated = True
-        Me.Guna2Button3.AutoRoundedCorners = True
-        Me.Guna2Button3.BorderRadius = 25
-        Me.Guna2Button3.CheckedState.Parent = Me.Guna2Button3
-        Me.Guna2Button3.CustomImages.Parent = Me.Guna2Button3
-        Me.Guna2Button3.FillColor = System.Drawing.Color.DarkViolet
-        Me.Guna2Button3.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Guna2Button3.ForeColor = System.Drawing.Color.White
-        Me.Guna2Button3.HoverState.Parent = Me.Guna2Button3
-        Me.Guna2Button3.Location = New System.Drawing.Point(926, 777)
-        Me.Guna2Button3.Name = "Guna2Button3"
-        Me.Guna2Button3.ShadowDecoration.Parent = Me.Guna2Button3
-        Me.Guna2Button3.Size = New System.Drawing.Size(237, 52)
-        Me.Guna2Button3.TabIndex = 103
-        Me.Guna2Button3.Text = "CANCEL"
+        Me.cancelBtn.Animated = True
+        Me.cancelBtn.AutoRoundedCorners = True
+        Me.cancelBtn.BorderRadius = 25
+        Me.cancelBtn.CheckedState.Parent = Me.cancelBtn
+        Me.cancelBtn.CustomImages.Parent = Me.cancelBtn
+        Me.cancelBtn.FillColor = System.Drawing.Color.DarkViolet
+        Me.cancelBtn.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cancelBtn.ForeColor = System.Drawing.Color.White
+        Me.cancelBtn.HoverState.Parent = Me.cancelBtn
+        Me.cancelBtn.Location = New System.Drawing.Point(926, 777)
+        Me.cancelBtn.Name = "cancelBtn"
+        Me.cancelBtn.ShadowDecoration.Parent = Me.cancelBtn
+        Me.cancelBtn.Size = New System.Drawing.Size(237, 52)
+        Me.cancelBtn.TabIndex = 103
+        Me.cancelBtn.Text = "CANCEL"
         '
-        'Guna2Button2
+        'bookBtn
         '
-        Me.Guna2Button2.Animated = True
-        Me.Guna2Button2.AutoRoundedCorners = True
-        Me.Guna2Button2.BorderRadius = 25
-        Me.Guna2Button2.CheckedState.Parent = Me.Guna2Button2
-        Me.Guna2Button2.CustomImages.Parent = Me.Guna2Button2
-        Me.Guna2Button2.FillColor = System.Drawing.Color.DarkViolet
-        Me.Guna2Button2.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Guna2Button2.ForeColor = System.Drawing.Color.White
-        Me.Guna2Button2.HoverState.Parent = Me.Guna2Button2
-        Me.Guna2Button2.Location = New System.Drawing.Point(1183, 777)
-        Me.Guna2Button2.Name = "Guna2Button2"
-        Me.Guna2Button2.ShadowDecoration.Parent = Me.Guna2Button2
-        Me.Guna2Button2.Size = New System.Drawing.Size(237, 52)
-        Me.Guna2Button2.TabIndex = 102
-        Me.Guna2Button2.Text = "BOOK NOW"
+        Me.bookBtn.Animated = True
+        Me.bookBtn.AutoRoundedCorners = True
+        Me.bookBtn.BorderRadius = 25
+        Me.bookBtn.CheckedState.Parent = Me.bookBtn
+        Me.bookBtn.CustomImages.Parent = Me.bookBtn
+        Me.bookBtn.FillColor = System.Drawing.Color.DarkViolet
+        Me.bookBtn.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.bookBtn.ForeColor = System.Drawing.Color.White
+        Me.bookBtn.HoverState.Parent = Me.bookBtn
+        Me.bookBtn.Location = New System.Drawing.Point(1183, 777)
+        Me.bookBtn.Name = "bookBtn"
+        Me.bookBtn.ShadowDecoration.Parent = Me.bookBtn
+        Me.bookBtn.Size = New System.Drawing.Size(237, 52)
+        Me.bookBtn.TabIndex = 102
+        Me.bookBtn.Text = "BOOK NOW"
         '
-        'Guna2Button1
+        'confirmBtn
         '
-        Me.Guna2Button1.Animated = True
-        Me.Guna2Button1.AutoRoundedCorners = True
-        Me.Guna2Button1.BorderRadius = 25
-        Me.Guna2Button1.CheckedState.Parent = Me.Guna2Button1
-        Me.Guna2Button1.CustomImages.Parent = Me.Guna2Button1
-        Me.Guna2Button1.FillColor = System.Drawing.Color.DarkViolet
-        Me.Guna2Button1.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Guna2Button1.ForeColor = System.Drawing.Color.White
-        Me.Guna2Button1.HoverState.Parent = Me.Guna2Button1
-        Me.Guna2Button1.Location = New System.Drawing.Point(242, 777)
-        Me.Guna2Button1.Name = "Guna2Button1"
-        Me.Guna2Button1.ShadowDecoration.Parent = Me.Guna2Button1
-        Me.Guna2Button1.Size = New System.Drawing.Size(237, 52)
-        Me.Guna2Button1.TabIndex = 101
-        Me.Guna2Button1.Text = "CONFIRM"
+        Me.confirmBtn.Animated = True
+        Me.confirmBtn.AutoRoundedCorners = True
+        Me.confirmBtn.BorderRadius = 25
+        Me.confirmBtn.CheckedState.Parent = Me.confirmBtn
+        Me.confirmBtn.CustomImages.Parent = Me.confirmBtn
+        Me.confirmBtn.FillColor = System.Drawing.Color.DarkViolet
+        Me.confirmBtn.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.confirmBtn.ForeColor = System.Drawing.Color.White
+        Me.confirmBtn.HoverState.Parent = Me.confirmBtn
+        Me.confirmBtn.Location = New System.Drawing.Point(242, 777)
+        Me.confirmBtn.Name = "confirmBtn"
+        Me.confirmBtn.ShadowDecoration.Parent = Me.confirmBtn
+        Me.confirmBtn.Size = New System.Drawing.Size(237, 52)
+        Me.confirmBtn.TabIndex = 101
+        Me.confirmBtn.Text = "CONFIRM"
         '
         'Label20
         '
@@ -399,198 +399,198 @@ Partial Class BOOKING
         Me.Label20.TabIndex = 100
         Me.Label20.Text = "Booking Receipt"
         '
-        'ListBox1
+        'receiptLst
         '
-        Me.ListBox1.FormattingEnabled = True
-        Me.ListBox1.ItemHeight = 16
-        Me.ListBox1.Location = New System.Drawing.Point(733, 423)
-        Me.ListBox1.Name = "ListBox1"
-        Me.ListBox1.Size = New System.Drawing.Size(687, 324)
-        Me.ListBox1.TabIndex = 99
+        Me.receiptLst.FormattingEnabled = True
+        Me.receiptLst.ItemHeight = 16
+        Me.receiptLst.Location = New System.Drawing.Point(733, 423)
+        Me.receiptLst.Name = "receiptLst"
+        Me.receiptLst.Size = New System.Drawing.Size(687, 324)
+        Me.receiptLst.TabIndex = 99
         '
-        'Guna2DateTimePicker1
+        'dateTxt
         '
-        Me.Guna2DateTimePicker1.BorderRadius = 10
-        Me.Guna2DateTimePicker1.CheckedState.Parent = Me.Guna2DateTimePicker1
-        Me.Guna2DateTimePicker1.FillColor = System.Drawing.Color.White
-        Me.Guna2DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.[Long]
-        Me.Guna2DateTimePicker1.HoverState.Parent = Me.Guna2DateTimePicker1
-        Me.Guna2DateTimePicker1.Location = New System.Drawing.Point(315, 518)
-        Me.Guna2DateTimePicker1.MaxDate = New Date(9998, 12, 31, 0, 0, 0, 0)
-        Me.Guna2DateTimePicker1.MinDate = New Date(1753, 1, 1, 0, 0, 0, 0)
-        Me.Guna2DateTimePicker1.Name = "Guna2DateTimePicker1"
-        Me.Guna2DateTimePicker1.ShadowDecoration.Parent = Me.Guna2DateTimePicker1
-        Me.Guna2DateTimePicker1.Size = New System.Drawing.Size(246, 37)
-        Me.Guna2DateTimePicker1.TabIndex = 98
-        Me.Guna2DateTimePicker1.Value = New Date(2022, 1, 31, 1, 19, 49, 433)
+        Me.dateTxt.BorderRadius = 10
+        Me.dateTxt.CheckedState.Parent = Me.dateTxt
+        Me.dateTxt.FillColor = System.Drawing.Color.White
+        Me.dateTxt.Format = System.Windows.Forms.DateTimePickerFormat.[Long]
+        Me.dateTxt.HoverState.Parent = Me.dateTxt
+        Me.dateTxt.Location = New System.Drawing.Point(315, 518)
+        Me.dateTxt.MaxDate = New Date(9998, 12, 31, 0, 0, 0, 0)
+        Me.dateTxt.MinDate = New Date(1753, 1, 1, 0, 0, 0, 0)
+        Me.dateTxt.Name = "dateTxt"
+        Me.dateTxt.ShadowDecoration.Parent = Me.dateTxt
+        Me.dateTxt.Size = New System.Drawing.Size(246, 37)
+        Me.dateTxt.TabIndex = 98
+        Me.dateTxt.Value = New Date(2022, 1, 31, 1, 19, 49, 433)
         '
-        'Guna2TextBox7
+        'adultTxt
         '
-        Me.Guna2TextBox7.BorderRadius = 10
-        Me.Guna2TextBox7.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.Guna2TextBox7.DefaultText = ""
-        Me.Guna2TextBox7.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
-        Me.Guna2TextBox7.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
-        Me.Guna2TextBox7.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.Guna2TextBox7.DisabledState.Parent = Me.Guna2TextBox7
-        Me.Guna2TextBox7.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.Guna2TextBox7.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Guna2TextBox7.FocusedState.Parent = Me.Guna2TextBox7
-        Me.Guna2TextBox7.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Guna2TextBox7.HoverState.Parent = Me.Guna2TextBox7
-        Me.Guna2TextBox7.Location = New System.Drawing.Point(315, 667)
-        Me.Guna2TextBox7.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
-        Me.Guna2TextBox7.Name = "Guna2TextBox7"
-        Me.Guna2TextBox7.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.Guna2TextBox7.PlaceholderText = ""
-        Me.Guna2TextBox7.SelectedText = ""
-        Me.Guna2TextBox7.ShadowDecoration.Parent = Me.Guna2TextBox7
-        Me.Guna2TextBox7.Size = New System.Drawing.Size(188, 36)
-        Me.Guna2TextBox7.TabIndex = 97
+        Me.adultTxt.BorderRadius = 10
+        Me.adultTxt.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.adultTxt.DefaultText = ""
+        Me.adultTxt.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
+        Me.adultTxt.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
+        Me.adultTxt.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.adultTxt.DisabledState.Parent = Me.adultTxt
+        Me.adultTxt.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.adultTxt.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.adultTxt.FocusedState.Parent = Me.adultTxt
+        Me.adultTxt.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.adultTxt.HoverState.Parent = Me.adultTxt
+        Me.adultTxt.Location = New System.Drawing.Point(315, 667)
+        Me.adultTxt.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.adultTxt.Name = "adultTxt"
+        Me.adultTxt.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.adultTxt.PlaceholderText = ""
+        Me.adultTxt.SelectedText = ""
+        Me.adultTxt.ShadowDecoration.Parent = Me.adultTxt
+        Me.adultTxt.Size = New System.Drawing.Size(188, 36)
+        Me.adultTxt.TabIndex = 97
         '
-        'Guna2TextBox6
+        'childTxt
         '
-        Me.Guna2TextBox6.BorderRadius = 10
-        Me.Guna2TextBox6.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.Guna2TextBox6.DefaultText = ""
-        Me.Guna2TextBox6.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
-        Me.Guna2TextBox6.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
-        Me.Guna2TextBox6.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.Guna2TextBox6.DisabledState.Parent = Me.Guna2TextBox6
-        Me.Guna2TextBox6.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.Guna2TextBox6.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Guna2TextBox6.FocusedState.Parent = Me.Guna2TextBox6
-        Me.Guna2TextBox6.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Guna2TextBox6.HoverState.Parent = Me.Guna2TextBox6
-        Me.Guna2TextBox6.Location = New System.Drawing.Point(315, 711)
-        Me.Guna2TextBox6.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
-        Me.Guna2TextBox6.Name = "Guna2TextBox6"
-        Me.Guna2TextBox6.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.Guna2TextBox6.PlaceholderText = ""
-        Me.Guna2TextBox6.SelectedText = ""
-        Me.Guna2TextBox6.ShadowDecoration.Parent = Me.Guna2TextBox6
-        Me.Guna2TextBox6.Size = New System.Drawing.Size(188, 36)
-        Me.Guna2TextBox6.TabIndex = 96
+        Me.childTxt.BorderRadius = 10
+        Me.childTxt.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.childTxt.DefaultText = ""
+        Me.childTxt.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
+        Me.childTxt.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
+        Me.childTxt.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.childTxt.DisabledState.Parent = Me.childTxt
+        Me.childTxt.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.childTxt.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.childTxt.FocusedState.Parent = Me.childTxt
+        Me.childTxt.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.childTxt.HoverState.Parent = Me.childTxt
+        Me.childTxt.Location = New System.Drawing.Point(315, 711)
+        Me.childTxt.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.childTxt.Name = "childTxt"
+        Me.childTxt.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.childTxt.PlaceholderText = ""
+        Me.childTxt.SelectedText = ""
+        Me.childTxt.ShadowDecoration.Parent = Me.childTxt
+        Me.childTxt.Size = New System.Drawing.Size(188, 36)
+        Me.childTxt.TabIndex = 96
         '
-        'Guna2TextBox5
+        'seniorTxt
         '
-        Me.Guna2TextBox5.BorderRadius = 10
-        Me.Guna2TextBox5.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.Guna2TextBox5.DefaultText = ""
-        Me.Guna2TextBox5.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
-        Me.Guna2TextBox5.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
-        Me.Guna2TextBox5.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.Guna2TextBox5.DisabledState.Parent = Me.Guna2TextBox5
-        Me.Guna2TextBox5.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.Guna2TextBox5.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Guna2TextBox5.FocusedState.Parent = Me.Guna2TextBox5
-        Me.Guna2TextBox5.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Guna2TextBox5.HoverState.Parent = Me.Guna2TextBox5
-        Me.Guna2TextBox5.Location = New System.Drawing.Point(315, 623)
-        Me.Guna2TextBox5.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
-        Me.Guna2TextBox5.Name = "Guna2TextBox5"
-        Me.Guna2TextBox5.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.Guna2TextBox5.PlaceholderText = ""
-        Me.Guna2TextBox5.SelectedText = ""
-        Me.Guna2TextBox5.ShadowDecoration.Parent = Me.Guna2TextBox5
-        Me.Guna2TextBox5.Size = New System.Drawing.Size(188, 36)
-        Me.Guna2TextBox5.TabIndex = 95
+        Me.seniorTxt.BorderRadius = 10
+        Me.seniorTxt.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.seniorTxt.DefaultText = ""
+        Me.seniorTxt.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
+        Me.seniorTxt.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
+        Me.seniorTxt.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.seniorTxt.DisabledState.Parent = Me.seniorTxt
+        Me.seniorTxt.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.seniorTxt.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.seniorTxt.FocusedState.Parent = Me.seniorTxt
+        Me.seniorTxt.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.seniorTxt.HoverState.Parent = Me.seniorTxt
+        Me.seniorTxt.Location = New System.Drawing.Point(315, 623)
+        Me.seniorTxt.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.seniorTxt.Name = "seniorTxt"
+        Me.seniorTxt.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.seniorTxt.PlaceholderText = ""
+        Me.seniorTxt.SelectedText = ""
+        Me.seniorTxt.ShadowDecoration.Parent = Me.seniorTxt
+        Me.seniorTxt.Size = New System.Drawing.Size(188, 36)
+        Me.seniorTxt.TabIndex = 95
         '
-        'Guna2TextBox4
+        'icTxt
         '
-        Me.Guna2TextBox4.BorderRadius = 10
-        Me.Guna2TextBox4.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.Guna2TextBox4.DefaultText = ""
-        Me.Guna2TextBox4.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
-        Me.Guna2TextBox4.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
-        Me.Guna2TextBox4.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.Guna2TextBox4.DisabledState.Parent = Me.Guna2TextBox4
-        Me.Guna2TextBox4.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.Guna2TextBox4.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Guna2TextBox4.FocusedState.Parent = Me.Guna2TextBox4
-        Me.Guna2TextBox4.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Guna2TextBox4.HoverState.Parent = Me.Guna2TextBox4
-        Me.Guna2TextBox4.Location = New System.Drawing.Point(315, 392)
-        Me.Guna2TextBox4.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
-        Me.Guna2TextBox4.Name = "Guna2TextBox4"
-        Me.Guna2TextBox4.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.Guna2TextBox4.PlaceholderText = ""
-        Me.Guna2TextBox4.SelectedText = ""
-        Me.Guna2TextBox4.ShadowDecoration.Parent = Me.Guna2TextBox4
-        Me.Guna2TextBox4.Size = New System.Drawing.Size(353, 36)
-        Me.Guna2TextBox4.TabIndex = 94
+        Me.icTxt.BorderRadius = 10
+        Me.icTxt.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.icTxt.DefaultText = ""
+        Me.icTxt.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
+        Me.icTxt.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
+        Me.icTxt.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.icTxt.DisabledState.Parent = Me.icTxt
+        Me.icTxt.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.icTxt.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.icTxt.FocusedState.Parent = Me.icTxt
+        Me.icTxt.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.icTxt.HoverState.Parent = Me.icTxt
+        Me.icTxt.Location = New System.Drawing.Point(315, 392)
+        Me.icTxt.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.icTxt.Name = "icTxt"
+        Me.icTxt.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.icTxt.PlaceholderText = ""
+        Me.icTxt.SelectedText = ""
+        Me.icTxt.ShadowDecoration.Parent = Me.icTxt
+        Me.icTxt.Size = New System.Drawing.Size(353, 36)
+        Me.icTxt.TabIndex = 94
         '
-        'Guna2TextBox3
+        'phoneTxt
         '
-        Me.Guna2TextBox3.BorderRadius = 10
-        Me.Guna2TextBox3.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.Guna2TextBox3.DefaultText = ""
-        Me.Guna2TextBox3.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
-        Me.Guna2TextBox3.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
-        Me.Guna2TextBox3.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.Guna2TextBox3.DisabledState.Parent = Me.Guna2TextBox3
-        Me.Guna2TextBox3.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.Guna2TextBox3.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Guna2TextBox3.FocusedState.Parent = Me.Guna2TextBox3
-        Me.Guna2TextBox3.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Guna2TextBox3.HoverState.Parent = Me.Guna2TextBox3
-        Me.Guna2TextBox3.Location = New System.Drawing.Point(315, 454)
-        Me.Guna2TextBox3.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
-        Me.Guna2TextBox3.Name = "Guna2TextBox3"
-        Me.Guna2TextBox3.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.Guna2TextBox3.PlaceholderText = ""
-        Me.Guna2TextBox3.SelectedText = ""
-        Me.Guna2TextBox3.ShadowDecoration.Parent = Me.Guna2TextBox3
-        Me.Guna2TextBox3.Size = New System.Drawing.Size(353, 36)
-        Me.Guna2TextBox3.TabIndex = 93
+        Me.phoneTxt.BorderRadius = 10
+        Me.phoneTxt.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.phoneTxt.DefaultText = ""
+        Me.phoneTxt.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
+        Me.phoneTxt.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
+        Me.phoneTxt.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.phoneTxt.DisabledState.Parent = Me.phoneTxt
+        Me.phoneTxt.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.phoneTxt.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.phoneTxt.FocusedState.Parent = Me.phoneTxt
+        Me.phoneTxt.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.phoneTxt.HoverState.Parent = Me.phoneTxt
+        Me.phoneTxt.Location = New System.Drawing.Point(315, 454)
+        Me.phoneTxt.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.phoneTxt.Name = "phoneTxt"
+        Me.phoneTxt.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.phoneTxt.PlaceholderText = ""
+        Me.phoneTxt.SelectedText = ""
+        Me.phoneTxt.ShadowDecoration.Parent = Me.phoneTxt
+        Me.phoneTxt.Size = New System.Drawing.Size(353, 36)
+        Me.phoneTxt.TabIndex = 93
         '
-        'Guna2TextBox2
+        'emailTxt
         '
-        Me.Guna2TextBox2.BorderRadius = 10
-        Me.Guna2TextBox2.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.Guna2TextBox2.DefaultText = ""
-        Me.Guna2TextBox2.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
-        Me.Guna2TextBox2.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
-        Me.Guna2TextBox2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.Guna2TextBox2.DisabledState.Parent = Me.Guna2TextBox2
-        Me.Guna2TextBox2.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.Guna2TextBox2.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Guna2TextBox2.FocusedState.Parent = Me.Guna2TextBox2
-        Me.Guna2TextBox2.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Guna2TextBox2.HoverState.Parent = Me.Guna2TextBox2
-        Me.Guna2TextBox2.Location = New System.Drawing.Point(315, 330)
-        Me.Guna2TextBox2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
-        Me.Guna2TextBox2.Name = "Guna2TextBox2"
-        Me.Guna2TextBox2.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.Guna2TextBox2.PlaceholderText = ""
-        Me.Guna2TextBox2.SelectedText = ""
-        Me.Guna2TextBox2.ShadowDecoration.Parent = Me.Guna2TextBox2
-        Me.Guna2TextBox2.Size = New System.Drawing.Size(353, 36)
-        Me.Guna2TextBox2.TabIndex = 92
+        Me.emailTxt.BorderRadius = 10
+        Me.emailTxt.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.emailTxt.DefaultText = ""
+        Me.emailTxt.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
+        Me.emailTxt.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
+        Me.emailTxt.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.emailTxt.DisabledState.Parent = Me.emailTxt
+        Me.emailTxt.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.emailTxt.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.emailTxt.FocusedState.Parent = Me.emailTxt
+        Me.emailTxt.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.emailTxt.HoverState.Parent = Me.emailTxt
+        Me.emailTxt.Location = New System.Drawing.Point(315, 330)
+        Me.emailTxt.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.emailTxt.Name = "emailTxt"
+        Me.emailTxt.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.emailTxt.PlaceholderText = ""
+        Me.emailTxt.SelectedText = ""
+        Me.emailTxt.ShadowDecoration.Parent = Me.emailTxt
+        Me.emailTxt.Size = New System.Drawing.Size(353, 36)
+        Me.emailTxt.TabIndex = 92
         '
-        'Guna2TextBox1
+        'nameTxt
         '
-        Me.Guna2TextBox1.BorderRadius = 10
-        Me.Guna2TextBox1.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.Guna2TextBox1.DefaultText = ""
-        Me.Guna2TextBox1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
-        Me.Guna2TextBox1.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
-        Me.Guna2TextBox1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.Guna2TextBox1.DisabledState.Parent = Me.Guna2TextBox1
-        Me.Guna2TextBox1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.Guna2TextBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Guna2TextBox1.FocusedState.Parent = Me.Guna2TextBox1
-        Me.Guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Guna2TextBox1.HoverState.Parent = Me.Guna2TextBox1
-        Me.Guna2TextBox1.Location = New System.Drawing.Point(315, 268)
-        Me.Guna2TextBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
-        Me.Guna2TextBox1.Name = "Guna2TextBox1"
-        Me.Guna2TextBox1.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.Guna2TextBox1.PlaceholderText = ""
-        Me.Guna2TextBox1.SelectedText = ""
-        Me.Guna2TextBox1.ShadowDecoration.Parent = Me.Guna2TextBox1
-        Me.Guna2TextBox1.Size = New System.Drawing.Size(353, 36)
-        Me.Guna2TextBox1.TabIndex = 91
+        Me.nameTxt.BorderRadius = 10
+        Me.nameTxt.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.nameTxt.DefaultText = ""
+        Me.nameTxt.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
+        Me.nameTxt.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
+        Me.nameTxt.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.nameTxt.DisabledState.Parent = Me.nameTxt
+        Me.nameTxt.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.nameTxt.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.nameTxt.FocusedState.Parent = Me.nameTxt
+        Me.nameTxt.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.nameTxt.HoverState.Parent = Me.nameTxt
+        Me.nameTxt.Location = New System.Drawing.Point(315, 268)
+        Me.nameTxt.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.nameTxt.Name = "nameTxt"
+        Me.nameTxt.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.nameTxt.PlaceholderText = ""
+        Me.nameTxt.SelectedText = ""
+        Me.nameTxt.ShadowDecoration.Parent = Me.nameTxt
+        Me.nameTxt.Size = New System.Drawing.Size(353, 36)
+        Me.nameTxt.TabIndex = 91
         '
         'Label16
         '
@@ -702,7 +702,7 @@ Partial Class BOOKING
         Me.Label7.TabIndex = 81
         Me.Label7.Text = "Email                       : "
         '
-        'BOOKING
+        'bookForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(120.0!, 120.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi
@@ -713,7 +713,7 @@ Partial Class BOOKING
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Margin = New System.Windows.Forms.Padding(4)
         Me.MaximizeBox = False
-        Me.Name = "BOOKING"
+        Me.Name = "bookForm"
         Me.Text = "IMRAI TOUR"
         Me.Panel3.ResumeLayout(False)
         Me.Panel3.PerformLayout()
@@ -740,14 +740,14 @@ Partial Class BOOKING
     Friend WithEvents Label5 As Label
     Friend WithEvents Label6 As Label
     Friend WithEvents Panel4 As Panel
-    Friend WithEvents Guna2DateTimePicker1 As Guna.UI2.WinForms.Guna2DateTimePicker
-    Friend WithEvents Guna2TextBox7 As Guna.UI2.WinForms.Guna2TextBox
-    Friend WithEvents Guna2TextBox6 As Guna.UI2.WinForms.Guna2TextBox
-    Friend WithEvents Guna2TextBox5 As Guna.UI2.WinForms.Guna2TextBox
-    Friend WithEvents Guna2TextBox4 As Guna.UI2.WinForms.Guna2TextBox
-    Friend WithEvents Guna2TextBox3 As Guna.UI2.WinForms.Guna2TextBox
-    Friend WithEvents Guna2TextBox2 As Guna.UI2.WinForms.Guna2TextBox
-    Friend WithEvents Guna2TextBox1 As Guna.UI2.WinForms.Guna2TextBox
+    Friend WithEvents dateTxt As Guna.UI2.WinForms.Guna2DateTimePicker
+    Friend WithEvents adultTxt As Guna.UI2.WinForms.Guna2TextBox
+    Friend WithEvents childTxt As Guna.UI2.WinForms.Guna2TextBox
+    Friend WithEvents seniorTxt As Guna.UI2.WinForms.Guna2TextBox
+    Friend WithEvents icTxt As Guna.UI2.WinForms.Guna2TextBox
+    Friend WithEvents phoneTxt As Guna.UI2.WinForms.Guna2TextBox
+    Friend WithEvents emailTxt As Guna.UI2.WinForms.Guna2TextBox
+    Friend WithEvents nameTxt As Guna.UI2.WinForms.Guna2TextBox
     Friend WithEvents Label16 As Label
     Friend WithEvents Label15 As Label
     Friend WithEvents Label14 As Label
@@ -758,13 +758,13 @@ Partial Class BOOKING
     Friend WithEvents Label9 As Label
     Friend WithEvents Label8 As Label
     Friend WithEvents Label7 As Label
-    Friend WithEvents Guna2Button1 As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents confirmBtn As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents Label20 As Label
-    Friend WithEvents ListBox1 As ListBox
-    Friend WithEvents Guna2Button3 As Guna.UI2.WinForms.Guna2Button
-    Friend WithEvents Guna2Button2 As Guna.UI2.WinForms.Guna2Button
-    Friend WithEvents Guna2ComboBox2 As Guna.UI2.WinForms.Guna2ComboBox
-    Friend WithEvents Guna2ComboBox1 As Guna.UI2.WinForms.Guna2ComboBox
-    Friend WithEvents Label21 As Label
+    Friend WithEvents receiptLst As ListBox
+    Friend WithEvents cancelBtn As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents bookBtn As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents comboAddon2 As Guna.UI2.WinForms.Guna2ComboBox
+    Friend WithEvents comboAddon1 As Guna.UI2.WinForms.Guna2ComboBox
+    Friend WithEvents pkgLbl As Label
     Friend WithEvents IconButton1 As FontAwesome.Sharp.IconButton
 End Class
