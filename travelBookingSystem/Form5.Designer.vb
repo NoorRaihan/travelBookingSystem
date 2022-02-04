@@ -27,25 +27,25 @@ Partial Class reportForm
         Me.IconButton3 = New FontAwesome.Sharp.IconButton()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.Panel4 = New System.Windows.Forms.Panel()
-        Me.Label39 = New System.Windows.Forms.Label()
-        Me.Label38 = New System.Windows.Forms.Label()
-        Me.Label37 = New System.Windows.Forms.Label()
-        Me.Label36 = New System.Windows.Forms.Label()
-        Me.Label35 = New System.Windows.Forms.Label()
-        Me.Label34 = New System.Windows.Forms.Label()
+        Me.addOnClbl = New System.Windows.Forms.Label()
+        Me.addOnBlbl = New System.Windows.Forms.Label()
+        Me.addOnAlbl = New System.Windows.Forms.Label()
+        Me.pkgClbl = New System.Windows.Forms.Label()
+        Me.pkgBlbl = New System.Windows.Forms.Label()
+        Me.pkgALbl = New System.Windows.Forms.Label()
         Me.Label33 = New System.Windows.Forms.Label()
         Me.Label32 = New System.Windows.Forms.Label()
         Me.Label31 = New System.Windows.Forms.Label()
         Me.Label28 = New System.Windows.Forms.Label()
         Me.Label29 = New System.Windows.Forms.Label()
         Me.Label30 = New System.Windows.Forms.Label()
-        Me.Label27 = New System.Windows.Forms.Label()
-        Me.Label26 = New System.Windows.Forms.Label()
+        Me.lowLbl = New System.Windows.Forms.Label()
+        Me.highLbl = New System.Windows.Forms.Label()
         Me.Label25 = New System.Windows.Forms.Label()
         Me.Label24 = New System.Windows.Forms.Label()
-        Me.Label23 = New System.Windows.Forms.Label()
-        Me.Label22 = New System.Windows.Forms.Label()
-        Me.Label21 = New System.Windows.Forms.Label()
+        Me.countPkgC = New System.Windows.Forms.Label()
+        Me.countPkgB = New System.Windows.Forms.Label()
+        Me.countPkgA = New System.Windows.Forms.Label()
         Me.Label20 = New System.Windows.Forms.Label()
         Me.Label19 = New System.Windows.Forms.Label()
         Me.Label18 = New System.Windows.Forms.Label()
@@ -54,12 +54,12 @@ Partial Class reportForm
         Me.IconPictureBox1 = New FontAwesome.Sharp.IconPictureBox()
         Me.Label17 = New System.Windows.Forms.Label()
         Me.Label16 = New System.Windows.Forms.Label()
-        Me.Label15 = New System.Windows.Forms.Label()
-        Me.Label14 = New System.Windows.Forms.Label()
+        Me.addOnLbl = New System.Windows.Forms.Label()
+        Me.pkgLbl = New System.Windows.Forms.Label()
         Me.Label13 = New System.Windows.Forms.Label()
         Me.Label12 = New System.Windows.Forms.Label()
         Me.Label11 = New System.Windows.Forms.Label()
-        Me.Label10 = New System.Windows.Forms.Label()
+        Me.dueLbl = New System.Windows.Forms.Label()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.Guna2Button1 = New Guna.UI2.WinForms.Guna2Button()
         Me.Label8 = New System.Windows.Forms.Label()
@@ -135,25 +135,25 @@ Partial Class reportForm
         'Panel4
         '
         Me.Panel4.BackColor = System.Drawing.Color.FromArgb(CType(CType(34, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(73, Byte), Integer))
-        Me.Panel4.Controls.Add(Me.Label39)
-        Me.Panel4.Controls.Add(Me.Label38)
-        Me.Panel4.Controls.Add(Me.Label37)
-        Me.Panel4.Controls.Add(Me.Label36)
-        Me.Panel4.Controls.Add(Me.Label35)
-        Me.Panel4.Controls.Add(Me.Label34)
+        Me.Panel4.Controls.Add(Me.addOnClbl)
+        Me.Panel4.Controls.Add(Me.addOnBlbl)
+        Me.Panel4.Controls.Add(Me.addOnAlbl)
+        Me.Panel4.Controls.Add(Me.pkgClbl)
+        Me.Panel4.Controls.Add(Me.pkgBlbl)
+        Me.Panel4.Controls.Add(Me.pkgALbl)
         Me.Panel4.Controls.Add(Me.Label33)
         Me.Panel4.Controls.Add(Me.Label32)
         Me.Panel4.Controls.Add(Me.Label31)
         Me.Panel4.Controls.Add(Me.Label28)
         Me.Panel4.Controls.Add(Me.Label29)
         Me.Panel4.Controls.Add(Me.Label30)
-        Me.Panel4.Controls.Add(Me.Label27)
-        Me.Panel4.Controls.Add(Me.Label26)
+        Me.Panel4.Controls.Add(Me.lowLbl)
+        Me.Panel4.Controls.Add(Me.highLbl)
         Me.Panel4.Controls.Add(Me.Label25)
         Me.Panel4.Controls.Add(Me.Label24)
-        Me.Panel4.Controls.Add(Me.Label23)
-        Me.Panel4.Controls.Add(Me.Label22)
-        Me.Panel4.Controls.Add(Me.Label21)
+        Me.Panel4.Controls.Add(Me.countPkgC)
+        Me.Panel4.Controls.Add(Me.countPkgB)
+        Me.Panel4.Controls.Add(Me.countPkgA)
         Me.Panel4.Controls.Add(Me.Label20)
         Me.Panel4.Controls.Add(Me.Label19)
         Me.Panel4.Controls.Add(Me.Label18)
@@ -162,12 +162,12 @@ Partial Class reportForm
         Me.Panel4.Controls.Add(Me.IconPictureBox1)
         Me.Panel4.Controls.Add(Me.Label17)
         Me.Panel4.Controls.Add(Me.Label16)
-        Me.Panel4.Controls.Add(Me.Label15)
-        Me.Panel4.Controls.Add(Me.Label14)
+        Me.Panel4.Controls.Add(Me.addOnLbl)
+        Me.Panel4.Controls.Add(Me.pkgLbl)
         Me.Panel4.Controls.Add(Me.Label13)
         Me.Panel4.Controls.Add(Me.Label12)
         Me.Panel4.Controls.Add(Me.Label11)
-        Me.Panel4.Controls.Add(Me.Label10)
+        Me.Panel4.Controls.Add(Me.dueLbl)
         Me.Panel4.Controls.Add(Me.Label9)
         Me.Panel4.Controls.Add(Me.Guna2Button1)
         Me.Panel4.Controls.Add(Me.Label8)
@@ -185,83 +185,83 @@ Partial Class reportForm
         Me.Panel4.Size = New System.Drawing.Size(1091, 670)
         Me.Panel4.TabIndex = 5
         '
-        'Label39
+        'addOnClbl
         '
-        Me.Label39.AutoSize = True
-        Me.Label39.BackColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(71, Byte), Integer), CType(CType(135, Byte), Integer))
-        Me.Label39.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label39.ForeColor = System.Drawing.Color.White
-        Me.Label39.Location = New System.Drawing.Point(443, 500)
-        Me.Label39.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label39.Name = "Label39"
-        Me.Label39.Size = New System.Drawing.Size(85, 18)
-        Me.Label39.TabIndex = 49
-        Me.Label39.Text = "RM 850.00"
+        Me.addOnClbl.AutoSize = True
+        Me.addOnClbl.BackColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(71, Byte), Integer), CType(CType(135, Byte), Integer))
+        Me.addOnClbl.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.addOnClbl.ForeColor = System.Drawing.Color.White
+        Me.addOnClbl.Location = New System.Drawing.Point(443, 500)
+        Me.addOnClbl.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.addOnClbl.Name = "addOnClbl"
+        Me.addOnClbl.Size = New System.Drawing.Size(85, 18)
+        Me.addOnClbl.TabIndex = 49
+        Me.addOnClbl.Text = "RM 850.00"
         '
-        'Label38
+        'addOnBlbl
         '
-        Me.Label38.AutoSize = True
-        Me.Label38.BackColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(71, Byte), Integer), CType(CType(135, Byte), Integer))
-        Me.Label38.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label38.ForeColor = System.Drawing.Color.White
-        Me.Label38.Location = New System.Drawing.Point(443, 424)
-        Me.Label38.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label38.Name = "Label38"
-        Me.Label38.Size = New System.Drawing.Size(85, 18)
-        Me.Label38.TabIndex = 48
-        Me.Label38.Text = "RM 850.00"
+        Me.addOnBlbl.AutoSize = True
+        Me.addOnBlbl.BackColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(71, Byte), Integer), CType(CType(135, Byte), Integer))
+        Me.addOnBlbl.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.addOnBlbl.ForeColor = System.Drawing.Color.White
+        Me.addOnBlbl.Location = New System.Drawing.Point(443, 424)
+        Me.addOnBlbl.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.addOnBlbl.Name = "addOnBlbl"
+        Me.addOnBlbl.Size = New System.Drawing.Size(67, 18)
+        Me.addOnBlbl.TabIndex = 48
+        Me.addOnBlbl.Text = "RM 0.00"
         '
-        'Label37
+        'addOnAlbl
         '
-        Me.Label37.AutoSize = True
-        Me.Label37.BackColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(71, Byte), Integer), CType(CType(135, Byte), Integer))
-        Me.Label37.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label37.ForeColor = System.Drawing.Color.White
-        Me.Label37.Location = New System.Drawing.Point(443, 348)
-        Me.Label37.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label37.Name = "Label37"
-        Me.Label37.Size = New System.Drawing.Size(85, 18)
-        Me.Label37.TabIndex = 47
-        Me.Label37.Text = "RM 850.00"
+        Me.addOnAlbl.AutoSize = True
+        Me.addOnAlbl.BackColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(71, Byte), Integer), CType(CType(135, Byte), Integer))
+        Me.addOnAlbl.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.addOnAlbl.ForeColor = System.Drawing.Color.White
+        Me.addOnAlbl.Location = New System.Drawing.Point(443, 348)
+        Me.addOnAlbl.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.addOnAlbl.Name = "addOnAlbl"
+        Me.addOnAlbl.Size = New System.Drawing.Size(67, 18)
+        Me.addOnAlbl.TabIndex = 47
+        Me.addOnAlbl.Text = "RM 0.00"
         '
-        'Label36
+        'pkgClbl
         '
-        Me.Label36.AutoSize = True
-        Me.Label36.BackColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(71, Byte), Integer), CType(CType(135, Byte), Integer))
-        Me.Label36.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label36.ForeColor = System.Drawing.Color.White
-        Me.Label36.Location = New System.Drawing.Point(443, 472)
-        Me.Label36.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label36.Name = "Label36"
-        Me.Label36.Size = New System.Drawing.Size(94, 18)
-        Me.Label36.TabIndex = 46
-        Me.Label36.Text = "RM 9850.00"
+        Me.pkgClbl.AutoSize = True
+        Me.pkgClbl.BackColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(71, Byte), Integer), CType(CType(135, Byte), Integer))
+        Me.pkgClbl.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.pkgClbl.ForeColor = System.Drawing.Color.White
+        Me.pkgClbl.Location = New System.Drawing.Point(443, 472)
+        Me.pkgClbl.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.pkgClbl.Name = "pkgClbl"
+        Me.pkgClbl.Size = New System.Drawing.Size(67, 18)
+        Me.pkgClbl.TabIndex = 46
+        Me.pkgClbl.Text = "RM 0.00"
         '
-        'Label35
+        'pkgBlbl
         '
-        Me.Label35.AutoSize = True
-        Me.Label35.BackColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(71, Byte), Integer), CType(CType(135, Byte), Integer))
-        Me.Label35.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label35.ForeColor = System.Drawing.Color.White
-        Me.Label35.Location = New System.Drawing.Point(442, 396)
-        Me.Label35.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label35.Name = "Label35"
-        Me.Label35.Size = New System.Drawing.Size(94, 18)
-        Me.Label35.TabIndex = 45
-        Me.Label35.Text = "RM 9850.00"
+        Me.pkgBlbl.AutoSize = True
+        Me.pkgBlbl.BackColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(71, Byte), Integer), CType(CType(135, Byte), Integer))
+        Me.pkgBlbl.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.pkgBlbl.ForeColor = System.Drawing.Color.White
+        Me.pkgBlbl.Location = New System.Drawing.Point(442, 396)
+        Me.pkgBlbl.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.pkgBlbl.Name = "pkgBlbl"
+        Me.pkgBlbl.Size = New System.Drawing.Size(67, 18)
+        Me.pkgBlbl.TabIndex = 45
+        Me.pkgBlbl.Text = "RM 0.00"
         '
-        'Label34
+        'pkgALbl
         '
-        Me.Label34.AutoSize = True
-        Me.Label34.BackColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(71, Byte), Integer), CType(CType(135, Byte), Integer))
-        Me.Label34.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label34.ForeColor = System.Drawing.Color.White
-        Me.Label34.Location = New System.Drawing.Point(443, 323)
-        Me.Label34.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label34.Name = "Label34"
-        Me.Label34.Size = New System.Drawing.Size(94, 18)
-        Me.Label34.TabIndex = 44
-        Me.Label34.Text = "RM 9850.00"
+        Me.pkgALbl.AutoSize = True
+        Me.pkgALbl.BackColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(71, Byte), Integer), CType(CType(135, Byte), Integer))
+        Me.pkgALbl.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.pkgALbl.ForeColor = System.Drawing.Color.White
+        Me.pkgALbl.Location = New System.Drawing.Point(443, 323)
+        Me.pkgALbl.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.pkgALbl.Name = "pkgALbl"
+        Me.pkgALbl.Size = New System.Drawing.Size(67, 18)
+        Me.pkgALbl.TabIndex = 44
+        Me.pkgALbl.Text = "RM 0.00"
         '
         'Label33
         '
@@ -313,7 +313,7 @@ Partial Class reportForm
         Me.Label28.Name = "Label28"
         Me.Label28.Size = New System.Drawing.Size(175, 18)
         Me.Label28.TabIndex = 40
-        Me.Label28.Text = "PACKAGE KAYANGAN  :"
+        Me.Label28.Text = "PACKAGE PREMIUM    :"
         '
         'Label29
         '
@@ -324,9 +324,9 @@ Partial Class reportForm
         Me.Label29.Location = New System.Drawing.Point(271, 398)
         Me.Label29.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label29.Name = "Label29"
-        Me.Label29.Size = New System.Drawing.Size(175, 18)
+        Me.Label29.Size = New System.Drawing.Size(176, 18)
         Me.Label29.TabIndex = 39
-        Me.Label29.Text = "PACKAGE PREMIUM    :"
+        Me.Label29.Text = "PACKAGE DELUXE       :"
         '
         'Label30
         '
@@ -337,35 +337,35 @@ Partial Class reportForm
         Me.Label30.Location = New System.Drawing.Point(272, 323)
         Me.Label30.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label30.Name = "Label30"
-        Me.Label30.Size = New System.Drawing.Size(173, 18)
+        Me.Label30.Size = New System.Drawing.Size(176, 18)
         Me.Label30.TabIndex = 38
-        Me.Label30.Text = "PACKAGE MARHAEN   :"
+        Me.Label30.Text = "PACKAGE BASIC           :"
         '
-        'Label27
+        'lowLbl
         '
-        Me.Label27.AutoSize = True
-        Me.Label27.BackColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(71, Byte), Integer), CType(CType(135, Byte), Integer))
-        Me.Label27.Font = New System.Drawing.Font("Arial", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label27.ForeColor = System.Drawing.Color.FromArgb(CType(CType(247, Byte), Integer), CType(CType(241, Byte), Integer), CType(CType(227, Byte), Integer))
-        Me.Label27.Location = New System.Drawing.Point(823, 474)
-        Me.Label27.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label27.Name = "Label27"
-        Me.Label27.Size = New System.Drawing.Size(212, 22)
-        Me.Label27.TabIndex = 37
-        Me.Label27.Text = "PACKAGE KAYANGAN"
+        Me.lowLbl.AutoSize = True
+        Me.lowLbl.BackColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(71, Byte), Integer), CType(CType(135, Byte), Integer))
+        Me.lowLbl.Font = New System.Drawing.Font("Arial", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lowLbl.ForeColor = System.Drawing.Color.FromArgb(CType(CType(247, Byte), Integer), CType(CType(241, Byte), Integer), CType(CType(227, Byte), Integer))
+        Me.lowLbl.Location = New System.Drawing.Point(823, 474)
+        Me.lowLbl.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.lowLbl.Name = "lowLbl"
+        Me.lowLbl.Size = New System.Drawing.Size(212, 22)
+        Me.lowLbl.TabIndex = 37
+        Me.lowLbl.Text = "PACKAGE KAYANGAN"
         '
-        'Label26
+        'highLbl
         '
-        Me.Label26.AutoSize = True
-        Me.Label26.BackColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(71, Byte), Integer), CType(CType(135, Byte), Integer))
-        Me.Label26.Font = New System.Drawing.Font("Arial", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label26.ForeColor = System.Drawing.Color.FromArgb(CType(CType(247, Byte), Integer), CType(CType(241, Byte), Integer), CType(CType(227, Byte), Integer))
-        Me.Label26.Location = New System.Drawing.Point(823, 334)
-        Me.Label26.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label26.Name = "Label26"
-        Me.Label26.Size = New System.Drawing.Size(200, 22)
-        Me.Label26.TabIndex = 36
-        Me.Label26.Text = "PACKAGE PREMIUM"
+        Me.highLbl.AutoSize = True
+        Me.highLbl.BackColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(71, Byte), Integer), CType(CType(135, Byte), Integer))
+        Me.highLbl.Font = New System.Drawing.Font("Arial", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.highLbl.ForeColor = System.Drawing.Color.FromArgb(CType(CType(247, Byte), Integer), CType(CType(241, Byte), Integer), CType(CType(227, Byte), Integer))
+        Me.highLbl.Location = New System.Drawing.Point(823, 334)
+        Me.highLbl.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.highLbl.Name = "highLbl"
+        Me.highLbl.Size = New System.Drawing.Size(200, 22)
+        Me.highLbl.TabIndex = 36
+        Me.highLbl.Text = "PACKAGE PREMIUM"
         '
         'Label25
         '
@@ -393,44 +393,44 @@ Partial Class reportForm
         Me.Label24.TabIndex = 34
         Me.Label24.Text = "HIGHEST DEMAND"
         '
-        'Label23
+        'countPkgC
         '
-        Me.Label23.AutoSize = True
-        Me.Label23.BackColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(71, Byte), Integer), CType(CType(135, Byte), Integer))
-        Me.Label23.Font = New System.Drawing.Font("Arial", 28.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label23.ForeColor = System.Drawing.Color.White
-        Me.Label23.Location = New System.Drawing.Point(598, 492)
-        Me.Label23.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label23.Name = "Label23"
-        Me.Label23.Size = New System.Drawing.Size(62, 45)
-        Me.Label23.TabIndex = 33
-        Me.Label23.Text = "50"
+        Me.countPkgC.AutoSize = True
+        Me.countPkgC.BackColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(71, Byte), Integer), CType(CType(135, Byte), Integer))
+        Me.countPkgC.Font = New System.Drawing.Font("Arial", 28.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.countPkgC.ForeColor = System.Drawing.Color.White
+        Me.countPkgC.Location = New System.Drawing.Point(598, 492)
+        Me.countPkgC.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.countPkgC.Name = "countPkgC"
+        Me.countPkgC.Size = New System.Drawing.Size(62, 45)
+        Me.countPkgC.TabIndex = 33
+        Me.countPkgC.Text = "50"
         '
-        'Label22
+        'countPkgB
         '
-        Me.Label22.AutoSize = True
-        Me.Label22.BackColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(71, Byte), Integer), CType(CType(135, Byte), Integer))
-        Me.Label22.Font = New System.Drawing.Font("Arial", 28.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label22.ForeColor = System.Drawing.Color.White
-        Me.Label22.Location = New System.Drawing.Point(597, 416)
-        Me.Label22.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label22.Name = "Label22"
-        Me.Label22.Size = New System.Drawing.Size(62, 45)
-        Me.Label22.TabIndex = 32
-        Me.Label22.Text = "50"
+        Me.countPkgB.AutoSize = True
+        Me.countPkgB.BackColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(71, Byte), Integer), CType(CType(135, Byte), Integer))
+        Me.countPkgB.Font = New System.Drawing.Font("Arial", 28.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.countPkgB.ForeColor = System.Drawing.Color.White
+        Me.countPkgB.Location = New System.Drawing.Point(597, 416)
+        Me.countPkgB.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.countPkgB.Name = "countPkgB"
+        Me.countPkgB.Size = New System.Drawing.Size(62, 45)
+        Me.countPkgB.TabIndex = 32
+        Me.countPkgB.Text = "50"
         '
-        'Label21
+        'countPkgA
         '
-        Me.Label21.AutoSize = True
-        Me.Label21.BackColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(71, Byte), Integer), CType(CType(135, Byte), Integer))
-        Me.Label21.Font = New System.Drawing.Font("Arial", 28.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label21.ForeColor = System.Drawing.Color.White
-        Me.Label21.Location = New System.Drawing.Point(598, 341)
-        Me.Label21.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label21.Name = "Label21"
-        Me.Label21.Size = New System.Drawing.Size(62, 45)
-        Me.Label21.TabIndex = 31
-        Me.Label21.Text = "50"
+        Me.countPkgA.AutoSize = True
+        Me.countPkgA.BackColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(71, Byte), Integer), CType(CType(135, Byte), Integer))
+        Me.countPkgA.Font = New System.Drawing.Font("Arial", 28.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.countPkgA.ForeColor = System.Drawing.Color.White
+        Me.countPkgA.Location = New System.Drawing.Point(598, 341)
+        Me.countPkgA.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.countPkgA.Name = "countPkgA"
+        Me.countPkgA.Size = New System.Drawing.Size(62, 45)
+        Me.countPkgA.TabIndex = 31
+        Me.countPkgA.Text = "50"
         '
         'Label20
         '
@@ -441,9 +441,9 @@ Partial Class reportForm
         Me.Label20.Location = New System.Drawing.Point(602, 474)
         Me.Label20.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label20.Name = "Label20"
-        Me.Label20.Size = New System.Drawing.Size(156, 17)
+        Me.Label20.Size = New System.Drawing.Size(147, 17)
         Me.Label20.TabIndex = 30
-        Me.Label20.Text = "PACKAGE KAYANGAN"
+        Me.Label20.Text = "PACKAGE PREMIUM"
         '
         'Label19
         '
@@ -454,9 +454,9 @@ Partial Class reportForm
         Me.Label19.Location = New System.Drawing.Point(602, 398)
         Me.Label19.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label19.Name = "Label19"
-        Me.Label19.Size = New System.Drawing.Size(147, 17)
+        Me.Label19.Size = New System.Drawing.Size(139, 17)
         Me.Label19.TabIndex = 29
-        Me.Label19.Text = "PACKAGE PREMIUM"
+        Me.Label19.Text = "PACKAGE DELUXE"
         '
         'Label18
         '
@@ -467,9 +467,9 @@ Partial Class reportForm
         Me.Label18.Location = New System.Drawing.Point(603, 323)
         Me.Label18.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label18.Name = "Label18"
-        Me.Label18.Size = New System.Drawing.Size(151, 17)
+        Me.Label18.Size = New System.Drawing.Size(124, 17)
         Me.Label18.TabIndex = 28
-        Me.Label18.Text = "PACKAGE MARHAEN"
+        Me.Label18.Text = "PACKAGE BASIC"
         '
         'IconPictureBox3
         '
@@ -539,31 +539,31 @@ Partial Class reportForm
         Me.Label16.TabIndex = 23
         Me.Label16.Text = "TOTAL PACKAGES"
         '
-        'Label15
+        'addOnLbl
         '
-        Me.Label15.AutoSize = True
-        Me.Label15.BackColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(71, Byte), Integer), CType(CType(135, Byte), Integer))
-        Me.Label15.Font = New System.Drawing.Font("Arial", 28.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label15.ForeColor = System.Drawing.Color.White
-        Me.Label15.Location = New System.Drawing.Point(829, 164)
-        Me.Label15.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label15.Name = "Label15"
-        Me.Label15.Size = New System.Drawing.Size(228, 45)
-        Me.Label15.TabIndex = 22
-        Me.Label15.Text = "RM 9850.00"
+        Me.addOnLbl.AutoSize = True
+        Me.addOnLbl.BackColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(71, Byte), Integer), CType(CType(135, Byte), Integer))
+        Me.addOnLbl.Font = New System.Drawing.Font("Arial", 28.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.addOnLbl.ForeColor = System.Drawing.Color.White
+        Me.addOnLbl.Location = New System.Drawing.Point(829, 164)
+        Me.addOnLbl.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.addOnLbl.Name = "addOnLbl"
+        Me.addOnLbl.Size = New System.Drawing.Size(95, 45)
+        Me.addOnLbl.TabIndex = 22
+        Me.addOnLbl.Text = "NaN"
         '
-        'Label14
+        'pkgLbl
         '
-        Me.Label14.AutoSize = True
-        Me.Label14.BackColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(71, Byte), Integer), CType(CType(135, Byte), Integer))
-        Me.Label14.Font = New System.Drawing.Font("Arial", 28.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label14.ForeColor = System.Drawing.Color.White
-        Me.Label14.Location = New System.Drawing.Point(544, 164)
-        Me.Label14.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label14.Name = "Label14"
-        Me.Label14.Size = New System.Drawing.Size(228, 45)
-        Me.Label14.TabIndex = 21
-        Me.Label14.Text = "RM 9850.00"
+        Me.pkgLbl.AutoSize = True
+        Me.pkgLbl.BackColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(71, Byte), Integer), CType(CType(135, Byte), Integer))
+        Me.pkgLbl.Font = New System.Drawing.Font("Arial", 28.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.pkgLbl.ForeColor = System.Drawing.Color.White
+        Me.pkgLbl.Location = New System.Drawing.Point(544, 164)
+        Me.pkgLbl.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.pkgLbl.Name = "pkgLbl"
+        Me.pkgLbl.Size = New System.Drawing.Size(95, 45)
+        Me.pkgLbl.TabIndex = 21
+        Me.pkgLbl.Text = "NaN"
         '
         'Label13
         '
@@ -604,18 +604,18 @@ Partial Class reportForm
         Me.Label11.TabIndex = 18
         Me.Label11.Text = "TOTAL DUE"
         '
-        'Label10
+        'dueLbl
         '
-        Me.Label10.AutoSize = True
-        Me.Label10.BackColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(71, Byte), Integer), CType(CType(135, Byte), Integer))
-        Me.Label10.Font = New System.Drawing.Font("Arial", 28.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label10.ForeColor = System.Drawing.Color.FromArgb(CType(CType(217, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Label10.Location = New System.Drawing.Point(272, 164)
-        Me.Label10.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(228, 45)
-        Me.Label10.TabIndex = 17
-        Me.Label10.Text = "RM 9850.00"
+        Me.dueLbl.AutoSize = True
+        Me.dueLbl.BackColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(71, Byte), Integer), CType(CType(135, Byte), Integer))
+        Me.dueLbl.Font = New System.Drawing.Font("Arial", 28.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.dueLbl.ForeColor = System.Drawing.Color.FromArgb(CType(CType(217, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.dueLbl.Location = New System.Drawing.Point(272, 164)
+        Me.dueLbl.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.dueLbl.Name = "dueLbl"
+        Me.dueLbl.Size = New System.Drawing.Size(95, 45)
+        Me.dueLbl.TabIndex = 17
+        Me.dueLbl.Text = "NaN"
         '
         'Label9
         '
@@ -884,12 +884,12 @@ Partial Class reportForm
     Friend WithEvents Label2 As Label
     Friend WithEvents Label17 As Label
     Friend WithEvents Label16 As Label
-    Friend WithEvents Label15 As Label
-    Friend WithEvents Label14 As Label
+    Friend WithEvents addOnLbl As Label
+    Friend WithEvents pkgLbl As Label
     Friend WithEvents Label13 As Label
     Friend WithEvents Label12 As Label
     Friend WithEvents Label11 As Label
-    Friend WithEvents Label10 As Label
+    Friend WithEvents dueLbl As Label
     Friend WithEvents Label9 As Label
     Friend WithEvents Guna2Button1 As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents Label8 As Label
@@ -903,19 +903,19 @@ Partial Class reportForm
     Friend WithEvents Label28 As Label
     Friend WithEvents Label29 As Label
     Friend WithEvents Label30 As Label
-    Friend WithEvents Label27 As Label
-    Friend WithEvents Label26 As Label
+    Friend WithEvents lowLbl As Label
+    Friend WithEvents highLbl As Label
     Friend WithEvents Label25 As Label
     Friend WithEvents Label24 As Label
-    Friend WithEvents Label23 As Label
-    Friend WithEvents Label22 As Label
-    Friend WithEvents Label21 As Label
-    Friend WithEvents Label39 As Label
-    Friend WithEvents Label38 As Label
-    Friend WithEvents Label37 As Label
-    Friend WithEvents Label36 As Label
-    Friend WithEvents Label35 As Label
-    Friend WithEvents Label34 As Label
+    Friend WithEvents countPkgC As Label
+    Friend WithEvents countPkgB As Label
+    Friend WithEvents countPkgA As Label
+    Friend WithEvents addOnClbl As Label
+    Friend WithEvents addOnBlbl As Label
+    Friend WithEvents addOnAlbl As Label
+    Friend WithEvents pkgClbl As Label
+    Friend WithEvents pkgBlbl As Label
+    Friend WithEvents pkgALbl As Label
     Friend WithEvents Label33 As Label
     Friend WithEvents Label32 As Label
     Friend WithEvents Label31 As Label
