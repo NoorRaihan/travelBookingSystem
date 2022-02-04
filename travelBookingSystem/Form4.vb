@@ -5,7 +5,7 @@
     Public adultPrice As Decimal
     Public childPrice As Decimal
     Private Sub packageForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Size = New Size(1140, 840)
+        'Size = New Size(1140, 840)
         confirmBtn.Visible = False
         cancelBtn.Visible = False
         seniorPrice = 0.00

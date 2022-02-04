@@ -18,6 +18,11 @@ Public Class bookForm
         packageForm.Show()
     End Sub
 
+    Private Sub backtest_Click(sender As Object, e As EventArgs)
+        Me.Hide()
+        packageForm.Show()
+    End Sub
+
     Dim addOn1, addOn2, displayReceipt As String
 
     Private Sub cancelBtn_Click(sender As Object, e As EventArgs) Handles cancelBtn.Click
