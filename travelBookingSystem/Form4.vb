@@ -62,7 +62,12 @@
     End Sub
 
     Private Sub confirmBtn_Click(sender As Object, e As EventArgs) Handles confirmBtn.Click
+        bookForm.pkgLbl.Text = packageName 
         Me.Hide()
         bookForm.Show()
+    End Sub
+
+    Private Sub Label1_Click(sender As Object, e As EventArgs) Handles Label1.Click
+
     End Sub
 End Class

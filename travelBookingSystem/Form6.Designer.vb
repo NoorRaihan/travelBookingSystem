@@ -25,7 +25,7 @@ Partial Class bookForm
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(bookForm))
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Panel3 = New System.Windows.Forms.Panel()
-        Me.IconButton1 = New FontAwesome.Sharp.IconButton()
+        Me.backBtn = New FontAwesome.Sharp.IconButton()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Panel2 = New System.Windows.Forms.Panel()
@@ -38,6 +38,7 @@ Partial Class bookForm
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Panel4 = New System.Windows.Forms.Panel()
+        Me.receiptTxt = New Guna.UI2.WinForms.Guna2TextBox()
         Me.comboAddon2 = New Guna.UI2.WinForms.Guna2ComboBox()
         Me.comboAddon1 = New Guna.UI2.WinForms.Guna2ComboBox()
         Me.pkgLbl = New System.Windows.Forms.Label()
@@ -45,7 +46,6 @@ Partial Class bookForm
         Me.bookBtn = New Guna.UI2.WinForms.Guna2Button()
         Me.confirmBtn = New Guna.UI2.WinForms.Guna2Button()
         Me.Label20 = New System.Windows.Forms.Label()
-        Me.receiptLst = New System.Windows.Forms.ListBox()
         Me.dateTxt = New Guna.UI2.WinForms.Guna2DateTimePicker()
         Me.adultTxt = New Guna.UI2.WinForms.Guna2TextBox()
         Me.childTxt = New Guna.UI2.WinForms.Guna2TextBox()
@@ -86,7 +86,7 @@ Partial Class bookForm
         'Panel3
         '
         Me.Panel3.BackColor = System.Drawing.Color.FromArgb(CType(CType(26, Byte), Integer), CType(CType(25, Byte), Integer), CType(CType(62, Byte), Integer))
-        Me.Panel3.Controls.Add(Me.IconButton1)
+        Me.Panel3.Controls.Add(Me.backBtn)
         Me.Panel3.Controls.Add(Me.Panel1)
         Me.Panel3.Controls.Add(Me.Label1)
         Me.Panel3.Dock = System.Windows.Forms.DockStyle.Top
@@ -96,19 +96,19 @@ Partial Class bookForm
         Me.Panel3.Size = New System.Drawing.Size(1473, 92)
         Me.Panel3.TabIndex = 6
         '
-        'IconButton1
+        'backBtn
         '
-        Me.IconButton1.FlatAppearance.BorderSize = 0
-        Me.IconButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.IconButton1.ForeColor = System.Drawing.Color.White
-        Me.IconButton1.IconChar = FontAwesome.Sharp.IconChar.ChevronCircleLeft
-        Me.IconButton1.IconColor = System.Drawing.Color.White
-        Me.IconButton1.IconFont = FontAwesome.Sharp.IconFont.[Auto]
-        Me.IconButton1.Location = New System.Drawing.Point(1386, 22)
-        Me.IconButton1.Name = "IconButton1"
-        Me.IconButton1.Size = New System.Drawing.Size(75, 64)
-        Me.IconButton1.TabIndex = 2
-        Me.IconButton1.UseVisualStyleBackColor = True
+        Me.backBtn.FlatAppearance.BorderSize = 0
+        Me.backBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.backBtn.ForeColor = System.Drawing.Color.White
+        Me.backBtn.IconChar = FontAwesome.Sharp.IconChar.ChevronCircleLeft
+        Me.backBtn.IconColor = System.Drawing.Color.White
+        Me.backBtn.IconFont = FontAwesome.Sharp.IconFont.[Auto]
+        Me.backBtn.Location = New System.Drawing.Point(1386, 22)
+        Me.backBtn.Name = "backBtn"
+        Me.backBtn.Size = New System.Drawing.Size(75, 64)
+        Me.backBtn.TabIndex = 2
+        Me.backBtn.UseVisualStyleBackColor = True
         '
         'Panel1
         '
@@ -249,6 +249,7 @@ Partial Class bookForm
         'Panel4
         '
         Me.Panel4.BackColor = System.Drawing.Color.FromArgb(CType(CType(34, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(73, Byte), Integer))
+        Me.Panel4.Controls.Add(Me.receiptTxt)
         Me.Panel4.Controls.Add(Me.comboAddon2)
         Me.Panel4.Controls.Add(Me.comboAddon1)
         Me.Panel4.Controls.Add(Me.pkgLbl)
@@ -256,7 +257,6 @@ Partial Class bookForm
         Me.Panel4.Controls.Add(Me.bookBtn)
         Me.Panel4.Controls.Add(Me.confirmBtn)
         Me.Panel4.Controls.Add(Me.Label20)
-        Me.Panel4.Controls.Add(Me.receiptLst)
         Me.Panel4.Controls.Add(Me.dateTxt)
         Me.Panel4.Controls.Add(Me.adultTxt)
         Me.Panel4.Controls.Add(Me.childTxt)
@@ -285,6 +285,35 @@ Partial Class bookForm
         Me.Panel4.Name = "Panel4"
         Me.Panel4.Size = New System.Drawing.Size(1473, 872)
         Me.Panel4.TabIndex = 7
+        '
+        'receiptTxt
+        '
+        Me.receiptTxt.BorderRadius = 10
+        Me.receiptTxt.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.receiptTxt.DefaultText = ""
+        Me.receiptTxt.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
+        Me.receiptTxt.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
+        Me.receiptTxt.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.receiptTxt.DisabledState.Parent = Me.receiptTxt
+        Me.receiptTxt.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.receiptTxt.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.receiptTxt.FocusedState.Parent = Me.receiptTxt
+        Me.receiptTxt.Font = New System.Drawing.Font("Segoe UI", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.receiptTxt.ForeColor = System.Drawing.Color.Black
+        Me.receiptTxt.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.receiptTxt.HoverState.Parent = Me.receiptTxt
+        Me.receiptTxt.Location = New System.Drawing.Point(729, 416)
+        Me.receiptTxt.Margin = New System.Windows.Forms.Padding(5, 6, 5, 6)
+        Me.receiptTxt.Multiline = True
+        Me.receiptTxt.Name = "receiptTxt"
+        Me.receiptTxt.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.receiptTxt.PlaceholderText = ""
+        Me.receiptTxt.ReadOnly = True
+        Me.receiptTxt.SelectedText = ""
+        Me.receiptTxt.ShadowDecoration.Parent = Me.receiptTxt
+        Me.receiptTxt.Size = New System.Drawing.Size(704, 352)
+        Me.receiptTxt.TabIndex = 107
+        Me.receiptTxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'comboAddon2
         '
@@ -398,15 +427,6 @@ Partial Class bookForm
         Me.Label20.Size = New System.Drawing.Size(206, 29)
         Me.Label20.TabIndex = 100
         Me.Label20.Text = "Booking Receipt"
-        '
-        'receiptLst
-        '
-        Me.receiptLst.FormattingEnabled = True
-        Me.receiptLst.ItemHeight = 16
-        Me.receiptLst.Location = New System.Drawing.Point(733, 423)
-        Me.receiptLst.Name = "receiptLst"
-        Me.receiptLst.Size = New System.Drawing.Size(687, 324)
-        Me.receiptLst.TabIndex = 99
         '
         'dateTxt
         '
@@ -760,11 +780,11 @@ Partial Class bookForm
     Friend WithEvents Label7 As Label
     Friend WithEvents confirmBtn As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents Label20 As Label
-    Friend WithEvents receiptLst As ListBox
     Friend WithEvents cancelBtn As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents bookBtn As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents comboAddon2 As Guna.UI2.WinForms.Guna2ComboBox
     Friend WithEvents comboAddon1 As Guna.UI2.WinForms.Guna2ComboBox
     Friend WithEvents pkgLbl As Label
-    Friend WithEvents IconButton1 As FontAwesome.Sharp.IconButton
+    Friend WithEvents backBtn As FontAwesome.Sharp.IconButton
+    Friend WithEvents receiptTxt As Guna.UI2.WinForms.Guna2TextBox
 End Class

@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
-Partial Class SUCCESS
+Partial Class thankForm
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -22,7 +22,7 @@ Partial Class SUCCESS
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(SUCCESS))
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(thankForm))
         Me.CheckBox17 = New System.Windows.Forms.CheckBox()
         Me.CheckBox18 = New System.Windows.Forms.CheckBox()
         Me.priceLbl = New System.Windows.Forms.Label()
@@ -562,7 +562,7 @@ Partial Class SUCCESS
         Me.Label17.TabIndex = 69
         Me.Label17.Text = "Choose Your Package"
         '
-        'SUCCESS
+        'thankForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -570,7 +570,7 @@ Partial Class SUCCESS
         Me.Controls.Add(Me.Panel3)
         Me.Controls.Add(Me.Panel4)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
-        Me.Name = "SUCCESS"
+        Me.Name = "thankForm"
         Me.Text = "IMRAI TOUR"
         Me.Panel3.ResumeLayout(False)
         Me.Panel3.PerformLayout()

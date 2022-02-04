@@ -1,3 +1,3 @@
-﻿Public Class SUCCESS
+﻿Public Class thankForm
 
 End Class
