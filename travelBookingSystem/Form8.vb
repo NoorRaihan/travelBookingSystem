@@ -4,9 +4,9 @@ Public Class signForm
     Dim con As New OleDbConnection
 
     Private Sub signBtn_Click(sender As Object, e As EventArgs) Handles signBtn.Click
-        con.ConnectionString = "Provider = Microsoft.ACE.OLEDB.12.0;Data source = \Staff.accdb"
+
         con.Open()
-        Dim logincmd As OleDbCommand = New OleDbCommand("Select * from LOGIN where [USERNAME] = '" & nameTxt.Text & "' and [PASSWORD] ='" & passTxt.Text & "'", con)
+        Dim logincmd As OleDbCommand = New OleDbCommand("Select * from Login where [USERNAME] = '" & nameTxt.Text & "' and [PASSWORD] ='" & passTxt.Text & "'", con)
         Dim loginrd As OleDbDataReader = logincmd.ExecuteReader
         If (loginrd.read() = True) Then
             Me.Hide()
