@@ -23,6 +23,11 @@ Public Class bookForm
         packageForm.Show()
     End Sub
 
+    Private Sub Label2_Click(sender As Object, e As EventArgs) Handles Label2.Click
+        Me.Hide()
+        packageForm.Show()
+    End Sub
+
     Dim addOn1, addOn2, displayReceipt As String
 
     Private Sub cancelBtn_Click(sender As Object, e As EventArgs) Handles cancelBtn.Click
@@ -33,7 +38,7 @@ Public Class bookForm
     Private Sub bookBtn_Click(sender As Object, e As EventArgs) Handles bookBtn.Click
         Try
             writeFile = File.AppendText("booking.txt")
-            writeFile.WriteLine(pkgLbl.Text & ";" & countSenior & ";" & countAdult & ";" & countChild & ";" & totalPeople & ";" & totalAddOn & ";" & totalAll)
+            writeFile.WriteLine("Package " & pkgLbl.Text & ";" & countSenior & ";" & countAdult & ";" & countChild & ";" & totalPeople & ";" & totalAddOn & ";" & totalAll)
             writeFile.Close()
 
             writeFile = File.AppendText("customer.txt")

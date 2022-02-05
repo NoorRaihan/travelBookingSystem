@@ -4,7 +4,7 @@ Public Class signForm
     Dim con As New OleDbConnection
 
     Private Sub signBtn_Click(sender As Object, e As EventArgs) Handles signBtn.Click
-
+        con.ConnectionString = "Provider = Microsoft.ACE.OLEDB.12.0;Data source = " & Application.StartupPath & "\Login.accdb"
         con.Open()
         Dim logincmd As OleDbCommand = New OleDbCommand("Select * from Login where [USERNAME] = '" & nameTxt.Text & "' and [PASSWORD] ='" & passTxt.Text & "'", con)
         Dim loginrd As OleDbDataReader = logincmd.ExecuteReader
@@ -32,5 +32,9 @@ Public Class signForm
     Private Sub startBtn_Click(sender As Object, e As EventArgs) Handles startBtn.Click
         Me.Hide()
         packageForm.Show()
+    End Sub
+
+    Private Sub signForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
     End Sub
 End Class

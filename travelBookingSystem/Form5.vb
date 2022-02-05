@@ -4,7 +4,7 @@ Public Class reportForm
 
     Dim readFile As StreamReader
 
-    Private Sub IconButton3_Click(sender As Object, e As EventArgs) Handles IconButton3.Click
+    Private Sub IconButton3_Click(sender As Object, e As EventArgs)
         End
     End Sub
 
@@ -112,5 +112,20 @@ Public Class reportForm
     Private Sub Guna2Button1_Click(sender As Object, e As EventArgs) Handles Guna2Button1.Click
         processCalc()
 
+    End Sub
+
+    Private Sub Guna2Button3_Click(sender As Object, e As EventArgs) Handles Guna2Button3.Click
+        Me.Hide()
+        staffForm.Show()
+    End Sub
+
+    Private Sub Guna2Button5_Click(sender As Object, e As EventArgs) Handles logoutBtn.Click
+        Me.Hide()
+        signForm.Show()
+    End Sub
+
+    Private Sub Guna2Button2_Click(sender As Object, e As EventArgs) Handles Guna2Button2.Click
+        Me.Hide()
+        dashForm.Show()
     End Sub
 End Class

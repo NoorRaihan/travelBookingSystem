@@ -63,8 +63,9 @@ Partial Class signForm
         Me.Panel4.Controls.Add(Me.PictureBox1)
         Me.Panel4.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel4.Location = New System.Drawing.Point(0, 0)
+        Me.Panel4.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Panel4.Name = "Panel4"
-        Me.Panel4.Size = New System.Drawing.Size(503, 671)
+        Me.Panel4.Size = New System.Drawing.Size(671, 826)
         Me.Panel4.TabIndex = 3
         '
         'Label7
@@ -72,10 +73,9 @@ Partial Class signForm
         Me.Label7.Font = New System.Drawing.Font("Lucida Handwriting", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label7.ForeColor = System.Drawing.Color.White
         Me.Label7.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.Label7.Location = New System.Drawing.Point(10, 300)
-        Me.Label7.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label7.Location = New System.Drawing.Point(13, 369)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(484, 32)
+        Me.Label7.Size = New System.Drawing.Size(645, 39)
         Me.Label7.TabIndex = 113
         Me.Label7.Text = "VIETNAM" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
         Me.Label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -89,10 +89,10 @@ Partial Class signForm
         Me.showChk.CheckedState.FillColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.showChk.FlatAppearance.BorderColor = System.Drawing.Color.White
         Me.showChk.ForeColor = System.Drawing.Color.White
-        Me.showChk.Location = New System.Drawing.Point(226, 567)
-        Me.showChk.Margin = New System.Windows.Forms.Padding(2)
+        Me.showChk.Location = New System.Drawing.Point(301, 698)
+        Me.showChk.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.showChk.Name = "showChk"
-        Me.showChk.Size = New System.Drawing.Size(102, 17)
+        Me.showChk.Size = New System.Drawing.Size(129, 21)
         Me.showChk.TabIndex = 112
         Me.showChk.Text = "Show Password"
         Me.showChk.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(125, Byte), Integer), CType(CType(137, Byte), Integer), CType(CType(149, Byte), Integer))
@@ -105,18 +105,18 @@ Partial Class signForm
         '
         Me.signBtn.Animated = True
         Me.signBtn.AutoRoundedCorners = True
-        Me.signBtn.BorderRadius = 20
+        Me.signBtn.BorderRadius = 25
         Me.signBtn.CheckedState.Parent = Me.signBtn
         Me.signBtn.CustomImages.Parent = Me.signBtn
         Me.signBtn.FillColor = System.Drawing.Color.DarkViolet
         Me.signBtn.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.signBtn.ForeColor = System.Drawing.Color.White
         Me.signBtn.HoverState.Parent = Me.signBtn
-        Me.signBtn.Location = New System.Drawing.Point(165, 609)
-        Me.signBtn.Margin = New System.Windows.Forms.Padding(2)
+        Me.signBtn.Location = New System.Drawing.Point(220, 750)
+        Me.signBtn.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.signBtn.Name = "signBtn"
         Me.signBtn.ShadowDecoration.Parent = Me.signBtn
-        Me.signBtn.Size = New System.Drawing.Size(178, 42)
+        Me.signBtn.Size = New System.Drawing.Size(237, 52)
         Me.signBtn.TabIndex = 111
         Me.signBtn.Text = "SIGN IN"
         '
@@ -134,13 +134,14 @@ Partial Class signForm
         Me.passTxt.FocusedState.Parent = Me.passTxt
         Me.passTxt.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.passTxt.HoverState.Parent = Me.passTxt
-        Me.passTxt.Location = New System.Drawing.Point(226, 532)
+        Me.passTxt.Location = New System.Drawing.Point(301, 655)
+        Me.passTxt.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
         Me.passTxt.Name = "passTxt"
         Me.passTxt.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.passTxt.PlaceholderText = ""
         Me.passTxt.SelectedText = ""
         Me.passTxt.ShadowDecoration.Parent = Me.passTxt
-        Me.passTxt.Size = New System.Drawing.Size(176, 29)
+        Me.passTxt.Size = New System.Drawing.Size(235, 36)
         Me.passTxt.TabIndex = 110
         '
         'nameTxt
@@ -157,23 +158,23 @@ Partial Class signForm
         Me.nameTxt.FocusedState.Parent = Me.nameTxt
         Me.nameTxt.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.nameTxt.HoverState.Parent = Me.nameTxt
-        Me.nameTxt.Location = New System.Drawing.Point(226, 479)
+        Me.nameTxt.Location = New System.Drawing.Point(301, 590)
+        Me.nameTxt.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
         Me.nameTxt.Name = "nameTxt"
         Me.nameTxt.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.nameTxt.PlaceholderText = ""
         Me.nameTxt.SelectedText = ""
         Me.nameTxt.ShadowDecoration.Parent = Me.nameTxt
-        Me.nameTxt.Size = New System.Drawing.Size(176, 29)
+        Me.nameTxt.Size = New System.Drawing.Size(235, 36)
         Me.nameTxt.TabIndex = 109
         '
         'Label6
         '
         Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label6.ForeColor = System.Drawing.Color.White
-        Me.Label6.Location = New System.Drawing.Point(97, 540)
-        Me.Label6.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label6.Location = New System.Drawing.Point(129, 665)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(123, 22)
+        Me.Label6.Size = New System.Drawing.Size(164, 27)
         Me.Label6.TabIndex = 108
         Me.Label6.Text = "Password   : "
         Me.Label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -182,10 +183,9 @@ Partial Class signForm
         '
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.White
-        Me.Label2.Location = New System.Drawing.Point(94, 487)
-        Me.Label2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label2.Location = New System.Drawing.Point(125, 599)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(127, 22)
+        Me.Label2.Size = New System.Drawing.Size(169, 27)
         Me.Label2.TabIndex = 107
         Me.Label2.Text = "Username   : "
         Me.Label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -194,10 +194,9 @@ Partial Class signForm
         '
         Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.ForeColor = System.Drawing.Color.White
-        Me.Label5.Location = New System.Drawing.Point(9, 413)
-        Me.Label5.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label5.Location = New System.Drawing.Point(12, 508)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(218, 22)
+        Me.Label5.Size = New System.Drawing.Size(291, 27)
         Me.Label5.TabIndex = 106
         Me.Label5.Text = "==================="
         Me.Label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -206,10 +205,9 @@ Partial Class signForm
         '
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.ForeColor = System.Drawing.Color.White
-        Me.Label4.Location = New System.Drawing.Point(269, 413)
-        Me.Label4.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label4.Location = New System.Drawing.Point(359, 508)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(218, 22)
+        Me.Label4.Size = New System.Drawing.Size(291, 27)
         Me.Label4.TabIndex = 105
         Me.Label4.Text = "==================="
         Me.Label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -218,10 +216,9 @@ Partial Class signForm
         '
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.Color.White
-        Me.Label3.Location = New System.Drawing.Point(200, 413)
-        Me.Label3.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label3.Location = New System.Drawing.Point(267, 508)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(101, 22)
+        Me.Label3.Size = New System.Drawing.Size(135, 27)
         Me.Label3.TabIndex = 104
         Me.Label3.Text = "staff"
         Me.Label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -230,18 +227,18 @@ Partial Class signForm
         '
         Me.startBtn.Animated = True
         Me.startBtn.AutoRoundedCorners = True
-        Me.startBtn.BorderRadius = 20
+        Me.startBtn.BorderRadius = 25
         Me.startBtn.CheckedState.Parent = Me.startBtn
         Me.startBtn.CustomImages.Parent = Me.startBtn
         Me.startBtn.FillColor = System.Drawing.Color.DarkViolet
         Me.startBtn.Font = New System.Drawing.Font("Segoe UI", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.startBtn.ForeColor = System.Drawing.Color.White
         Me.startBtn.HoverState.Parent = Me.startBtn
-        Me.startBtn.Location = New System.Drawing.Point(100, 348)
-        Me.startBtn.Margin = New System.Windows.Forms.Padding(2)
+        Me.startBtn.Location = New System.Drawing.Point(133, 428)
+        Me.startBtn.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.startBtn.Name = "startBtn"
         Me.startBtn.ShadowDecoration.Parent = Me.startBtn
-        Me.startBtn.Size = New System.Drawing.Size(301, 42)
+        Me.startBtn.Size = New System.Drawing.Size(401, 52)
         Me.startBtn.TabIndex = 102
         Me.startBtn.Text = "LETS TRAVEL -->"
         '
@@ -251,8 +248,9 @@ Partial Class signForm
         Me.Panel3.Controls.Add(Me.IconButton1)
         Me.Panel3.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel3.Location = New System.Drawing.Point(0, 0)
+        Me.Panel3.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(503, 48)
+        Me.Panel3.Size = New System.Drawing.Size(671, 59)
         Me.Panel3.TabIndex = 2
         '
         'IconButton1
@@ -262,10 +260,10 @@ Partial Class signForm
         Me.IconButton1.IconChar = FontAwesome.Sharp.IconChar.DoorOpen
         Me.IconButton1.IconColor = System.Drawing.Color.White
         Me.IconButton1.IconFont = FontAwesome.Sharp.IconFont.[Auto]
-        Me.IconButton1.Location = New System.Drawing.Point(438, 2)
-        Me.IconButton1.Margin = New System.Windows.Forms.Padding(2)
+        Me.IconButton1.Location = New System.Drawing.Point(584, 2)
+        Me.IconButton1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.IconButton1.Name = "IconButton1"
-        Me.IconButton1.Size = New System.Drawing.Size(56, 46)
+        Me.IconButton1.Size = New System.Drawing.Size(75, 57)
         Me.IconButton1.TabIndex = 0
         Me.IconButton1.UseVisualStyleBackColor = True
         '
@@ -274,10 +272,9 @@ Partial Class signForm
         Me.Label1.Font = New System.Drawing.Font("Lucida Handwriting", 16.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.White
         Me.Label1.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.Label1.Location = New System.Drawing.Point(8, 267)
-        Me.Label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label1.Location = New System.Drawing.Point(11, 329)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(484, 32)
+        Me.Label1.Size = New System.Drawing.Size(645, 39)
         Me.Label1.TabIndex = 1
         Me.Label1.Text = "WELCOME TO HO CHI MINH" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
         Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -285,23 +282,23 @@ Partial Class signForm
         'PictureBox1
         '
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(157, 57)
-        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(2)
+        Me.PictureBox1.Location = New System.Drawing.Point(209, 70)
+        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(193, 184)
+        Me.PictureBox1.Size = New System.Drawing.Size(257, 226)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox1.TabIndex = 0
         Me.PictureBox1.TabStop = False
         '
         'signForm
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(503, 671)
+        Me.ClientSize = New System.Drawing.Size(671, 826)
         Me.Controls.Add(Me.Panel4)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
-        Me.Margin = New System.Windows.Forms.Padding(2)
+        Me.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.MaximizeBox = False
         Me.Name = "signForm"
         Me.Text = "IMRAI TOUR"

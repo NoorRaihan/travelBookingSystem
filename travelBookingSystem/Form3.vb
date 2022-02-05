@@ -3,7 +3,7 @@
 
     End Sub
 
-    Private Sub Guna2Button4_Click(sender As Object, e As EventArgs) Handles Guna2Button4.Click
+    Private Sub Guna2Button4_Click(sender As Object, e As EventArgs) Handles logoutBtn.Click
         Me.Hide()
         signForm.Show()
     End Sub
