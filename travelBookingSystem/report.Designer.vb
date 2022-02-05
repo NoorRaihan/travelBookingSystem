@@ -24,6 +24,7 @@ Partial Class reportForm
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(reportForm))
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.logoutBtn = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2Button6 = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2Button3 = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2Button2 = New Guna.UI2.WinForms.Guna2Button()
@@ -76,7 +77,6 @@ Partial Class reportForm
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.Panel3 = New System.Windows.Forms.Panel()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.logoutBtn = New Guna.UI2.WinForms.Guna2Button()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -103,6 +103,30 @@ Partial Class reportForm
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(309, 825)
         Me.Panel1.TabIndex = 3
+        '
+        'logoutBtn
+        '
+        Me.logoutBtn.CheckedState.BorderColor = System.Drawing.Color.Black
+        Me.logoutBtn.CheckedState.FillColor = System.Drawing.Color.FromArgb(CType(CType(47, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(94, Byte), Integer))
+        Me.logoutBtn.CheckedState.Parent = Me.logoutBtn
+        Me.logoutBtn.CustomImages.Parent = Me.logoutBtn
+        Me.logoutBtn.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.logoutBtn.FillColor = System.Drawing.Color.FromArgb(CType(CType(31, Byte), Integer), CType(CType(30, Byte), Integer), CType(CType(68, Byte), Integer))
+        Me.logoutBtn.Font = New System.Drawing.Font("Segoe UI", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.logoutBtn.ForeColor = System.Drawing.Color.White
+        Me.logoutBtn.HoverState.FillColor = System.Drawing.Color.FromArgb(CType(CType(47, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(94, Byte), Integer))
+        Me.logoutBtn.HoverState.Parent = Me.logoutBtn
+        Me.logoutBtn.Image = CType(resources.GetObject("logoutBtn.Image"), System.Drawing.Image)
+        Me.logoutBtn.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
+        Me.logoutBtn.ImageSize = New System.Drawing.Size(30, 30)
+        Me.logoutBtn.Location = New System.Drawing.Point(0, 756)
+        Me.logoutBtn.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.logoutBtn.Name = "logoutBtn"
+        Me.logoutBtn.ShadowDecoration.Parent = Me.logoutBtn
+        Me.logoutBtn.Size = New System.Drawing.Size(309, 69)
+        Me.logoutBtn.TabIndex = 14
+        Me.logoutBtn.Text = "Logout"
+        Me.logoutBtn.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
         '
         'Guna2Button6
         '
@@ -283,9 +307,9 @@ Partial Class reportForm
         Me.addOnClbl.ForeColor = System.Drawing.Color.White
         Me.addOnClbl.Location = New System.Drawing.Point(591, 615)
         Me.addOnClbl.Name = "addOnClbl"
-        Me.addOnClbl.Size = New System.Drawing.Size(108, 23)
+        Me.addOnClbl.Size = New System.Drawing.Size(86, 23)
         Me.addOnClbl.TabIndex = 49
-        Me.addOnClbl.Text = "RM 850.00"
+        Me.addOnClbl.Text = "RM 0.00"
         '
         'addOnBlbl
         '
@@ -337,12 +361,13 @@ Partial Class reportForm
         '
         'pkgALbl
         '
+        Me.pkgALbl.AutoSize = True
         Me.pkgALbl.BackColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(71, Byte), Integer), CType(CType(135, Byte), Integer))
         Me.pkgALbl.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.pkgALbl.ForeColor = System.Drawing.Color.White
         Me.pkgALbl.Location = New System.Drawing.Point(591, 398)
         Me.pkgALbl.Name = "pkgALbl"
-        Me.pkgALbl.Size = New System.Drawing.Size(115, 28)
+        Me.pkgALbl.Size = New System.Drawing.Size(86, 23)
         Me.pkgALbl.TabIndex = 44
         Me.pkgALbl.Text = "RM 0.00"
         '
@@ -421,7 +446,7 @@ Partial Class reportForm
         Me.lowLbl.AutoSize = True
         Me.lowLbl.BackColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(71, Byte), Integer), CType(CType(135, Byte), Integer))
         Me.lowLbl.Font = New System.Drawing.Font("Arial", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lowLbl.ForeColor = System.Drawing.Color.FromArgb(CType(CType(247, Byte), Integer), CType(CType(241, Byte), Integer), CType(CType(227, Byte), Integer))
+        Me.lowLbl.ForeColor = System.Drawing.Color.Magenta
         Me.lowLbl.Location = New System.Drawing.Point(1093, 583)
         Me.lowLbl.Name = "lowLbl"
         Me.lowLbl.Size = New System.Drawing.Size(269, 29)
@@ -433,7 +458,7 @@ Partial Class reportForm
         Me.highLbl.AutoSize = True
         Me.highLbl.BackColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(71, Byte), Integer), CType(CType(135, Byte), Integer))
         Me.highLbl.Font = New System.Drawing.Font("Arial", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.highLbl.ForeColor = System.Drawing.Color.FromArgb(CType(CType(247, Byte), Integer), CType(CType(241, Byte), Integer), CType(CType(227, Byte), Integer))
+        Me.highLbl.ForeColor = System.Drawing.Color.Magenta
         Me.highLbl.Location = New System.Drawing.Point(1093, 411)
         Me.highLbl.Name = "highLbl"
         Me.highLbl.Size = New System.Drawing.Size(252, 29)
@@ -446,7 +471,7 @@ Partial Class reportForm
         Me.Label25.BackColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(71, Byte), Integer), CType(CType(135, Byte), Integer))
         Me.Label25.Font = New System.Drawing.Font("Arial", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label25.ForeColor = System.Drawing.Color.White
-        Me.Label25.Location = New System.Drawing.Point(1094, 542)
+        Me.Label25.Location = New System.Drawing.Point(1093, 542)
         Me.Label25.Name = "Label25"
         Me.Label25.Size = New System.Drawing.Size(221, 27)
         Me.Label25.TabIndex = 35
@@ -458,7 +483,7 @@ Partial Class reportForm
         Me.Label24.BackColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(71, Byte), Integer), CType(CType(135, Byte), Integer))
         Me.Label24.Font = New System.Drawing.Font("Arial", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label24.ForeColor = System.Drawing.Color.White
-        Me.Label24.Location = New System.Drawing.Point(1094, 372)
+        Me.Label24.Location = New System.Drawing.Point(1093, 372)
         Me.Label24.Name = "Label24"
         Me.Label24.Size = New System.Drawing.Size(225, 27)
         Me.Label24.TabIndex = 34
@@ -469,7 +494,7 @@ Partial Class reportForm
         Me.countPkgC.AutoSize = True
         Me.countPkgC.BackColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(71, Byte), Integer), CType(CType(135, Byte), Integer))
         Me.countPkgC.Font = New System.Drawing.Font("Arial", 28.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.countPkgC.ForeColor = System.Drawing.Color.White
+        Me.countPkgC.ForeColor = System.Drawing.Color.Magenta
         Me.countPkgC.Location = New System.Drawing.Point(797, 606)
         Me.countPkgC.Name = "countPkgC"
         Me.countPkgC.Size = New System.Drawing.Size(78, 56)
@@ -481,7 +506,7 @@ Partial Class reportForm
         Me.countPkgB.AutoSize = True
         Me.countPkgB.BackColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(71, Byte), Integer), CType(CType(135, Byte), Integer))
         Me.countPkgB.Font = New System.Drawing.Font("Arial", 28.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.countPkgB.ForeColor = System.Drawing.Color.White
+        Me.countPkgB.ForeColor = System.Drawing.Color.Magenta
         Me.countPkgB.Location = New System.Drawing.Point(796, 512)
         Me.countPkgB.Name = "countPkgB"
         Me.countPkgB.Size = New System.Drawing.Size(78, 56)
@@ -493,7 +518,7 @@ Partial Class reportForm
         Me.countPkgA.AutoSize = True
         Me.countPkgA.BackColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(71, Byte), Integer), CType(CType(135, Byte), Integer))
         Me.countPkgA.Font = New System.Drawing.Font("Arial", 28.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.countPkgA.ForeColor = System.Drawing.Color.White
+        Me.countPkgA.ForeColor = System.Drawing.Color.Magenta
         Me.countPkgA.Location = New System.Drawing.Point(797, 420)
         Me.countPkgA.Name = "countPkgA"
         Me.countPkgA.Size = New System.Drawing.Size(78, 56)
@@ -506,7 +531,7 @@ Partial Class reportForm
         Me.Label20.BackColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(71, Byte), Integer), CType(CType(135, Byte), Integer))
         Me.Label20.Font = New System.Drawing.Font("Arial", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label20.ForeColor = System.Drawing.Color.White
-        Me.Label20.Location = New System.Drawing.Point(791, 584)
+        Me.Label20.Location = New System.Drawing.Point(791, 583)
         Me.Label20.Name = "Label20"
         Me.Label20.Size = New System.Drawing.Size(197, 22)
         Me.Label20.TabIndex = 30
@@ -601,10 +626,10 @@ Partial Class reportForm
         '
         Me.addOnLbl.BackColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(71, Byte), Integer), CType(CType(135, Byte), Integer))
         Me.addOnLbl.Font = New System.Drawing.Font("Arial", 19.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.addOnLbl.ForeColor = System.Drawing.Color.White
+        Me.addOnLbl.ForeColor = System.Drawing.Color.Magenta
         Me.addOnLbl.Location = New System.Drawing.Point(1105, 202)
         Me.addOnLbl.Name = "addOnLbl"
-        Me.addOnLbl.Size = New System.Drawing.Size(314, 69)
+        Me.addOnLbl.Size = New System.Drawing.Size(315, 69)
         Me.addOnLbl.TabIndex = 22
         Me.addOnLbl.Text = "NaN"
         '
@@ -612,7 +637,7 @@ Partial Class reportForm
         '
         Me.pkgLbl.BackColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(71, Byte), Integer), CType(CType(135, Byte), Integer))
         Me.pkgLbl.Font = New System.Drawing.Font("Arial", 19.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.pkgLbl.ForeColor = System.Drawing.Color.White
+        Me.pkgLbl.ForeColor = System.Drawing.Color.Magenta
         Me.pkgLbl.Location = New System.Drawing.Point(725, 202)
         Me.pkgLbl.Name = "pkgLbl"
         Me.pkgLbl.Size = New System.Drawing.Size(317, 69)
@@ -658,10 +683,10 @@ Partial Class reportForm
         '
         Me.dueLbl.BackColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(71, Byte), Integer), CType(CType(135, Byte), Integer))
         Me.dueLbl.Font = New System.Drawing.Font("Arial", 19.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.dueLbl.ForeColor = System.Drawing.Color.FromArgb(CType(CType(217, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.dueLbl.ForeColor = System.Drawing.Color.Magenta
         Me.dueLbl.Location = New System.Drawing.Point(363, 202)
         Me.dueLbl.Name = "dueLbl"
-        Me.dueLbl.Size = New System.Drawing.Size(314, 69)
+        Me.dueLbl.Size = New System.Drawing.Size(315, 69)
         Me.dueLbl.TabIndex = 17
         Me.dueLbl.Text = "NaN"
         '
@@ -684,8 +709,10 @@ Partial Class reportForm
         Me.Guna2Button1.BorderRadius = 22
         Me.Guna2Button1.CheckedState.Parent = Me.Guna2Button1
         Me.Guna2Button1.CustomImages.Parent = Me.Guna2Button1
+        Me.Guna2Button1.FillColor = System.Drawing.Color.DarkViolet
         Me.Guna2Button1.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Guna2Button1.ForeColor = System.Drawing.Color.White
+        Me.Guna2Button1.HoverState.FillColor = System.Drawing.Color.MediumOrchid
         Me.Guna2Button1.HoverState.Parent = Me.Guna2Button1
         Me.Guna2Button1.Location = New System.Drawing.Point(1253, 751)
         Me.Guna2Button1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
@@ -774,38 +801,14 @@ Partial Class reportForm
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 26.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.White
-        Me.Label1.Location = New System.Drawing.Point(339, 36)
+        Me.Label1.Location = New System.Drawing.Point(724, 28)
         Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(227, 32)
-        Me.Label1.TabIndex = 0
+        Me.Label1.Size = New System.Drawing.Size(354, 52)
+        Me.Label1.TabIndex = 1
         Me.Label1.Text = "Report Summary"
-        '
-        'logoutBtn
-        '
-        Me.logoutBtn.CheckedState.BorderColor = System.Drawing.Color.Black
-        Me.logoutBtn.CheckedState.FillColor = System.Drawing.Color.FromArgb(CType(CType(47, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(94, Byte), Integer))
-        Me.logoutBtn.CheckedState.Parent = Me.logoutBtn
-        Me.logoutBtn.CustomImages.Parent = Me.logoutBtn
-        Me.logoutBtn.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.logoutBtn.FillColor = System.Drawing.Color.FromArgb(CType(CType(31, Byte), Integer), CType(CType(30, Byte), Integer), CType(CType(68, Byte), Integer))
-        Me.logoutBtn.Font = New System.Drawing.Font("Segoe UI", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.logoutBtn.ForeColor = System.Drawing.Color.White
-        Me.logoutBtn.HoverState.FillColor = System.Drawing.Color.FromArgb(CType(CType(47, Byte), Integer), CType(CType(45, Byte), Integer), CType(CType(94, Byte), Integer))
-        Me.logoutBtn.HoverState.Parent = Me.logoutBtn
-        Me.logoutBtn.Image = CType(resources.GetObject("logoutBtn.Image"), System.Drawing.Image)
-        Me.logoutBtn.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left
-        Me.logoutBtn.ImageSize = New System.Drawing.Size(30, 30)
-        Me.logoutBtn.Location = New System.Drawing.Point(0, 756)
-        Me.logoutBtn.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.logoutBtn.Name = "logoutBtn"
-        Me.logoutBtn.ShadowDecoration.Parent = Me.logoutBtn
-        Me.logoutBtn.Size = New System.Drawing.Size(309, 69)
-        Me.logoutBtn.TabIndex = 14
-        Me.logoutBtn.Text = "Logout"
-        Me.logoutBtn.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
         '
         'reportForm
         '
@@ -815,10 +818,11 @@ Partial Class reportForm
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.Panel4)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.MaximizeBox = False
         Me.Name = "reportForm"
-        Me.Text = "Form5"
+        Me.Text = "IMRAI TOUR"
         Me.Panel1.ResumeLayout(False)
         Me.Panel2.ResumeLayout(False)
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
@@ -837,7 +841,6 @@ Partial Class reportForm
     Friend WithEvents Panel2 As Panel
     Friend WithEvents Panel4 As Panel
     Friend WithEvents Panel3 As Panel
-    Friend WithEvents Label1 As Label
     Friend WithEvents PictureBox2 As PictureBox
     Friend WithEvents Label6 As Label
     Friend WithEvents Label4 As Label
@@ -887,4 +890,5 @@ Partial Class reportForm
     Friend WithEvents Guna2Button2 As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents Guna2Button4 As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents logoutBtn As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents Label1 As Label
 End Class

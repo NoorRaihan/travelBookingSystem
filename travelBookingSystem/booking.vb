@@ -36,20 +36,26 @@ Public Class bookForm
 
 
     Private Sub bookBtn_Click(sender As Object, e As EventArgs) Handles bookBtn.Click
-        Try
-            writeFile = File.AppendText("booking.txt")
-            writeFile.WriteLine("Package " & pkgLbl.Text & ";" & countSenior & ";" & countAdult & ";" & countChild & ";" & totalPeople & ";" & totalAddOn & ";" & totalAll)
-            writeFile.Close()
+        Dim dia As DialogResult
 
-            writeFile = File.AppendText("customer.txt")
-            writeFile.WriteLine(receiptTxt.Text)
-            writeFile.Close()
+        dia = MessageBox.Show("Are you confirm ?", "INFO", MessageBoxButtons.YesNo, MessageBoxIcon.Question)
+        If dia = DialogResult.Yes Then
+            Try
+                writeFile = File.AppendText("booking.txt")
+                writeFile.WriteLine("Package " & pkgLbl.Text & ";" & countSenior & ";" & countAdult & ";" & countChild & ";" & totalPeople & ";" & totalAddOn & ";" & totalAll)
+                writeFile.Close()
 
-            Me.Hide()
-            thankForm.Show()
-        Catch ex As Exception
-            MessageBox.Show("Something went wrong!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
-        End Try
+                writeFile = File.AppendText("customer.txt")
+                writeFile.WriteLine(receiptTxt.Text)
+                writeFile.Close()
+
+                Me.Hide()
+                thankForm.Show()
+            Catch ex As Exception
+                MessageBox.Show("Something went wrong!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            End Try
+        End If
+
     End Sub
 
     Private Sub bookForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load

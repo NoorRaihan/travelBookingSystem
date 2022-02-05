@@ -85,46 +85,46 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form3.Designer.vb">
-      <DependentUpon>Form3.vb</DependentUpon>
+    <Compile Include="dashboard.Designer.vb">
+      <DependentUpon>dashboard.vb</DependentUpon>
     </Compile>
-    <Compile Include="Form3.vb">
+    <Compile Include="dashboard.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form4.Designer.vb">
-      <DependentUpon>Form4.vb</DependentUpon>
+    <Compile Include="package.Designer.vb">
+      <DependentUpon>package.vb</DependentUpon>
     </Compile>
-    <Compile Include="Form4.vb">
+    <Compile Include="package.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form5.Designer.vb">
-      <DependentUpon>Form5.vb</DependentUpon>
+    <Compile Include="report.Designer.vb">
+      <DependentUpon>report.vb</DependentUpon>
     </Compile>
-    <Compile Include="Form5.vb">
+    <Compile Include="report.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form6.Designer.vb">
-      <DependentUpon>Form6.vb</DependentUpon>
+    <Compile Include="booking.Designer.vb">
+      <DependentUpon>booking.vb</DependentUpon>
     </Compile>
-    <Compile Include="Form6.vb">
+    <Compile Include="booking.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form7.Designer.vb">
-      <DependentUpon>Form7.vb</DependentUpon>
+    <Compile Include="thanks.Designer.vb">
+      <DependentUpon>thanks.vb</DependentUpon>
     </Compile>
-    <Compile Include="Form7.vb">
+    <Compile Include="thanks.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form8.Designer.vb">
-      <DependentUpon>Form8.vb</DependentUpon>
+    <Compile Include="login.Designer.vb">
+      <DependentUpon>login.vb</DependentUpon>
     </Compile>
-    <Compile Include="Form8.vb">
+    <Compile Include="login.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form9.Designer.vb">
-      <DependentUpon>Form9.vb</DependentUpon>
+    <Compile Include="staff.Designer.vb">
+      <DependentUpon>staff.vb</DependentUpon>
     </Compile>
-    <Compile Include="Form9.vb">
+    <Compile Include="staff.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -143,43 +143,34 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="reportSummaryForm.Designer.vb">
-      <DependentUpon>reportSummaryForm.vb</DependentUpon>
-    </Compile>
-    <Compile Include="reportSummaryForm.vb">
-      <SubType>Form</SubType>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Form3.resx">
-      <DependentUpon>Form3.vb</DependentUpon>
+    <EmbeddedResource Include="dashboard.resx">
+      <DependentUpon>dashboard.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form4.resx">
-      <DependentUpon>Form4.vb</DependentUpon>
+    <EmbeddedResource Include="package.resx">
+      <DependentUpon>package.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form5.resx">
-      <DependentUpon>Form5.vb</DependentUpon>
+    <EmbeddedResource Include="report.resx">
+      <DependentUpon>report.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form6.resx">
-      <DependentUpon>Form6.vb</DependentUpon>
+    <EmbeddedResource Include="booking.resx">
+      <DependentUpon>booking.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form7.resx">
-      <DependentUpon>Form7.vb</DependentUpon>
+    <EmbeddedResource Include="thanks.resx">
+      <DependentUpon>thanks.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form8.resx">
-      <DependentUpon>Form8.vb</DependentUpon>
+    <EmbeddedResource Include="login.resx">
+      <DependentUpon>login.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form9.resx">
-      <DependentUpon>Form9.vb</DependentUpon>
+    <EmbeddedResource Include="staff.resx">
+      <DependentUpon>staff.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="reportSummaryForm.resx">
-      <DependentUpon>reportSummaryForm.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
