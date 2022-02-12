@@ -38,6 +38,7 @@ Partial Class bookForm
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Panel4 = New System.Windows.Forms.Panel()
+        Me.printBtn = New Guna.UI2.WinForms.Guna2Button()
         Me.receiptTxt = New Guna.UI2.WinForms.Guna2TextBox()
         Me.comboAddon2 = New Guna.UI2.WinForms.Guna2ComboBox()
         Me.comboAddon1 = New Guna.UI2.WinForms.Guna2ComboBox()
@@ -64,6 +65,9 @@ Partial Class bookForm
         Me.Label9 = New System.Windows.Forms.Label()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
+        Me.pdDocument = New System.Drawing.Printing.PrintDocument()
+        Me.printDialogprev = New System.Windows.Forms.PrintPreviewDialog()
+        Me.PrintDialog1 = New System.Windows.Forms.PrintDialog()
         Me.Panel3.SuspendLayout()
         Me.Panel1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -241,6 +245,7 @@ Partial Class bookForm
         'Panel4
         '
         Me.Panel4.BackColor = System.Drawing.Color.FromArgb(CType(CType(34, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(73, Byte), Integer))
+        Me.Panel4.Controls.Add(Me.printBtn)
         Me.Panel4.Controls.Add(Me.receiptTxt)
         Me.Panel4.Controls.Add(Me.comboAddon2)
         Me.Panel4.Controls.Add(Me.comboAddon1)
@@ -277,6 +282,24 @@ Partial Class bookForm
         Me.Panel4.Size = New System.Drawing.Size(1178, 676)
         Me.Panel4.TabIndex = 7
         '
+        'printBtn
+        '
+        Me.printBtn.Animated = True
+        Me.printBtn.AutoRoundedCorners = True
+        Me.printBtn.BorderRadius = 20
+        Me.printBtn.CheckedState.Parent = Me.printBtn
+        Me.printBtn.CustomImages.Parent = Me.printBtn
+        Me.printBtn.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.printBtn.ForeColor = System.Drawing.Color.White
+        Me.printBtn.HoverState.Parent = Me.printBtn
+        Me.printBtn.Location = New System.Drawing.Point(764, 622)
+        Me.printBtn.Margin = New System.Windows.Forms.Padding(2)
+        Me.printBtn.Name = "printBtn"
+        Me.printBtn.ShadowDecoration.Parent = Me.printBtn
+        Me.printBtn.Size = New System.Drawing.Size(190, 42)
+        Me.printBtn.TabIndex = 108
+        Me.printBtn.Text = "PRINT RECEIPT"
+        '
         'receiptTxt
         '
         Me.receiptTxt.BorderRadius = 10
@@ -289,7 +312,7 @@ Partial Class bookForm
         Me.receiptTxt.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
         Me.receiptTxt.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.receiptTxt.FocusedState.Parent = Me.receiptTxt
-        Me.receiptTxt.Font = New System.Drawing.Font("Segoe UI", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.receiptTxt.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.receiptTxt.ForeColor = System.Drawing.Color.Black
         Me.receiptTxt.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.receiptTxt.HoverState.Parent = Me.receiptTxt
@@ -367,7 +390,7 @@ Partial Class bookForm
         Me.cancelBtn.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cancelBtn.ForeColor = System.Drawing.Color.White
         Me.cancelBtn.HoverState.Parent = Me.cancelBtn
-        Me.cancelBtn.Location = New System.Drawing.Point(741, 622)
+        Me.cancelBtn.Location = New System.Drawing.Point(570, 622)
         Me.cancelBtn.Margin = New System.Windows.Forms.Padding(2)
         Me.cancelBtn.Name = "cancelBtn"
         Me.cancelBtn.ShadowDecoration.Parent = Me.cancelBtn
@@ -385,7 +408,7 @@ Partial Class bookForm
         Me.bookBtn.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.bookBtn.ForeColor = System.Drawing.Color.White
         Me.bookBtn.HoverState.Parent = Me.bookBtn
-        Me.bookBtn.Location = New System.Drawing.Point(946, 622)
+        Me.bookBtn.Location = New System.Drawing.Point(958, 622)
         Me.bookBtn.Margin = New System.Windows.Forms.Padding(2)
         Me.bookBtn.Name = "bookBtn"
         Me.bookBtn.ShadowDecoration.Parent = Me.bookBtn
@@ -728,6 +751,24 @@ Partial Class bookForm
         Me.Label7.TabIndex = 81
         Me.Label7.Text = "Email                       : "
         '
+        'pdDocument
+        '
+        '
+        'printDialogprev
+        '
+        Me.printDialogprev.AutoScrollMargin = New System.Drawing.Size(0, 0)
+        Me.printDialogprev.AutoScrollMinSize = New System.Drawing.Size(0, 0)
+        Me.printDialogprev.ClientSize = New System.Drawing.Size(400, 300)
+        Me.printDialogprev.Document = Me.pdDocument
+        Me.printDialogprev.Enabled = True
+        Me.printDialogprev.Icon = CType(resources.GetObject("printDialogprev.Icon"), System.Drawing.Icon)
+        Me.printDialogprev.Name = "printDialogprev"
+        Me.printDialogprev.Visible = False
+        '
+        'PrintDialog1
+        '
+        Me.PrintDialog1.UseEXDialog = True
+        '
         'bookForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(96.0!, 96.0!)
@@ -792,4 +833,8 @@ Partial Class bookForm
     Friend WithEvents pkgLbl As Label
     Friend WithEvents backBtn As FontAwesome.Sharp.IconButton
     Friend WithEvents receiptTxt As Guna.UI2.WinForms.Guna2TextBox
+    Friend WithEvents printBtn As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents pdDocument As Printing.PrintDocument
+    Friend WithEvents printDialogprev As PrintPreviewDialog
+    Friend WithEvents PrintDialog1 As PrintDialog
 End Class

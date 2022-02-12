@@ -28,6 +28,28 @@ Public Class bookForm
         packageForm.Show()
     End Sub
 
+    Private Sub printBtn_Click(sender As Object, e As EventArgs) Handles printBtn.Click
+        PrintDialog1.Document = pdDocument
+        PrintDialog1.PrinterSettings = pdDocument.PrinterSettings
+        PrintDialog1.AllowSomePages = True
+
+        If PrintDialog1.ShowDialog = DialogResult.OK Then
+            pdDocument.PrinterSettings = PrintDialog1.PrinterSettings
+            pdDocument.Print()
+        End If
+
+    End Sub
+
+    Private Sub pdDocument_PrintPage(sender As Object, e As Printing.PrintPageEventArgs) Handles pdDocument.PrintPage
+
+        e.Graphics.DrawString(receiptTxt.Text, New Font("Courier New", 14, FontStyle.Regular), Brushes.Black, 150, 30)
+    End Sub
+
+    Private Sub prevBtn_Click(sender As Object, e As EventArgs)
+        printDialogprev.ShowDialog()
+
+    End Sub
+
     Dim addOn1, addOn2, displayReceipt As String
 
     Private Sub cancelBtn_Click(sender As Object, e As EventArgs) Handles cancelBtn.Click
@@ -67,12 +89,13 @@ Public Class bookForm
         comboAddon2.Items.Add(addon(4, 0))
         bookBtn.Visible = False
         cancelBtn.Visible = False
+        printBtn.Visible = False
         seniorTxt.Text = 0
         adultTxt.Text = 0
         childTxt.Text = 0
         addOn1 = "None"
         addOn2 = "None"
-        displayReceipt = vbNewLine & "=========================== RECEIPT HERE ===========================" & vbNewLine
+        displayReceipt = vbNewLine & "================== RECEIPT HERE==================" & vbNewLine
         receiptTxt.Text = displayReceipt
         'seniorTxt.Enabled = False
         'adultTxt.Enabled = False
@@ -151,7 +174,7 @@ Public Class bookForm
         childTxt.Text = 0
         addOn1 = "None"
         addOn2 = "None"
-        displayReceipt = vbNewLine & "=========================== RECEIPT HERE ===========================" & vbNewLine
+        displayReceipt = vbNewLine & "================== RECEIPT HERE ==================" & vbNewLine
         receiptTxt.Text = displayReceipt
         nameTxt.Clear()
         emailTxt.Clear()
@@ -175,6 +198,7 @@ Public Class bookForm
             totalAdult = packageForm.adultPrice * countAdult
             totalChild = packageForm.childPrice * countChild
             totalPeople = totalSenior + totalAdult + totalChild
+            printBtn.Visible = True
             bookBtn.Visible = True
             cancelBtn.Visible = True
 
@@ -209,7 +233,7 @@ Public Class bookForm
             displayReceipt &= "IC Number : " & icTxt.Text & vbNewLine
             displayReceipt &= "Phone : " & phoneTxt.Text & vbNewLine
             displayReceipt &= "Travel Date : " & dateTxt.Value.Date.ToString("dd/MM/yyyy") & vbNewLine
-            displayReceipt &= vbNewLine & "=========================== SELECTED PACKAGE ===========================" & vbNewLine
+            displayReceipt &= vbNewLine & "================ SELECTED PACKAGE ================" & vbNewLine
             displayReceipt &= "Package : " & pkgLbl.Text & vbNewLine
 
             If (countSenior > 0) Then

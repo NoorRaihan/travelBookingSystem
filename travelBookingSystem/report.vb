@@ -128,4 +128,44 @@ Public Class reportForm
         Me.Hide()
         dashForm.Show()
     End Sub
+
+    Private Sub printBtn_Click(sender As Object, e As EventArgs) Handles printBtn.Click
+        PrintDialog1.Document = pdDocument
+        PrintDialog1.PrinterSettings = pdDocument.PrinterSettings
+        PrintDialog1.AllowSomePages = True
+
+        If PrintDialog1.ShowDialog = DialogResult.OK Then
+            pdDocument.PrinterSettings = PrintDialog1.PrinterSettings
+            pdDocument.Print()
+        End If
+    End Sub
+
+    Private Sub pdDocument_PrintPage(sender As Object, e As Printing.PrintPageEventArgs) Handles pdDocument.PrintPage
+        e.Graphics.DrawString("REPORT SUMMARY", New Font("Times New Roman", 20, FontStyle.Bold), Brushes.Black, 300, 40)
+        e.Graphics.DrawString("PACKAGE SALES", New Font("Courier New", 14, FontStyle.Bold), Brushes.Black, 340, 120)
+        e.Graphics.DrawString(String.Format("{0,-20} {1,-20}", "PACKAGE NAME", "PRICE"), New Font("Courier New", 14, FontStyle.Bold), Brushes.Black, 240, 140)
+        e.Graphics.DrawString(String.Format("{0,-20} {1,-20}", "PACKAGE BASIC", pkgALbl.Text), New Font("Courier New", 14, FontStyle.Regular), Brushes.Black, 240, 180)
+        e.Graphics.DrawString(String.Format("{0,-20} {1,-20}", "PACKAGE DELUXE", pkgBlbl.Text), New Font("Courier New", 14, FontStyle.Regular), Brushes.Black, 240, 200)
+        e.Graphics.DrawString(String.Format("{0,-20} {1,-20}", "PACKAGE PREMIUM", pkgClbl.Text), New Font("Courier New", 14, FontStyle.Regular), Brushes.Black, 240, 220)
+
+        e.Graphics.DrawString("PACKAGE DEMAND", New Font("Courier New", 14, FontStyle.Bold), Brushes.Black, 340, 280)
+        e.Graphics.DrawString(String.Format("{0,-20} {1,-20}", "PACKAGE NAME", "TOTAL CUSTOMER"), New Font("Courier New", 14, FontStyle.Bold), Brushes.Black, 240, 300)
+        e.Graphics.DrawString(String.Format("{0,-20} {1,-20}", "PACKAGE BASIC", countPkgA.Text), New Font("Courier New", 14, FontStyle.Regular), Brushes.Black, 240, 340)
+        e.Graphics.DrawString(String.Format("{0,-20} {1,-20}", "PACKAGE DELUXE", countPkgB.Text), New Font("Courier New", 14, FontStyle.Regular), Brushes.Black, 240, 360)
+        e.Graphics.DrawString(String.Format("{0,-20} {1,-20}", "PACKAGE PREMIUM", countPkgC.Text), New Font("Courier New", 14, FontStyle.Regular), Brushes.Black, 240, 380)
+
+        e.Graphics.DrawString("HIGHEST DEMAND PACKAGE: " & highLbl.Text, New Font("Courier New", 14, FontStyle.Regular), Brushes.Black, 200, 440)
+        e.Graphics.DrawString("LOWEST DEMAND PACKAGE: " & lowLbl.Text, New Font("Courier New", 14, FontStyle.Regular), Brushes.Black, 200, 460)
+
+        e.Graphics.DrawString("TOTAL DUE: " & dueLbl.Text, New Font("Courier New", 14, FontStyle.Bold), Brushes.Black, 200, 500)
+        e.Graphics.DrawString("TOTAL PACKAGE SALES: " & pkgLbl.Text, New Font("Courier New", 14, FontStyle.Bold), Brushes.Black, 200, 520)
+        e.Graphics.DrawString("TOTAL ADD ONS SALES: " & addOnLbl.Text, New Font("Courier New", 14, FontStyle.Bold), Brushes.Black, 200, 540)
+
+        e.Graphics.DrawString("COPYRIGHT IMRAI TRAVEL AGENCY 2022 @OFFICIAL", New Font("Times New Roman", 10, FontStyle.Regular), Brushes.Black, 230, 600)
+
+    End Sub
+
+    Private Sub prevBtn_Click(sender As Object, e As EventArgs) Handles prevBtn.Click
+        PrintPreviewDialog1.ShowDialog()
+    End Sub
 End Class
