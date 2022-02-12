@@ -185,14 +185,14 @@ Partial Class thankForm
         '
         'Label1
         '
-        Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 26.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.White
-        Me.Label1.Location = New System.Drawing.Point(386, 15)
+        Me.Label1.Location = New System.Drawing.Point(391, 7)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(362, 39)
+        Me.Label1.Size = New System.Drawing.Size(385, 61)
         Me.Label1.TabIndex = 0
-        Me.Label1.Text = "Choose Your Package"
+        Me.Label1.Text = "Successfully Booked"
+        Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Panel4
         '
@@ -559,7 +559,6 @@ Partial Class thankForm
         Me.Name = "thankForm"
         Me.Text = "IMRAI TOUR"
         Me.Panel3.ResumeLayout(False)
-        Me.Panel3.PerformLayout()
         Me.Panel1.ResumeLayout(False)
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel4.ResumeLayout(False)
