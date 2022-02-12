@@ -120,7 +120,9 @@ Public Class reportForm
     End Sub
 
     Private Sub Guna2Button5_Click(sender As Object, e As EventArgs) Handles logoutBtn.Click
-        Me.Hide()
+        Me.Close()
+        dashForm.Close()
+        staffForm.Close()
         signForm.Show()
     End Sub
 

@@ -19,7 +19,9 @@ Public Class staffForm
     End Sub
 
     Private Sub logoutBtn_Click(sender As Object, e As EventArgs) Handles logoutBtn.Click
-        Me.Hide()
+        Me.Close()
+        reportForm.Close()
+        dashForm.Close()
         signForm.Show()
     End Sub
 

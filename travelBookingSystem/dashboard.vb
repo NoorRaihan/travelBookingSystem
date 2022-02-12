@@ -5,6 +5,8 @@
 
     Private Sub Guna2Button4_Click(sender As Object, e As EventArgs) Handles logoutBtn.Click
         Me.Close()
+        reportForm.Close()
+        staffForm.Close()
         signForm.Show()
     End Sub
 
