@@ -47,15 +47,15 @@ Public Class reportForm
                     totalPrice = Val(data(6))
 
                     If (packageName = "Package Basic") Then
-                        countPackageA += (senior + adult + child)
+                        countPackageA += 1
                         totalPkgA += packagePrice
                         addOnA += addOnPrice
                     ElseIf (packageName = "Package Deluxe") Then
-                        countPackageB += (senior + adult + child)
+                        countPackageB += 1
                         totalPkgB += packagePrice
                         addOnB += addOnPrice
                     Else
-                        countPackageC += (senior + adult + child)
+                        countPackageC += 1
                         totalPkgC += packagePrice
                         addOnC += addOnPrice
                     End If
@@ -83,17 +83,17 @@ Public Class reportForm
                 addOnClbl.Text = Format(addOnC, "RM#,####.00")
                 countPkgC.Text = countPackageC
 
-                If (countPackageA > countPackageB And countPackageA > countPackageC) Then
+                If (countPackageA >= countPackageB And countPackageA >= countPackageC) Then
                     highLbl.Text = "PACKAGE BASIC"
-                ElseIf (countPackageB > countPackageA And countPackageB > countPackageC) Then
+                ElseIf (countPackageB >= countPackageA And countPackageB >= countPackageC) Then
                     highLbl.Text = "PACKAGE DELUXE"
                 Else
                     highLbl.Text = "PACKAGE PREMIUM"
                 End If
 
-                If (countPackageA < countPackageB And countPackageA < countPackageC) Then
+                If (countPackageA <= countPackageB And countPackageA <= countPackageC) Then
                     lowLbl.Text = "PACKAGE BASIC"
-                ElseIf (countPackageB < countPackageA And countPackageB < countPackageC) Then
+                ElseIf (countPackageB <= countPackageA And countPackageB <= countPackageC) Then
                     lowLbl.Text = "PACKAGE DELUXE"
                 Else
                     lowLbl.Text = "PACKAGE PREMIUM"
@@ -147,27 +147,34 @@ Public Class reportForm
         e.Graphics.DrawString("PACKAGE SALES", New Font("Courier New", 14, FontStyle.Bold), Brushes.Black, 340, 120)
         e.Graphics.DrawString(String.Format("{0,-20} {1,-20}", "PACKAGE NAME", "PRICE"), New Font("Courier New", 14, FontStyle.Bold), Brushes.Black, 240, 140)
         e.Graphics.DrawString(String.Format("{0,-20} {1,-20}", "PACKAGE BASIC", pkgALbl.Text), New Font("Courier New", 14, FontStyle.Regular), Brushes.Black, 240, 180)
-        e.Graphics.DrawString(String.Format("{0,-20} {1,-20}", "PACKAGE DELUXE", pkgBlbl.Text), New Font("Courier New", 14, FontStyle.Regular), Brushes.Black, 240, 200)
-        e.Graphics.DrawString(String.Format("{0,-20} {1,-20}", "PACKAGE PREMIUM", pkgClbl.Text), New Font("Courier New", 14, FontStyle.Regular), Brushes.Black, 240, 220)
+        e.Graphics.DrawString(String.Format("{0,-20} {1,-20}", "ADD ON", addOnAlbl.Text), New Font("Courier New", 14, FontStyle.Regular), Brushes.Black, 240, 200)
+        e.Graphics.DrawString(String.Format("{0,-20} {1,-20}", "PACKAGE DELUXE", pkgBlbl.Text), New Font("Courier New", 14, FontStyle.Regular), Brushes.Black, 240, 240)
+        e.Graphics.DrawString(String.Format("{0,-20} {1,-20}", "ADD ON", addOnBlbl.Text), New Font("Courier New", 14, FontStyle.Regular), Brushes.Black, 240, 260)
+        e.Graphics.DrawString(String.Format("{0,-20} {1,-20}", "PACKAGE PREMIUM", pkgClbl.Text), New Font("Courier New", 14, FontStyle.Regular), Brushes.Black, 240, 300)
+        e.Graphics.DrawString(String.Format("{0,-20} {1,-20}", "ADD ON", addOnClbl.Text), New Font("Courier New", 14, FontStyle.Regular), Brushes.Black, 240, 320)
 
-        e.Graphics.DrawString("PACKAGE DEMAND", New Font("Courier New", 14, FontStyle.Bold), Brushes.Black, 340, 280)
-        e.Graphics.DrawString(String.Format("{0,-20} {1,-20}", "PACKAGE NAME", "TOTAL CUSTOMER"), New Font("Courier New", 14, FontStyle.Bold), Brushes.Black, 240, 300)
-        e.Graphics.DrawString(String.Format("{0,-20} {1,-20}", "PACKAGE BASIC", countPkgA.Text), New Font("Courier New", 14, FontStyle.Regular), Brushes.Black, 240, 340)
-        e.Graphics.DrawString(String.Format("{0,-20} {1,-20}", "PACKAGE DELUXE", countPkgB.Text), New Font("Courier New", 14, FontStyle.Regular), Brushes.Black, 240, 360)
-        e.Graphics.DrawString(String.Format("{0,-20} {1,-20}", "PACKAGE PREMIUM", countPkgC.Text), New Font("Courier New", 14, FontStyle.Regular), Brushes.Black, 240, 380)
+        e.Graphics.DrawString("PACKAGE DEMAND", New Font("Courier New", 14, FontStyle.Bold), Brushes.Black, 340, 380)
+        e.Graphics.DrawString(String.Format("{0,-20} {1,-20}", "PACKAGE NAME", "TOTAL CUSTOMER"), New Font("Courier New", 14, FontStyle.Bold), Brushes.Black, 240, 400)
+        e.Graphics.DrawString(String.Format("{0,-20} {1,-20}", "PACKAGE BASIC", countPkgA.Text), New Font("Courier New", 14, FontStyle.Regular), Brushes.Black, 240, 440)
+        e.Graphics.DrawString(String.Format("{0,-20} {1,-20}", "PACKAGE DELUXE", countPkgB.Text), New Font("Courier New", 14, FontStyle.Regular), Brushes.Black, 240, 460)
+        e.Graphics.DrawString(String.Format("{0,-20} {1,-20}", "PACKAGE PREMIUM", countPkgC.Text), New Font("Courier New", 14, FontStyle.Regular), Brushes.Black, 240, 480)
 
-        e.Graphics.DrawString("HIGHEST DEMAND PACKAGE: " & highLbl.Text, New Font("Courier New", 14, FontStyle.Regular), Brushes.Black, 200, 440)
-        e.Graphics.DrawString("LOWEST DEMAND PACKAGE: " & lowLbl.Text, New Font("Courier New", 14, FontStyle.Regular), Brushes.Black, 200, 460)
+        e.Graphics.DrawString("HIGHEST DEMAND PACKAGE: " & highLbl.Text, New Font("Courier New", 14, FontStyle.Regular), Brushes.Black, 200, 540)
+        e.Graphics.DrawString("LOWEST DEMAND PACKAGE: " & lowLbl.Text, New Font("Courier New", 14, FontStyle.Regular), Brushes.Black, 200, 560)
 
-        e.Graphics.DrawString("TOTAL DUE: " & dueLbl.Text, New Font("Courier New", 14, FontStyle.Bold), Brushes.Black, 200, 500)
-        e.Graphics.DrawString("TOTAL PACKAGE SALES: " & pkgLbl.Text, New Font("Courier New", 14, FontStyle.Bold), Brushes.Black, 200, 520)
-        e.Graphics.DrawString("TOTAL ADD ONS SALES: " & addOnLbl.Text, New Font("Courier New", 14, FontStyle.Bold), Brushes.Black, 200, 540)
+        e.Graphics.DrawString("TOTAL DUE: " & dueLbl.Text, New Font("Courier New", 14, FontStyle.Bold), Brushes.Black, 200, 600)
+        e.Graphics.DrawString("TOTAL PACKAGE SALES: " & pkgLbl.Text, New Font("Courier New", 14, FontStyle.Bold), Brushes.Black, 200, 620)
+        e.Graphics.DrawString("TOTAL ADD ONS SALES: " & addOnLbl.Text, New Font("Courier New", 14, FontStyle.Bold), Brushes.Black, 200, 640)
 
-        e.Graphics.DrawString("COPYRIGHT IMRAI TRAVEL AGENCY 2022 @OFFICIAL", New Font("Times New Roman", 10, FontStyle.Regular), Brushes.Black, 230, 600)
+        e.Graphics.DrawString("COPYRIGHT IMRAI TRAVEL AGENCY 2022 @OFFICIAL", New Font("Times New Roman", 10, FontStyle.Regular), Brushes.Black, 230, 700)
 
     End Sub
 
     Private Sub prevBtn_Click(sender As Object, e As EventArgs) Handles prevBtn.Click
         PrintPreviewDialog1.ShowDialog()
+    End Sub
+
+    Private Sub Panel4_Paint(sender As Object, e As PaintEventArgs) Handles Panel4.Paint
+
     End Sub
 End Class
